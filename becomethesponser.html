@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BecomeTheSponser</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .bg-dark-ov {
+            background-color: rgb(34,34,34);
+        }
+        .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+            color: rgb(64,157,224);
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255,255,255);
+        }
+        body {
+            font-size: 0.8rem;
+        }
+        .navbar-dark .navbar-nav .nav-link.disabled {
+            color: rgb(255,255,255);
+        }
+        .dropdown-menu{
+            background: rgb(34,34,34);
+        }
+        .dropdown-item{
+            color : rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            padding: .6rem 1.5rem;
+        }
+        .dropdown-item:hover{
+            color: white;
+            background-color: rgb(34,34,34);
+        }
+        .nav-item:hover{
+            color: rgb(64,157,224);
+        }
+        .register-nav:hover{
+            background-color: white;
+            color : black;
+        }
+        @media (min-width: 992px){
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: .7rem;
+                padding-left: .7rem;
+            }
+
+        }
+        @media (max-width: 800px){
+        	.botpadding{
+            	padding-bottom: 50px;
+        	}
+        }
+       
+        .sec-one {
+            background: url('images/becomethesponser.png') center center;
+            background-size: cover;
+            /*margin-top: 20px;*/
+            background-color: black
+        }
+        .sec-one-cont {
+            height: auto;
+            min-height: 80vh;
+            color : white;
+        }
+
+        .botpad{
+        	padding-bottom: 5px;
+        }
+        .accordionn {
+		  /*background-color: #eee;*/
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		  transition: 0.4s;
+		  color: blue
+		}
+
+		.activeclass, .accordion:hover {
+		  /*background-color: #ccc;*/
+		}
+
+		.accordion:after {
+		  /*color: #777;*/
+		  font-weight: bold;
+		  float: right;
+		  margin-left: 5px;
+		}
+
+		.activeclass:after {
+		}
+
+		.panell {
+		  padding: 0 18px;
+		  background-color: white;
+		  max-height: 0;
+		  overflow: hidden;
+		  transition: max-height 0.2s ease-out;
+		}
+
+
+		.y {
+		  font-family: 'Titillium Web', cursive;
+		  margin: 0 auto;
+		  text-align: center;
+		  color: white;
+		  background: #222;
+		  font-weight: 100;
+		}
+
+		.x {
+		  display: inline-block;
+		  line-height: 1;
+		  padding: 20px;
+		  font-size: 40px;
+		}
+
+		span {
+		  display: block;
+		  font-size: 20px;
+		  color: white;
+		}
+
+		#days {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+		#hours {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+		#minutes {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+		#seconds {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+
+
+		@media (max-width: 780px){
+			.subbut{
+				padding-left: 15px;
+			}
+			.black-content {
+				height: 96vh;
+			}
+			.inpbut{
+				width: 200px
+			}
+			.subbut{
+				width: 100px;
+				margin-left:-10px; 
+			}
+		}
+
+		@media (min-width: 900px){
+				.givepos{
+					 top:145vh;
+					 left: 50%;
+				}
+				.black{
+					display: inline-block;
+				}
+				.inpbut{
+					width: 300px;
+				}
+				.subbut{
+					margin-left: -10px;
+					width: 150px;
+				}
+				.lesspad{
+					padding-left: -22px;
+				}
+			}
+
+		#footer {
+		background: #222;
+		color: #fff;
+		padding: 80px 0 35px 0;
+		}
+		
+		.bfricon:before {
+		    content: "\e131";
+		    font-family: 'Glyphicons Halflings';
+		    font-size: 10px;
+		    float: left;
+		    margin-left: -17px;
+		    color: #4a4a4a;
+		}
+
+		
+	
+
+		.vertical-align{
+			line-height: 160px;
+		}
+
+		.black{
+				background-color: black;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+				height: 16vh;
+				width: 13vw;
+				vertical-align: middle;
+				font-weight:900;
+				padding-top: 4vh;
+			}
+			
+			.text-block {
+			  position: absolute;
+			  bottom: 20px;
+			  right: 20px;
+			  background-color: black;
+			  color: white;
+			  padding-left: 20px;
+			  padding-right: 20px;
+			}
+
+			.black-content {
+				height: 20vh;
+			}
+
+
+		
+    </style>
+
+</head>
+<body>
+<div class="container-fluid" style="background-color: rgb(34,34,34)">
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
+        <a class="navbar-brand" href="#">
+            <img src="../images/iwa.png" height="30" alt="IWA logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ABOUT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">THE CONFERENCE</a>
+                        <a class="dropdown-item" href="#">LOCAL ORGANISING COMMITTEE</a>
+                        <a class="dropdown-item" href="#">PROGRAMME COMMITTEE</a>
+                        <a class="dropdown-item" href="#">ADVISORY COMMITTEE</a>
+                        <a class="dropdown-item" href="#">CONTACT</a>
+                        <a class="dropdown-item" href="#">EXTRA</a>
+                    </div>
+                </li>
+                <!--PROGRAMME TO USED LATER -->
+                <!--<li class="nav-item dropdown">-->
+                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--PROGRAMME-->
+                    <!--</a>-->
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                        <!--<a class="dropdown-item" href="#">VISITORS REGISTRATION</a>-->
+                        <!--<a class="dropdown-item" href="#">BUSINESS FORUMS</a>-->
+                        <!--<a class="dropdown-item" href="#">FLOORPLAN</a>-->
+                        <!--<a class="dropdown-item" href="#">EXHIBITORS</a>-->
+                        <!--<a class="dropdown-item" href="#">PAVILIONS</a>-->
+                        <!--<a class="dropdown-item" href="#">TESTIMONIALS</a>-->
+                        <!--<a class="dropdown-item" href="#">BOOKING INFORMATION</a>-->
+                        <!--<a class="dropdown-item" href="#">WHY EXHIBIT?</a>-->
+                        <!--<a class="dropdown-item" href="#">EXHIBITION NEWS</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SPONSORS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">BECOME A SPONSOR</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DESTINATION
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">VISA REQUIREMENTS</a>
+                        <a class="dropdown-item" href="#">ACCOMMODATION</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DOWNLOADS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">PHOTOS</a>
+                        <a class="dropdown-item" href="#">MEDIA</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="margin-right: 15px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CONTACT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                </li>
+                <li class="nav-item " style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
+                    <a class="nav-link active" href="#" >REGISTER</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row sec-one" style="height: auto;min-height: 350px;padding: 1vh 10vw 10vh 15vw;">
+        <div class="col-xs-12" style="color: white;height: auto; margin-top: 7vh; margin-bottom: 5vh">
+            <h1 style="font-size: 4em; font-weight: bold;">
+                Empower Emerging Water leaders
+            </h1>
+            <p><span style="color: #ffffff; font-size: 18px;">We partner with some of the water sector’s leading companies and organizations and work together for a better water future.<br>
+			As an innovative water industry, looking to showcase your technical, service and product solutions, and to engage with the best young water leaders, this is the investment platform for your brand.</span></p>
+
+			<div style="width: 100px;height: 30px;background-color: blue;text-align: center;line-height: 30px">GET IN TOUCH!</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-fluid" style="margin-top: 30px;color: black">
+	<div class="row">
+
+
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			
+		<h3>Shaping Our Water Future, Together.</h3>
+		<p>We partner with some of the water sector’s leading companies and organizations and work together for a better water future.</p>
+		<p>Our sponsors and partners benefit from a unique opportunity to connect with young professionals from within and outside the water sector.</p>
+
+		<ol>
+		<li class="botpad">Get personal access to over 300 young water professionals</li>
+		<li class="botpad">Get recognition within the global water and wastewater community as a company that supports and promotes emerging talent</li>
+		<li class="botpad">Gain extensive visibility by crossing many markets and broadening your international reach</li>
+		<li class="botpad">Gain valuable insights into the global Young Water Professionals market</li>
+		<li class="botpad">Gaining access to the Young Water Professionals fresh and innovative thinking</li>
+		<li class="botpad">Influencing Young Water Professionals as they progress in their career to decision making positions</li>
+		<li class="botpad">Provide professional development opportunities to your young staff by making them part of the Young Water Professionals segment</li>
+		<li class="botpad">Plant yourself firmly into the minds of key industry players</li>
+		<li class="botpad">Enjoy well-targeted networking opportunities</li>
+		</ol>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid">
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		
+		<div class="col-xs-12 col-lg-4 botpadding" >
+				<div style="border: 1px solid #e6e6e6; height: auto; width: auto">
+	
+				<div style="width: 100%;background-color: #e6e6e6 !important;">
+					<h6 style="text-align: center;height: 36px;line-height: 36px;">GOLD SPONSOR</h6>
+				</div>
+
+				<div style="background-color: white">
+					<div style="text-align: center;"><span style="font-size: 22px;">12.500 Euro/&nbsp; 19600 Canadian dollar</span></div>
+				</div>
+				</div>
+				<button class="accordionn" style="text-align: center;">More Info</button>
+				<div class="panell">
+					<ul>
+					<li>Acknowledgement on conference website with company profile and link to company website (Logo, link and 200 words)</li>
+					<li>Logo on all conference promotional publications, i.e. Save the date, Call for Abstracts, Invitation to Register</li>
+					<li>Logo and company profile in Final Program (digital) and website (Logo and 200 words)</li>
+					<li>Logo on opening audio visual slides for sessions (Medium)</li>
+					<li>Insertion of flyer/ USB or gadget (of choice) in Delegate Bag</li>
+					<li>Five complimentary delegate registrations</li>
+					<li>Include company information in conference documentation (USB or download to be decided)</li>
+					<li>Sponsors logo at social events (1 social events)</li>
+					<li>Stand in Networking area and participation to career fair (assuming relevant staff will be present)</li>
+					<li>Opportunity to host a high level training for delegates</li>
+					</ul>
+				</div>
+		</div>
+ 
+		<div class="col-xs-12 col-lg-4 botpadding" >
+				<div style="border: 1px solid #e6e6e6; height: auto; width: auto">
+	
+				<div style="width: 100%;background-color: #e6e6e6 !important;">
+					<h6 style="text-align: center;height: 36px;line-height: 36px;">GOLD SPONSOR</h6>
+				</div>
+
+				<div style="background-color: white">
+					<div style="text-align: center;"><span style="font-size: 22px;">12.500 Euro/&nbsp; 19600 Canadian dollar</span></div>
+				</div>
+				</div>
+				<button class="accordionn" style="text-align: center;">More Info</button>
+				<div class="panell">
+					<ul>
+					<li>Acknowledgement on conference website with company profile and link to company website (Logo, link and 200 words)</li>
+					<li>Logo on all conference promotional publications, i.e. Save the date, Call for Abstracts, Invitation to Register</li>
+					<li>Logo and company profile in Final Program (digital) and website (Logo and 200 words)</li>
+					<li>Logo on opening audio visual slides for sessions (Medium)</li>
+					<li>Insertion of flyer/ USB or gadget (of choice) in Delegate Bag</li>
+					<li>Five complimentary delegate registrations</li>
+					<li>Include company information in conference documentation (USB or download to be decided)</li>
+					<li>Sponsors logo at social events (1 social events)</li>
+					<li>Stand in Networking area and participation to career fair (assuming relevant staff will be present)</li>
+					<li>Opportunity to host a high level training for delegates</li>
+					</ul>
+				</div>
+		</div>
+
+
+		<div class="col-xs-12 col-lg-4 botpadding" >
+				<div style="border: 1px solid #e6e6e6; height: auto; width: auto">
+	
+				<div style="width: 100%;background-color: #e6e6e6 !important;">
+					<h6 style="text-align: center;height: 36px;line-height: 36px;">GOLD SPONSOR</h6>
+				</div>
+
+				<div style="background-color: white">
+					<div style="text-align: center;"><span style="font-size: 22px;">12.500 Euro/&nbsp; 19600 Canadian dollar</span></div>
+				</div>
+				</div>
+
+				<button class="accordionn" style="text-align: center;">More Info</button>
+				<div class="panell">
+					<ul>
+					<li>Acknowledgement on conference website with company profile and link to company website (Logo, link and 200 words)</li>
+					<li>Logo on all conference promotional publications, i.e. Save the date, Call for Abstracts, Invitation to Register</li>
+					<li>Logo and company profile in Final Program (digital) and website (Logo and 200 words)</li>
+					<li>Logo on opening audio visual slides for sessions (Medium)</li>
+					<li>Insertion of flyer/ USB or gadget (of choice) in Delegate Bag</li>
+					<li>Five complimentary delegate registrations</li>
+					<li>Include company information in conference documentation (USB or download to be decided)</li>
+					<li>Sponsors logo at social events (1 social events)</li>
+					<li>Stand in Networking area and participation to career fair (assuming relevant staff will be present)</li>
+					<li>Opportunity to host a high level training for delegates</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	<div  class="row" style="height: auto;  padding: 2vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-4 botpadding" >
+				<div style="border: 1px solid #e6e6e6; height: auto; width: auto">
+	
+				<div style="width: 100%;background-color: #e6e6e6 !important;">
+					<h6 style="text-align: center;height: 36px;line-height: 36px;">GOLD SPONSOR</h6>
+				</div>
+
+				<div style="background-color: white">
+					<div style="text-align: center;"><span style="font-size: 22px;">12.500 Euro/&nbsp; 19600 Canadian dollar</span></div>
+				</div>
+				</div>
+				<button class="accordionn" style="text-align: center;">More Info</button>
+				<div class="panell">
+					<ul>
+					<li>Acknowledgement on conference website with company profile and link to company website (Logo, link and 200 words)</li>
+					<li>Logo on all conference promotional publications, i.e. Save the date, Call for Abstracts, Invitation to Register</li>
+					<li>Logo and company profile in Final Program (digital) and website (Logo and 200 words)</li>
+					<li>Logo on opening audio visual slides for sessions (Medium)</li>
+					<li>Insertion of flyer/ USB or gadget (of choice) in Delegate Bag</li>
+					<li>Five complimentary delegate registrations</li>
+					<li>Include company information in conference documentation (USB or download to be decided)</li>
+					<li>Sponsors logo at social events (1 social events)</li>
+					<li>Stand in Networking area and participation to career fair (assuming relevant staff will be present)</li>
+					<li>Opportunity to host a high level training for delegates</li>
+					</ul>
+				</div>
+		</div>
+		<div class="col-xs-12 col-lg-4 botpadding" >
+				<div style="border: 1px solid #e6e6e6; height: auto; width: auto">
+	
+				<div style="width: 100%;background-color: #e6e6e6 !important;">
+					<h6 style="text-align: center;height: 36px;line-height: 36px;">GOLD SPONSOR</h6>
+				</div>
+
+				<div style="background-color: white">
+					<div style="text-align: center;"><span style="font-size: 22px;">12.500 Euro/&nbsp; 19600 Canadian dollar</span></div>
+				</div>
+				</div>
+				<button class="accordionn" style="text-align: center;">More Info</button>
+				<div class="panell">
+					<ul>
+					<li>Acknowledgement on conference website with company profile and link to company website (Logo, link and 200 words)</li>
+					<li>Logo on all conference promotional publications, i.e. Save the date, Call for Abstracts, Invitation to Register</li>
+					<li>Logo and company profile in Final Program (digital) and website (Logo and 200 words)</li>
+					<li>Logo on opening audio visual slides for sessions (Medium)</li>
+					<li>Insertion of flyer/ USB or gadget (of choice) in Delegate Bag</li>
+					<li>Five complimentary delegate registrations</li>
+					<li>Include company information in conference documentation (USB or download to be decided)</li>
+					<li>Sponsors logo at social events (1 social events)</li>
+					<li>Stand in Networking area and participation to career fair (assuming relevant staff will be present)</li>
+					<li>Opportunity to host a high level training for delegates</li>
+					</ul>
+				</div>
+		</div>
+		<div class="col-xs-12 col-lg-4 botpadding" >
+				<div style="border: 1px solid #e6e6e6; height: auto; width: auto">
+	
+				<div style="width: 100%;background-color: #e6e6e6 !important;">
+					<h6 style="text-align: center;height: 36px;line-height: 36px;">GOLD SPONSOR</h6>
+				</div>
+
+				<div style="background-color: white">
+					<div style="text-align: center;"><span style="font-size: 22px;">12.500 Euro/&nbsp; 19600 Canadian dollar</span></div>
+				</div>
+				</div>
+				<button class="accordionn" style="text-align: center;">More Info</button>
+				<div class="panell">
+					<ul>
+					<li>Acknowledgement on conference website with company profile and link to company website (Logo, link and 200 words)</li>
+					<li>Logo on all conference promotional publications, i.e. Save the date, Call for Abstracts, Invitation to Register</li>
+					<li>Logo and company profile in Final Program (digital) and website (Logo and 200 words)</li>
+					<li>Logo on opening audio visual slides for sessions (Medium)</li>
+					<li>Insertion of flyer/ USB or gadget (of choice) in Delegate Bag</li>
+					<li>Five complimentary delegate registrations</li>
+					<li>Include company information in conference documentation (USB or download to be decided)</li>
+					<li>Sponsors logo at social events (1 social events)</li>
+					<li>Stand in Networking area and participation to career fair (assuming relevant staff will be present)</li>
+					<li>Opportunity to host a high level training for delegates</li>
+					</ul>
+				</div>
+		</div>
+
+
+
+
+<div class="container-fluid" style="margin-top: 50px">
+		<h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Gold Sponsers</h4>
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 200px" src="images/spon1.jpg">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<p>Major advances in technology are creating extraordinary opportunities to solve water issues globally. Xylem is a leading global water technology company dedicated to solving the world’s most challenging water issues. We collaborate with our customers and partners to bring the right technology and solutions to the market to increase the productivity of, and optimize, water and wastewater operations. Our products and services move, treat, analyze, monitor and return water to the environment in public utility, industrial, residential and commercial building services settings.&nbsp;As a global leader in smart water, we are pioneering new ways to harness technology, data and innovation to deliver powerful and unprecedented insights to customers around the water cycle. We are excited about the incredible opportunities that new digital technologies are bringing to the water sector, and we are committed to driving innovation and advancing the conversation around digital transformation. We’re proud to sponsor the IWA International Young Water Professionals Conference 2019, and we look forward to participating in this important global dialogue about our water future. Let’s solve water. @Xyleminc</p>
+		</div>
+
+	</div>
+</div>
+
+<div class="container-fluid">
+		<h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Silver Sponsers</h4>
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 180px" src="images/silver.png">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<p><strong>Ryerson University </strong>&nbsp;is at the intersection of mind and action. What our students learn in the classroom is enhanced by real-world knowledge and experience. They champion diversity, entrepreneurship and innovation</p>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container-fluid">
+		<h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Bronze Sponsers</h4>
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 200px" src="images/bronze.jpg">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<p><strong>Trojan Technologies</strong>&nbsp;ensures greater water confidence and environmental stewardship for people, industries and municipalities, improving the lives of over one billion people globally. They enable customers to meet their water quality objectives by providing eco-efficient solutions that reduce and recover costs, energy, resources and space. Collaboratively solving problems with our customers, they deliver low-risk, innovative technologies that offer sustainable results. Trojan Technologies encompasses six businesses: Aquafine, Trojan Marinex, TrojanUV, Salsnes Filter, USP Technologies and VIQUA. The products and services provided by these businesses play vital roles in making various stages of the water treatment process more effective, efficient and sustainable.</p>
+			
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container-fluid">
+		<!-- <h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Bronze Sponsers</h4> -->
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 180px" src="images/Western.png">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			
+			<p>CWWA is a non-profit national body representing the common interests of Canada’s public sector municipal water and wastewater services and their private sector suppliers and partners. CWWA is recognized by the federal government and national bodies as the national voice of this public service sector. For Further Information&nbsp;<a href="http://www.cwwa.ca/">visit CWWA</a></p>
+			
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container-fluid">
+		<!-- <h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Bronze Sponsers</h4> -->
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 180px" src="images/cwwa.jpg">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<p>CWWA is a non-profit national body representing the common interests of Canada’s public sector municipal water and wastewater services and their private sector suppliers and partners. CWWA is recognized by the federal government and national bodies as the national voice of this public service sector. For Further Information&nbsp;<a href="http://www.cwwa.ca/">visit CWWA</a></p>
+			
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container-fluid">
+		<!-- <h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Bronze Sponsers</h4> -->
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 120px" src="images/toronto.jpg">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			
+			<p>The Faculty of Applied Science &amp; Engineering at the University of Toronto is the premier engineering school in Canada and among the world’s best. Through excellence in engineering education and research, we prepare the next generation of engineering leaders to address the world’s most critical challenges. The Faculty is proud to support the 9<sup>th</sup> International Young Water Professionals Conference through contributions from the departments of Chemical Engineering &amp; Applied Chemistry, Material Science &amp; Engineering, Mechanical &amp; Industrial Engineering, and Civil Engineering, as well as the Institute for Water Innovation. For further information visit <a href="https://www.engineering.utoronto.ca/">Toronto University</a></p>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container-fluid">
+		<h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Strategic Partners</h4>
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			<img style="width: 350px;height: 120px" src="images/strat.png">
+		</div>
+ 
+		<div class="col-xs-12 col-lg-6 botpadding" >
+			
+			<img style="width: 350px;height: 120px" src="images/jacobs.jpg">
+			
+		</div>
+
+	</div>
+</div>
+
+<hr style="width: 80%">
+
+
+
+<div class="container-fluid">
+		<h4 style="height: auto;  padding: 5vh 10vw 1vh 10vw;">Join our mission</h4>
+
+	<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw;">
+		<div class="col-xs-12 col-lg-12 botpadding" >
+			As a sponsor of the International Young Water Professionals, you will have unparalleled opportunities to support and engage with the next generation of water leaders from across the globe, who are volunteer driven looking to bring answers to the water crisis by becoming the knowledge hub for technical solutions in emerging and developed world countries. We are soliciting sponsorship to provide YWPs, who would otherwise not be able to support themselves financially, with the opportunity to attend this conference and keep our registration fees as low as possible.
+
+		</div>
+
+
+	</div>
+	<div style="background-color: blue;width: 150px;height: 30px;text-align: center;line-height: 30px;margin: -10vh 10vw 15vh 10vw;">CONTACT US NOW</div>
+</div>
+
+
+
+
+
+<div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
+	<h1 style="font-weight: 600;color: white">Join us in Copenhagen! See you in...</h1>
+	<div class="x">
+		<div class="x" id="timer">
+		   <div class="x" id="days"></div>
+	  	   <div class="x" id="hours"></div>
+	       <div class="x" id="minutes"></div>
+	  	   <div class="x" id="seconds"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+	<div id="footer">
+		<div class="container">	
+			<div class="row">
+
+				<div class="col-md-6 col-xs-12">
+					<div id="text-2" class=""><h4>Stay informed</h4>			
+						<div class="textwidget">						
+							<p>Latest updates and announcements, delivered to your e-mail.</p><br>
+							<form method="post">
+
+								<div>	
+								
+										<input class="inpbut" type="email" name="EMAIL" style="height:40px;color: black;border:none; " placeholder="  Your email address" required="" class="col-md-8 col-xs-8">
+									
+								
+										<input type="submit" value="Sign up" style="height:40px;background-color:#00ADEF;margin-top: -2px; border:none; " class="subbut">
+									
+								</div>
+								<label style="display: none !important;">Leave this field empty if you're human: 
+									<input type="text" name="" value="" tabindex="-1" autocomplete="off">
+								</label>
+
+							</form>
+						</div>	
+					</div>				
+				</div>
+									
+
+				<div class="col-md-3 col-md-push-1 col-sm-6 col-xs-12" style="padding-top: 15px;">
+                    <div id="" ><h3><b>Contact</b></h3>			
+                    	<div class=""><p>Email: 
+                    		<a href="#" style="color: #7f7f7f;">WWCE2018programme</a><br>
+							Programme:
+							<a href="#" style="color: #7f7f7f;">João Grilo</a><br>
+							Sponsorship: 
+							<a href="#" style="color: #7f7f7f;">Isabelle Servant</a><br>
+							Tel:
+							<a href="#" style="color: #7f7f7f;">+31 70 315 07 92</a><br>
+							Exhibition: 
+							<a href="#" style="color: #7f7f7f;">Roy Agterbos</a><br>
+							Tel: 
+							<a href="#" style="color: #7f7f7f;">+31 70 382 00 28</a></p>
+							<p>Media: 
+							<a href="#" style="color: #7f7f7f;">Rui Veras</a><br>
+							Congress: 
+							<a href="#" style="color: #7f7f7f;">Keith Robertson</a></p>
+							<p>Website: 
+							<a href="#" style="color: #7f7f7f;" target="_blank" rel="noopener">P/Q</a></p>
+						</div>
+					</div>				
+				</div>
+		
+				<div class="col-md-2 col-md-push-1 col-sm-6 col-xs-12 extpad" style="padding-top: 15px;padding-left: 37px;">
+                    <div class="" id="" role="navigation">
+					   <div><h3 class="lesspad"><b>Quick links</b></h3>			
+					   	<div class="">
+					   		<ul class="list-unstyled">
+                            	<li class="bfricon"><a href="#">ABOUT</a></li>
+								<li class="bfricon"><a href="#">MEDIA</a></li>
+								<li class="bfricon"><a href="#" target="_blank">ALL IWA EVENTS</a></li>
+                                <li class="bfricon"><a href="#" target="_blank">FUTURE LEADERS</a></li>
+								<li class="bfricon"><a href="#" target="_blank">IWA-LET</a></li>
+								<li class="bfricon"><a href="#" target="_blank">DEVELOPMENT CONGRESS</a></li>
+							</ul>
+						</div>
+						</div>          
+		          </div>    
+				</div>
+
+				<div class="col-md-12 social-networks">
+                    <div id="" class="">			
+                    	<div><p>&nbsp;</p>
+						<p style="font-size: 25px;">
+							<a href="#"><strong style="color: white">#WorldWaterCongress &nbsp;</strong></a> &nbsp;&nbsp;<a class="" href="#" target="_blank" rel="noopener"><strong style="color: white">@IWAhq</strong></a>&nbsp; &nbsp;
+							<a class="twitter-hash" href="#" target="_blank" rel="noopener"><strong style="color: white">#iwacongress&nbsp;</strong></a>
+						</p>
+						</div>
+					</div>				
+				</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="http://worldwatercongress.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
+
+
+<script type="text/javascript">
+	function makeTimer() {
+
+	//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+		var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");			
+			endTime = (Date.parse(endTime) / 1000);
+
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#days").html(days + "<span>Days</span>");
+			$("#hours").html(hours + "<span>Hours</span>");
+			$("#minutes").html(minutes + "<span>Minutes</span>");
+			$("#seconds").html(seconds + "<span>Seconds</span>");		
+
+	}
+
+	setInterval(function() { makeTimer(); }, 1000);
+</script>
+
+
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordionn");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeclass");
+    var panell = this.nextElementSibling;
+    if (panell.style.maxHeight){
+      panell.style.maxHeight = null;
+    } else {
+      panell.style.maxHeight = panell.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
