@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>The conference</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<style type="text/css">
+.bg-dark-ov {
+            background-color: rgb(34,34,34);
+        }
+        .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+            color: rgb(64,157,224);
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255,255,255);
+        }
+        body {
+            font-size: 0.8rem;
+        }
+        .navbar-dark .navbar-nav .nav-link.disabled {
+            color: rgb(255,255,255);
+        }
+        .dropdown-menu{
+            background: rgb(34,34,34);
+        }
+        .dropdown-item{
+            color : rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            padding: .6rem 1.5rem;
+        }
+        .dropdown-item:hover{
+            color: white;
+            background-color: rgb(34,34,34);
+        }
+        .nav-item:hover{
+            color: rgb(64,157,224);
+        }
+        .register-nav:hover{
+            background-color: white;
+            color : black;
+        }
+        @media (min-width: 992px){
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: .7rem;
+                padding-left: .7rem;
+            }
+        }
+
+
+        .sec-one {
+            background: url('images/conf.jpg') center center;
+            background-size: cover;
+            /*margin-top: 20px;*/
+        }
+        .sec-one-cont {
+            height: auto;
+            min-height: 80vh;
+            color : white;
+        }
+
+
+        .y {
+          font-family: 'Titillium Web', cursive;
+          margin: 0 auto;
+          text-align: center;
+          color: white;
+          background: #222;
+          font-weight: 100;
+        }
+
+        .x {
+          display: inline-block;
+          line-height: 1;
+          padding: 20px;
+          font-size: 40px;
+        }
+
+        span {
+          display: block;
+          font-size: 20px;
+          color: white;
+        }
+
+        #days {
+          font-size: 100px;
+          color: white;
+          background-color: black;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        #hours {
+          font-size: 100px;
+          color: white;
+          background-color: black;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        #minutes {
+          font-size: 100px;
+          color: white;
+          background-color: black;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        #seconds {
+          font-size: 100px;
+          color: white;
+          background-color: black;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+
+
+        @media (max-width: 780px){
+            .subbut{
+                padding-left: 15px;
+            }
+            .black-content {
+                height: 96vh;
+            }
+            .inpbut{
+                width: 200px
+            }
+            .subbut{
+                width: 100px;
+                margin-left:-10px; 
+            }
+        }
+
+        @media (min-width: 900px){
+                .givepos{
+                     top:145vh;
+                     left: 50%;
+                }
+                .black{
+                    display: inline-block;
+                }
+                .inpbut{
+                    width: 300px;
+                }
+                .subbut{
+                    margin-left: -10px;
+                    width: 150px;
+                }
+                .lesspad{
+                    padding-left: -22px;
+                }
+            }
+
+        #footer {
+        background: #222;
+        color: #fff;
+        padding: 80px 0 35px 0;
+        }
+        
+        .bfricon:before {
+            content: "\e131";
+            font-family: 'Glyphicons Halflings';
+            font-size: 10px;
+            float: left;
+            margin-left: -17px;
+            color: #4a4a4a;
+        }
+
+        
+    
+
+        .vertical-align{
+            line-height: 160px;
+        }
+
+        .black{
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                height: 16vh;
+                width: 13vw;
+                vertical-align: middle;
+                font-weight:900;
+                padding-top: 4vh;
+            }
+            
+            .text-block {
+              position: absolute;
+              bottom: 20px;
+              right: 20px;
+              background-color: black;
+              color: white;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+
+            .black-content {
+                height: 20vh;
+            }
+
+</style>
+
+
+<body>
+
+<div class="container-fluid" style="background-color: rgb(34,34,34)">
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
+        <a class="navbar-brand" href="#">
+            <img src="images/iwa.png"  height="30" alt="IWA logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ABOUT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">THE CONFERENCE</a>
+                        <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
+                        <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
+                        <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+                        <a class="dropdown-item" href="#">CONTACT</a>
+                        <a class="dropdown-item" href="#">EXTRA</a>
+                    </div>
+                </li>
+                <!--PROGRAMME TO USED LATER -->
+                <!--<li class="nav-item dropdown">-->
+                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                <!--PROGRAMME-->
+                <!--</a>-->
+                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                <!--<a class="dropdown-item" href="#">VISITORS REGISTRATION</a>-->
+                <!--<a class="dropdown-item" href="#">BUSINESS FORUMS</a>-->
+                <!--<a class="dropdown-item" href="#">FLOORPLAN</a>-->
+                <!--<a class="dropdown-item" href="#">EXHIBITORS</a>-->
+                <!--<a class="dropdown-item" href="#">PAVILIONS</a>-->
+                <!--<a class="dropdown-item" href="#">TESTIMONIALS</a>-->
+                <!--<a class="dropdown-item" href="#">BOOKING INFORMATION</a>-->
+                <!--<a class="dropdown-item" href="#">WHY EXHIBIT?</a>-->
+                <!--<a class="dropdown-item" href="#">EXHIBITION NEWS</a>-->
+                <!--</div>-->
+                <!--</li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SPONSORS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">BECOME A SPONSOR</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DESTINATION
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">VISA REQUIREMENTS</a>
+                        <a class="dropdown-item" href="#">ACCOMMODATION</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DOWNLOADS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">PHOTOS</a>
+                        <a class="dropdown-item" href="#">MEDIA</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="margin-right: 15px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CONTACT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FAQ</a>
+                    </div>
+                </li>
+                <li class="nav-item " style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
+                    <a class="nav-link active" href="#" >REGISTER</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid">
+    <div class="row sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+        <div class="col-xs-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh">
+            <h1 style="font-size: 4.5em; font-weight: bold;">
+                Empowering Future Water Leaders
+            </h1>
+            <p style="font-size: 18px;">
+                A Conference for Young Leaders, by Young Leaders
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+        <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
+            <h1 style="font-size: 3.3em;font-weight: 800">The International Young Water Professionals Conference</h1><br>
+            <p style="font-size: 20px;">
+                IWA aims to empower young talent, like yourselves, to contribute to delivering the solutions for sustainable water management (IWA Vision). This conference is one of the vehicles in which we support young water professionals to develop themselves to be at the forefront of decision making.
+            </p>
+            <p style="font-size: 20px; margin-top: 3vh">
+                Besides a must attend event for career progression, you will have fun networking and building friendships with your passionate peers. Through the offering of technical paper sessions, topical workshops, soft skill learning sessions, networking opportunities and a career fair, the IYWPC will be the “Must Attend” event for young water professionals (YWPs), especially for those wishing to develop their career and progress further into the water sector.
+           </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid" style="margin-top: 50px">
+    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw; background-image: url(images/conf2.png);background-size: cover;">
+        <div class="col-xs-12" style="color: white;height: auto; ">
+
+            <h1 style="font-size: 50px; font-weight: 500;margin-bottom: 5vh; padding-top: 3vh">
+                <b>Joint Organising Committee</b>
+            </h1><p><span style="color: #ffffff;font-size:15px ">Making Decisions</span></p>
+            
+ 
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-6" style="margin-top : 5vh; margin-bottom: 5vh; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em;color : white" >
+                        <ul style="font-size: 16px; letter-spacing: 3px; padding-left: 17px; line-height: 24px;">
+                        <li>
+                        <p class="p1"><span class="s1" style="color: #ffffff;"><b>Farnaz Daynouri Pancino, YWP Canada</b></span></p>
+                        </li>
+                        <li>
+                        <p class="p1"><span class="s1" style="color: #ffffff;"><b>Joao Grilo, IWA</b></span></p>
+                        </li>
+                        <li>
+                        <p class="p1"><span class="s1" style="color: #ffffff;"><b>Kirsten de Vette, IWA</b></span></p>
+                        </li>
+                        <li>
+                        <p class="p1"><span class="s1" style="color: #ffffff;"><b>Robert Haller, CWWA</b></span></p>
+                        </li>
+                        <li>
+                        <p class="p1"><span class="s1" style="color: #ffffff;"><b>Siva Sarathy, YWP Canada</b></span></p>
+                        </li>
+                        
+                        
+                        </ul>
+                    <!-- 
+                    <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">A world in which water is managed wisely is one where all individuals have access to safe water and adequate sanitation, where water and wastewater make a positive contribution to resource efficiency, and where the quality of water in rivers, lakes, aquifers and other water bodies safeguards environmental and public health. To create a water-wise world we need to reduce, renew, and replenish our supplies. This was the vision behind the World Water Congress & Exhibition 2016.</p> -->
+                </div>
+                
+                <div class="col-xs-12 col-lg-6"  style=" margin-top : 5vh; margin-bottom: 5vh;padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em;color : white" >
+
+                    
+                                   
+                   <!-- <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">In late September 2014, global attention focused on two assemblies separated by five time zones across one ocean. New York and Lisbon hosted influential gatherings to advance human progress in the face of escalating competition over finite natural resources, in particular: water. The IWA World Water Congress & Exhibition Synthesis Report is a groundbreaking report documenting the key discussions and debates that took place in Lisbon between water professionals from within and outside the water sector.</p> -->
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid" style="margin-top: 50px">
+    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+        <div class="col-xs-12" style="height: auto; ">
+            <h1 style="font-size: 6vh; font-weight: 700;margin-bottom: 5vh; padding-top: 3vh">Local Organising Committee</h1>
+            <p style="font-size: 18px">The Local Organising Committee – all young water professionals – are responsible for the event experience. They manage everything related to conference management, including the conference planning, the budget (with JOC approving all costs), the venue and catering, the social events, the career fair,&nbsp;the technical tours and other logistics</p>
+
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-6" style="margin-top : 5vh; margin-bottom: 5vh; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em" >
+                        <ul style="font-size: 18px">
+                        <li>Siva Sarathy (Joint Organising Committee – JOC and Treasurer)</li>
+                        <li>Farnaz Daynouri Pancino (Conference Chair and JOC)</li>
+                        <li>Tasnim Amerian (Venue lead)</li>
+                        <li>Alexander Imbault (Venue lead)</li>
+                        <li>Bernardo Vazquez (Communications lead)</li>
+                        <li>Nadia Koukoui (Communications lead)</li>
+                        <li><span style="font-weight: 400;">Mehdi Bazri (Treasurer)</span></li>
+                        <li>Malini Ghosh (Events Lead)</li>
+                        <li>Roberta Maffetone (Events Lead)</li>
+                        </ul>
+                    <!-- 
+                    <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">A world in which water is managed wisely is one where all individuals have access to safe water and adequate sanitation, where water and wastewater make a positive contribution to resource efficiency, and where the quality of water in rivers, lakes, aquifers and other water bodies safeguards environmental and public health. To create a water-wise world we need to reduce, renew, and replenish our supplies. This was the vision behind the World Water Congress & Exhibition 2016.</p> -->
+                </div>
+                
+                <div class="col-xs-12 col-lg-6"  style=" margin-top : 5vh; margin-bottom: 5vh;padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em;" >
+
+                    <ul style="font-size: 18px">
+                    <li><span style="font-weight: 400;">Stephanie Gora (Social Lead)</span></li>
+                    <li>Chris Degroot (Programme Chair)</li>
+                    <li>Elena Torfs (Programme committee)</li>
+                    <li>Pankaj Chowdhury (Programme committee)</li>
+                    <li>Hayat Raza (Local Programme committee)</li>
+                    <li>Francesca Giaccherini (Career Fair Lead)</li>
+                    <li><span style="font-weight: 400;">Medhavi Gupta (Career Fair Lead)<br>
+                    </span></li>
+                    </ul>
+                                   
+                   <!-- <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">In late September 2014, global attention focused on two assemblies separated by five time zones across one ocean. New York and Lisbon hosted influential gatherings to advance human progress in the face of escalating competition over finite natural resources, in particular: water. The IWA World Water Congress & Exhibition Synthesis Report is a groundbreaking report documenting the key discussions and debates that took place in Lisbon between water professionals from within and outside the water sector.</p> -->
+                </div>
+                
+
+                <div style="text-align: center;width: 110px;height: 33px;line-height: 33px;background-color: blue;color: white">LEARN MORE</div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid" style="margin-top: 50px;color: white">
+    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;background-image: url(images/conf.jpg);background-size: cover;">
+        <div class="col-xs-12" style="height: auto; ">
+            <h1 style="font-size: 6vh; font-weight: 700;margin-bottom: 5vh; padding-top: 3vh">Advisory Committee</h1>
+            <p style="font-size: 18px">Inter-generational learning</p>
+
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-4" style="margin-top : 5vh; margin-bottom: 5vh; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em" >
+                        <ul style="font-size: 18px">
+                            
+                            <li><span style="color: #ffffff;"><b>Patricia Bakir – Jordan</b></span></li>
+                            <li><span style="color: #ffffff;"><b>Joan Rose – USA </b></span></li>
+                            <li><span style="color: #ffffff;"><b>Jo Burgess – South Africa</b></span></li>
+                            <li><span style="color: #ffffff;"><b>Xiaochang Wang – China</b></span></li>
+
+                        </ul>
+                    <!-- 
+                    <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">A world in which water is managed wisely is one where all individuals have access to safe water and adequate sanitation, where water and wastewater make a positive contribution to resource efficiency, and where the quality of water in rivers, lakes, aquifers and other water bodies safeguards environmental and public health. To create a water-wise world we need to reduce, renew, and replenish our supplies. This was the vision behind the World Water Congress & Exhibition 2016.</p> -->
+                </div>
+                
+                <div class="col-xs-12 col-lg-4"  style=" margin-top : 5vh; margin-bottom: 5vh;padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em;" >
+
+                    <ul style="font-size: 18px">
+                        <li><span style="color: #ffffff;"><b>Gustaf Olsson – Sweden</b></span></li>
+                        <li><span style="color: #ffffff;"><b>Arash Zamyadi – Canada</b></span></li>
+                        <li><span style="color: #ffffff;"><b>How Yong Ng – Singapore</b></span></li>
+                        <li><span style="color: #ffffff;"><b>Krishna Pagilla- USA</b></span></li>
+                    </ul>
+                                   
+                   <!-- <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">In late September 2014, global attention focused on two assemblies separated by five time zones across one ocean. New York and Lisbon hosted influential gatherings to advance human progress in the face of escalating competition over finite natural resources, in particular: water. The IWA World Water Congress & Exhibition Synthesis Report is a groundbreaking report documenting the key discussions and debates that took place in Lisbon between water professionals from within and outside the water sector.</p> -->
+                </div>
+
+
+                <div class="col-xs-12 col-lg-4"  style=" margin-top : 5vh; margin-bottom: 5vh;padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em;" >
+
+                    <ul style="font-size: 18px">
+                        <li><span style="color: #ffffff;"><b>Peter Vanrolleghem – Canada</b></span></li>
+                        <li><span style="color: #ffffff;"><b>Zoran Kapelan – UK </b></span></li>
+                        <li><span style="color: #ffffff;"><b>Günter Langergraber – Austria</b></span></li>
+                        </ul>
+                    </ul>
+                                   
+                   <!-- <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">In late September 2014, global attention focused on two assemblies separated by five time zones across one ocean. New York and Lisbon hosted influential gatherings to advance human progress in the face of escalating competition over finite natural resources, in particular: water. The IWA World Water Congress & Exhibition Synthesis Report is a groundbreaking report documenting the key discussions and debates that took place in Lisbon between water professionals from within and outside the water sector.</p> -->
+                </div>
+                
+
+                <div style="text-align: center;width: 110px;height: 33px;line-height: 33px;background-color: blue;color: white">LEARN MORE</div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid" style="margin-top: 50px">
+    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+        <div class="col-xs-12" style="height: auto; ">
+            <h1 style="font-size: 6vh; font-weight: 700;margin-bottom: 5vh; padding-top: 3vh">Programme Committee</h1>
+            <p style="font-size: 18px">The Programme Committee – all young water professionals – is responsible for the content of the conference and ensuring that the high standard of previous IYWPCs is maintained and meets the needs of the international water sector. They decide the balance between technical sessions, workshops, learning sessions and networking events. As part of the conference programme, the keynote speakers and their topics will be decided by the Programme Committee.
+            </p>
+
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-6" style="margin-top : 5vh; margin-bottom: 5vh; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em" >
+                        <ul style="font-size: 18px">
+                        
+                        <li>Chris Degroot – Canada (chair)</li>
+                        <li>Arlinda Ibrahimllari –&nbsp;Albania</li>
+                        <li>Elena Torfs – Canada</li>
+                        <li>Federica Brenner – Argentina</li>
+                        <li>Loga Veeraiah – Malaysia</li>
+                        <li>Muriel Dumit – USA</li>
+
+                        </ul>
+                    <!-- 
+                    <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">A world in which water is managed wisely is one where all individuals have access to safe water and adequate sanitation, where water and wastewater make a positive contribution to resource efficiency, and where the quality of water in rivers, lakes, aquifers and other water bodies safeguards environmental and public health. To create a water-wise world we need to reduce, renew, and replenish our supplies. This was the vision behind the World Water Congress & Exhibition 2016.</p> -->
+                </div>
+                
+                <div class="col-xs-12 col-lg-6"  style=" margin-top : 5vh; margin-bottom: 5vh;padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em;" >
+
+                    <ul style="font-size: 18px">
+                    <ul>
+                    <li>Niels Mamose Askjaer – Denmark</li>
+                    <li>Pabel Cervantes – Mexico</li>
+                    <li>Pankaj Chowdhury – Canada</li>
+                    <li>Xiaoyuan Zhang – China</li>
+                    </ul>
+                                   
+                   <!-- <p style="text-align: left;color: black;font-size: 18px;padding-top: 20px">In late September 2014, global attention focused on two assemblies separated by five time zones across one ocean. New York and Lisbon hosted influential gatherings to advance human progress in the face of escalating competition over finite natural resources, in particular: water. The IWA World Water Congress & Exhibition Synthesis Report is a groundbreaking report documenting the key discussions and debates that took place in Lisbon between water professionals from within and outside the water sector.</p> -->
+                </div>
+                
+
+                <div style="text-align: center;width: 110px;height: 33px;line-height: 33px;background-color: blue;color: white">LEARN MORE</div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid" style="margin-top: -10px;">
+    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw; background: url('images/conf4.png');background-size: cover;">
+        <div class="col-xs-12 col-lg-1" style="color: white;height: auto; ">
+        </div>
+        <div class="col-xs-12 col-lg-10" style="color: white;height: auto; ">
+            
+            <div><br><br>
+            <p><span style="color: #ffffff;">The goal of the IWA International Young Water Professional Conference (IYWPC) is to provide tangible support to the empowerment of young talent in the water sector by connecting, developing and recognising emerging talent. The conference will provide a unique combination of programmatic content that will appeal to young academics, early career- as well as advancing water professionals from all disciplines and all types of organisations.</span></p>
+            <p><span style="color: #ffffff;">The 9th&nbsp;edition of this accessible and affordable conference for young professionals, starting and or working to develop a water career, is&nbsp;organised by and for young water professionals (YWPs), it will:</span></p>
+            <ul>
+            <li><span style="color: #ffffff;">Provide a platform to exchange good practices and lessons learned, generate inter-disciplinary and inter-generational dialogue</span></li>
+            <li><span style="color: #ffffff;">Provide a platform for YWPs to network nationally, regionally and internationally</span></li>
+            <li><span style="color: #ffffff;">Provide ample professional updating and learning activities for YWPs from all disciplines and organisations (eg. Pre-conference support for Academic authors, workshop organisers, and attendees and onsite skill development Sessions).</span></li>
+            <li><span style="color: #ffffff;">Providing connections to the water sector (i.e. industry, research, government and NGOs) through developing career fairs</span></li>
+            </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid" style="margin-top: 40px">
+    <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-6">
+                
+                
+                    <div class="">
+                        <h3>Overview</h3>
+                    </div>
+                
+
+                    <div class="">
+                            <p>The 2017 edition offered:</p>
+                            <ul>
+                            <li><a href="#">A technical programme</a> with technical sessions, 2 minute thesis sessions, workshop and learning sessions and a career fair.</li>
+                            <li><a href="#">Networking events</a> (preconference and onsite)</li>
+                            <li><a href="#">Technical Tours</a></li>
+                            <li><a href="#">Preconference webinars</a></li>
+                            </ul>
+                            <p>All will contribute to the professional development for our future water leaders.&nbsp;The IYWPC encourages multidisciplinary sharing and learning.</p>
+                    </div>
+                
+            </div>
+
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 60px">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-6">
+        <h3>Learn more about the organisers</h3>
+        </div>    
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- <div class="col-lg-12"> -->
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <figure>
+                            <img style="height: auto;width: 215px" src="https://iwa-youngwaterprofessionals.org/wp-content/uploads/2016/09/IWA-LOGO-TransP-1.png" class="" alt="">
+                            
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                 <h3>International Water Association</h3>
+                 <p>Water underpins every aspect of human and environmental existence. The severe water challenges facing the world today require an unprecedented global response. IWA members and staff are situated in 130 countries worldwide, forming the largest international network of water professionals working towards a water wise world. For Further Information: <a href="http://www.iwa-network.org/">http://www.iwa-network.org/</a></p>
+            </div>
+
+        <!-- </div> -->
+    </div>
+</div>
+    
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- <div class="col-lg-12"> -->
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <figure>
+                            <img style="height: auto;width: 215px" src="https://iwa-youngwaterprofessionals.org/wp-content/uploads/2018/03/COUNTRY-LOGO-Canada-YWP.png" class="" alt="">
+                            
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                 <h3>Canadian Young Water Professionals</h3>
+                 <p>The Canadian Young Water Professionals (YWP Canada) is focused on bringing people working in or interested in the water sector together in a meaningful way. YWP Canada is a network of people who are passionate about all aspects of water.</a></p>
+            </div>
+
+        <!-- </div> -->
+    </div>
+</div>
+    
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- <div class="col-lg-12"> -->
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <figure>
+                            <img style="height: auto;width: 215px" src="https://iwa-youngwaterprofessionals.org/wp-content/uploads/2018/03/CWWA_LOGO.jpg" class="" alt="">
+                            
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                 <h3>Canadian Water and Wastewater Association</h3>
+                 <p>CWWA is a non-profit national body representing the common interests of Canada’s public sector municipal water and wastewater services and their private sector suppliers and partners. CWWA is recognized by the federal government and national bodies as the national voice of this public service sector. For Further Information<a href="#">visit CWWA</a></p>
+            </div>
+
+        <!-- </div> -->
+    </div>
+</div>
+    
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- <div class="col-lg-12"> -->
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <figure>
+                            <img style="height: auto;width: 215px" src="https://iwa-youngwaterprofessionals.org/wp-content/uploads/2018/03/COUNTRY-LOGO-Canada-YWP.png" class="" alt="">
+                            
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                 <h3>Canadian Water Quality Association</h3>
+                 <h3>International Water Association</h3>
+                 <p>Founded in 1956, the Canadian Water Quality Association (CWQA) is the voice of Canada’s residential, commercial, industrial and institutional water treatment industry. Our industry is a vital and growing part of Canada’s economy in communities across the country. For Further Information <a href="#"> visit CWQA</a></p>
+            </div>
+
+        <!-- </div> -->
+    </div>
+</div>
+    
+<div class="container-fluid" style="margin-top: -10px;">
+    <div class="row" style="height: auto;  padding: 5vh 5vw 10vh 18vw; background: url('images/conf5.jpg') center no-repeat;background-size: cover;">
+        <div class="col-xs-12" style="color: white;height: auto; ">
+            <h1 id="fontres2" style=" font-weight: bold; margin-bottom: 5vh; padding-top: 3vh">
+                Did you know
+            </h1>
+           
+            <p id="textres2" style="padding-right: 25vw">
+                These conferences are run with the aim to provide an affordable and accessible platform for professional development and learning for young professionals in the water sector. The conferences are organised voluntarily by young water professionals for young water professionals. These young water professionals gain skills – organising, communication, sponsorship, project management, etc. – and build new professional relationships in the process.
+            </p>
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
+    <h1 style="font-weight: 600;color: white">Join us in Copenhagen! See you in...</h1>
+    <div class="x">
+        <div class="x" id="timer">
+           <div class="x" id="days"></div>
+           <div class="x" id="hours"></div>
+           <div class="x" id="minutes"></div>
+           <div class="x" id="seconds"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="container"> 
+            <div class="row">
+
+                <div class="col-md-6 col-xs-12">
+                    <div id="text-2" class=""><h4>Stay informed</h4>            
+                        <div class="textwidget">                        
+                            <p>Latest updates and announcements, delivered to your e-mail.</p><br>
+                            <form method="post">
+
+                                <div>   
+                                
+                                        <input class="inpbut" type="email" name="EMAIL" style="height:40px;color: black;border:none; " placeholder="  Your email address" required="" class="col-md-8 col-xs-8">
+                                    
+                                
+                                        <input type="submit" value="Sign up" style="height:40px;background-color:#00ADEF;margin-top: -2px; border:none; " class="subbut">
+                                    
+                                </div>
+                                <label style="display: none !important;">Leave this field empty if you're human: 
+                                    <input type="text" name="" value="" tabindex="-1" autocomplete="off">
+                                </label>
+
+                            </form>
+                        </div>  
+                    </div>              
+                </div>
+                                    
+
+                <div class="col-md-3 col-md-push-1 col-sm-6 col-xs-12" style="padding-top: 15px;">
+                    <div id="" ><h3><b>Contact</b></h3>         
+                        <div class=""><p>Email: 
+                            <a href="#" style="color: #7f7f7f;">WWCE2018programme</a><br>
+                            Programme:
+                            <a href="#" style="color: #7f7f7f;">João Grilo</a><br>
+                            Sponsorship: 
+                            <a href="#" style="color: #7f7f7f;">Isabelle Servant</a><br>
+                            Tel:
+                            <a href="#" style="color: #7f7f7f;">+31 70 315 07 92</a><br>
+                            Exhibition: 
+                            <a href="#" style="color: #7f7f7f;">Roy Agterbos</a><br>
+                            Tel: 
+                            <a href="#" style="color: #7f7f7f;">+31 70 382 00 28</a></p>
+                            <p>Media: 
+                            <a href="#" style="color: #7f7f7f;">Rui Veras</a><br>
+                            Congress: 
+                            <a href="#" style="color: #7f7f7f;">Keith Robertson</a></p>
+                            <p>Website: 
+                            <a href="#" style="color: #7f7f7f;" target="_blank" rel="noopener">P/Q</a></p>
+                        </div>
+                    </div>              
+                </div>
+        
+                <div class="col-md-2 col-md-push-1 col-sm-6 col-xs-12 extpad" style="padding-top: 15px;padding-left: 37px;">
+                    <div class="" id="" role="navigation">
+                       <div><h3 class="lesspad"><b>Quick links</b></h3>         
+                        <div class="">
+                            <ul class="list-unstyled">
+                                <li class="bfricon"><a href="#">ABOUT</a></li>
+                                <li class="bfricon"><a href="#">MEDIA</a></li>
+                                <li class="bfricon"><a href="#" target="_blank">ALL IWA EVENTS</a></li>
+                                <li class="bfricon"><a href="#" target="_blank">FUTURE LEADERS</a></li>
+                                <li class="bfricon"><a href="#" target="_blank">IWA-LET</a></li>
+                                <li class="bfricon"><a href="#" target="_blank">DEVELOPMENT CONGRESS</a></li>
+                            </ul>
+                        </div>
+                        </div>          
+                  </div>    
+                </div>
+
+                <div class="col-md-12 social-networks">
+                    <div id="" class="">            
+                        <div><p>&nbsp;</p>
+                        <p style="font-size: 25px;">
+                            <a href="#"><strong style="color: white">#WorldWaterCongress &nbsp;</strong></a> &nbsp;&nbsp;<a class="" href="#" target="_blank" rel="noopener"><strong style="color: white">@IWAhq</strong></a>&nbsp; &nbsp;
+                            <a class="twitter-hash" href="#" target="_blank" rel="noopener"><strong style="color: white">#iwacongress&nbsp;</strong></a>
+                        </p>
+                        </div>
+                    </div>              
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://worldwatercongress.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
+
+
+<script type="text/javascript">
+    function makeTimer() {
+
+    //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
+        var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");          
+            endTime = (Date.parse(endTime) / 1000);
+
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
+
+            var timeLeft = endTime - now;
+
+            var days = Math.floor(timeLeft / 86400); 
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+            if (hours < "10") { hours = "0" + hours; }
+            if (minutes < "10") { minutes = "0" + minutes; }
+            if (seconds < "10") { seconds = "0" + seconds; }
+
+            $("#days").html(days + "<span>Days</span>");
+            $("#hours").html(hours + "<span>Hours</span>");
+            $("#minutes").html(minutes + "<span>Minutes</span>");
+            $("#seconds").html(seconds + "<span>Seconds</span>");       
+
+    }
+
+    setInterval(function() { makeTimer(); }, 1000);
+</script>
+
+
+
+
+
+</body>
+</html>
