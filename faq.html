@@ -298,8 +298,7 @@
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0" >
                             <button id="one" class="btn btn-link " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none">
-                                <i id="oneI" class="fas fa-plus" style=" color: dodgerblue; margin-right: 10px;"></i>
-                                <span style=" color: black; font-size: 25px; text-decoration: none">Visa Invitation Letter</span>
+                                <span style="color : black;font-size: 25px "><i id="oneI" class="fas fa-plus" style=" color: dodgerblue; margin-right: 10px; "></i>Visa Invitation Letter</span>
                             </button>
                         </h5>
                     </div>
@@ -319,10 +318,10 @@
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                             <button id="two" class="btn btn-link " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none">
-                                <i id="twoI" class="fas fa-plus" style=" color: dodgerblue; margin-right: 10px;"></i>
-                                <span style=" color: black; font-size: 25px; text-decoration: none">Visa Invitation Letter</span>
+                                <span style="color : black;font-size: 25px "><i id="twoI" class="fas fa-plus" style=" color: dodgerblue; margin-right: 10px; "></i>Visa Invitation Letter</span>
                             </button>
                         </h5>
+
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body" style="padding-left: 5vw ; padding-right: 5vw">
@@ -339,8 +338,7 @@
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                             <button id="three" class="btn btn-link " data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none">
-                                <i id="threeI" class="fas fa-plus" style=" color: dodgerblue; margin-right: 10px;"></i>
-                                <span style=" color: black; font-size: 25px; text-decoration: none">Visa Invitation Letter</span>
+                                <span style="color : black;font-size: 25px "><i id="threeI" class="fas fa-plus" style=" color: dodgerblue; margin-right: 10px; "></i>Visa Invitation Letter</span>
                             </button>
                         </h5>
                     </div>
@@ -526,18 +524,18 @@
         });
         $('#three').click(function() {
             if ($("#oneI").hasClass('fas fa-minus')) {
-                console.log("has class")
+                console.log("has class");
                 $("#oneI").removeClass('fa-minus').addClass('fa-plus');
             }
             if ($("#twoI").hasClass('fas fa-minus')) {
-                console.log("has class")
+                console.log("has class");
                 $("#twoI").removeClass('fa-minus').addClass('fa-plus');
             }
             if ($("#threeI").hasClass('fas fa-plus')) {
-                console.log("has class")
+                console.log("has class");
                 $("#threeI").removeClass('fa-plus').addClass('fa-minus');
             } else {
-                console.log("no class")
+                console.log("no class");
                 $("#threeI").addClass('fa-plus').removeClass('fa-minus');
             }
         });
