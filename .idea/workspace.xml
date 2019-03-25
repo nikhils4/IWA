@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bf58fae-e2c0-41fc-9e7d-5ba4a86cef8f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accommodation.html" beforeDir="false" afterPath="$PROJECT_DIR$/accommodation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/additionalCommittee.html" beforeDir="false" afterPath="$PROJECT_DIR$/additionalCommittee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advisoryCommittee.html" beforeDir="false" afterPath="$PROJECT_DIR$/advisoryCommittee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becomethesponser.html" beforeDir="false" afterPath="$PROJECT_DIR$/becomethesponser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visaRequirements.html" beforeDir="false" afterPath="$PROJECT_DIR$/visaRequirements.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -125,20 +123,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/additionalCommittee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="498" selection-start-line="498" selection-end-line="498" />
+            <state relative-caret-position="274">
+              <caret line="294" column="120" selection-start-line="294" selection-start-column="120" selection-end-line="294" selection-end-column="120" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1553515220476" expanded="true" signature="13567:15140" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accommodation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+            <state relative-caret-position="575">
+              <caret line="442" column="7" selection-start-line="442" selection-start-column="7" selection-end-line="442" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,6 +167,7 @@
       <find>li:</find>
       <find>get in touch</find>
       <find>your email</find>
+      <find>register</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,8 +194,8 @@
         <option value="$PROJECT_DIR$/visaRequirements.html" />
         <option value="$PROJECT_DIR$/becomethesponser.html" />
         <option value="$PROJECT_DIR$/advisoryCommittee.html" />
-        <option value="$PROJECT_DIR$/additionalCommittee.html" />
         <option value="$PROJECT_DIR$/accommodation.html" />
+        <option value="$PROJECT_DIR$/additionalCommittee.html" />
       </list>
     </option>
   </component>
@@ -243,17 +254,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.faq.html">
+  <component name="RunManager" selected="JavaScript Debug.additionalCommittee.html">
+    <configuration name="accommodation.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/accommodation.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="additionalCommittee.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/additionalCommittee.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="faq.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/faq.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="footerLatest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/utility files/footerLatest.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="footer.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/footer.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="footer.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/utility files/footer.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/IWA/index.html" useBuiltInWebServerPort="true">
@@ -261,11 +272,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.additionalCommittee.html" />
+        <item itemvalue="JavaScript Debug.accommodation.html" />
         <item itemvalue="JavaScript Debug.faq.html" />
         <item itemvalue="JavaScript Debug.footerLatest.html" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.footer.html" />
-        <item itemvalue="JavaScript Debug.footer.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -285,12 +296,12 @@
       <workItem from="1552228639534" duration="23310000" />
       <workItem from="1552806842833" duration="3252000" />
       <workItem from="1553101788081" duration="270000" />
-      <workItem from="1553512512992" duration="1143000" />
+      <workItem from="1553512512992" duration="2296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32682000" />
+    <option name="totallyTimeSpent" value="33835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -779,17 +790,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/additionalCommittee.html">
+    <entry file="file://$PROJECT_DIR$/accommodation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="498" selection-start-line="498" selection-end-line="498" />
+        <state relative-caret-position="575">
+          <caret line="442" column="7" selection-start-line="442" selection-start-column="7" selection-end-line="442" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accommodation.html">
+    <entry file="file://$PROJECT_DIR$/additionalCommittee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+        <state relative-caret-position="274">
+          <caret line="294" column="120" selection-start-line="294" selection-start-column="120" selection-end-line="294" selection-end-column="120" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1553515220476" expanded="true" signature="13567:15140" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
