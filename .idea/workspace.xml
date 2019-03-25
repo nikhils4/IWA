@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bf58fae-e2c0-41fc-9e7d-5ba4a86cef8f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/visaRequirements.html" beforeDir="false" afterPath="$PROJECT_DIR$/visaRequirements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme" beforeDir="false" afterPath="$PROJECT_DIR$/Readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accommodation.html" beforeDir="false" afterPath="$PROJECT_DIR$/accommodation.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,7 +15,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Readme">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="103" selection-start-column="103" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accommodation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="247" column="7" selection-start-line="247" selection-start-column="7" selection-end-line="247" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,7 +65,6 @@
         <option value="$PROJECT_DIR$/../Elec-vote/templates/userSuccessLogin.html" />
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/images/additonalCommittee.html" />
-        <option value="$PROJECT_DIR$/Readme" />
         <option value="$PROJECT_DIR$/abhishek.html" />
         <option value="$PROJECT_DIR$/utility files/footer.html" />
         <option value="$PROJECT_DIR$/utility files/footerLatest.html" />
@@ -53,10 +76,11 @@
         <option value="$PROJECT_DIR$/theconference.html" />
         <option value="$PROJECT_DIR$/becomethesponser.html" />
         <option value="$PROJECT_DIR$/advisoryCommittee.html" />
-        <option value="$PROJECT_DIR$/accommodation.html" />
         <option value="$PROJECT_DIR$/additionalCommittee.html" />
         <option value="$PROJECT_DIR$/localOrganisingCommittee.html" />
         <option value="$PROJECT_DIR$/visaRequirements.html" />
+        <option value="$PROJECT_DIR$/Readme" />
+        <option value="$PROJECT_DIR$/accommodation.html" />
       </list>
     </option>
   </component>
@@ -115,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.visaRequirements.html">
+  <component name="RunManager" selected="JavaScript Debug.accommodation.html">
     <configuration name="accommodation.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IWA/accommodation.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -133,10 +157,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.accommodation.html" />
         <item itemvalue="JavaScript Debug.visaRequirements.html" />
         <item itemvalue="JavaScript Debug.localOrganisingCommittee.html" />
         <item itemvalue="JavaScript Debug.additionalCommittee.html" />
-        <item itemvalue="JavaScript Debug.accommodation.html" />
         <item itemvalue="JavaScript Debug.faq.html" />
       </list>
     </recent_temporary>
@@ -157,15 +181,16 @@
       <workItem from="1552228639534" duration="23310000" />
       <workItem from="1552806842833" duration="3252000" />
       <workItem from="1553101788081" duration="270000" />
-      <workItem from="1553512512992" duration="3352000" />
+      <workItem from="1553512512992" duration="4147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34891000" />
+    <option name="totallyTimeSpent" value="35686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24876674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -255,13 +280,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.html" />
-    <entry file="file://$PROJECT_DIR$/Readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/abhishek.html" />
     <entry file="file://$PROJECT_DIR$/utility files/footer.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -551,19 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accommodation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="442" column="7" selection-start-line="442" selection-start-column="7" selection-end-line="442" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/additionalCommittee.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -621,6 +626,24 @@
             <element signature="n#style#0;n#li#6;n#ul#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#7;n#ul#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#8;n#ul#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="103" selection-start-column="103" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accommodation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="247" column="7" selection-start-line="247" selection-start-column="7" selection-end-line="247" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
