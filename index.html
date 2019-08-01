@@ -179,7 +179,7 @@
         li{
             font-size: 12px;
         }
-        #bgImages {
+        .bgImages {
 
         background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/blueLine.png") no-repeat;
         background-repeat: no-repeat;
@@ -357,7 +357,7 @@
 </div>
 
 <div class="container-fluid">
-        <div class="row" style="height: auto; background-color: white; padding: 10vh 10vw 10vh 10vw;">
+        <div class="row bgImages" style="height: auto;padding: 10vh 10vw 10vh 10vw;">
             <div class="col-xs-12 col-md-6"  style="min-height: 350px; height: auto;" >
                 <h1 style="font-weight: bold"><a href="#" style="color : rgb(64,157,225);">DESTINATION</a></h1>
                 
@@ -368,11 +368,16 @@
                     </a>
             </div>
                  <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
-                    <iframe class="col-xs-12 col-md-6" width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw">
-                    </iframe>
+                 <object type="application/x-shockwave-flash" style="width:520px; height:325px;" data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
+                    <param name="movie" value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
+                    <param name="allowFullScreen" value="true" />
+                    <param name="allowscriptaccess" value="always" />
+                </object>
                 
         </div>
     </div>
+
+    
 <!-- 
 <div class="container-fluid">
     <div class="row " style="height: auto; background-color: black; padding: 7vh 10vw 5vh 10vw;">
@@ -507,7 +512,7 @@
 
 
 <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 0vh 10vw 8vh 10vw;">
+        <div class="row bgImages" style="height: auto;  padding: 0vh 10vw 8vh 10vw;">
             <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
                 <h1 style="font-size: 3.3em;font-weight: 800">About IWA</h1><br>
                 <p style="font-size: 20px;">
@@ -529,7 +534,7 @@
 
 
     <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 0vh 10vw 8vh 10vw;">
+        <div class="row bgImages" style="height: auto;  padding: 0vh 10vw 8vh 10vw;">
             <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
                 <h1 style="font-size: 3.3em;font-weight: 800">About YWP</h1><br>
                 <p style="font-size: 20px;">
@@ -550,7 +555,7 @@
             <div id="bgImages" class="row" style="height: auto;  padding: 2vh 10vw 8vh 10vw; background: dodgerblue;color: white">
                 <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
                     
-                    <a href="https://iwa-network.org/join/" style="text-decoration: none">
+                    <a href="https://iwa-network.org/join/" style="text-decoration: none;cursor: pointer">
                         <div style=" width : 300px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
                                 TO BECOME IWA MEMBER
                         </div>
