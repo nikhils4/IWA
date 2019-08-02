@@ -196,145 +196,214 @@
         li {
             font-size: 12px;
         }
-        #bgImagesTamil{
-        background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/tamilnadu.jpg") center center no-repeat;
 
-        /* background: url('images/goalConf.jpg') center center; */
+        #bgImagesTamil {
+            background: linear-gradient(rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)), url("images/tamilnadu.jpg") center center no-repeat;
+
+            /* background: url('images/goalConf.jpg') center center; */
             background-size: cover;
             /*margin-top: 20px;*/
             color: white;
-    }
-    #bgImagesVellore{
-        background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/velloreFort.jpg") center center no-repeat;
+        }
+
+        #bgImagesVellore {
+            background: linear-gradient(rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)), url("images/velloreFort.jpg") center center no-repeat;
             background-size: cover;
             /*margin-top: 20px;*/
             color: white;
-    }
-    .bgImages {
+        }
 
-background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
-background-repeat: no-repeat;
-background-position: center;
+        .bgImages {
 
-}
-.bgImagesLine{
-    background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/blueLine.png") no-repeat;
-background-repeat: no-repeat;
-background-position: center;
+            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
 
-}
+        }
+
+        .bgImagesLine {
+            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/blueLine.png") no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+
+
+        /* video in background */
+
+
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-        <div class="container-fluid" style="background-color: rgb(34,34,34)">
-                <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/iwa.png"  height="30" alt="IWA logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                            </li>
-            
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    ABOUT
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
-                                    <a class="dropdown-item" href="themes.html">THEMES</a>
-                                    <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
-                                    <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS
-                                    <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
-                         
-                                </div>
-                            </li>
-                            <!--PROGRAMME TO USED LATER -->
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="container-fluid" style="background-color: rgb(34,34,34)">
+        <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
+            <a class="navbar-brand" href="#">
+                <img src="images/iwa.png" height="30" alt="IWA logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
+                            <a class="dropdown-item" href="themes.html">THEMES</a>
+                            <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
+                            <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS
+                                <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
+
+                        </div>
+                    </li>
+                    <!--PROGRAMME TO USED LATER -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             PROGRAMME
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
                             <a class="dropdown-item" href="techSessions.html">TECHINAL SESSIONS</a>
                             <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
                             <a class="dropdown-item" href="techTour.html">TECHINAL TOUR</a>
-                            
-                            </div>
-                            </li>
-            
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    COMMITTEE
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="petron.html">PATRONS</a>
-                                    <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
-                                    <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
-                                    <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
-                                    <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
-                                    <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        SUBMISSION
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR ABSRACT</a>
-            
-                                       </div>
-                                </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    SPONSORS
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    DESTINATION
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
-                                    <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
-                                    <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    DOWNLOADS
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">BROCHURE</a>
-                                    <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown" style="margin-right: 15px;">
-                                <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    CONTACT
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="faq.html">FAQ</a>
-                                </div>
-                            </li>
-                            <li class="nav-item " style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
-                                <a class="nav-link active" href="#" >REGISTER</a>
-                            </li>
-                        </ul>
-            
-                    </div>
-                </nav>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COMMITTEE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="petron.html">PATRONS</a>
+                            <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
+                            <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
+                            <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+                            <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
+                            <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SUBMISSION
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR ABSRACT</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SPONSORS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DESTINATION
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
+                            <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
+                            <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DOWNLOADS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">BROCHURE</a>
+                            <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-right: 15px;">
+                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CONTACT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item "
+                        style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
+                        <a class="nav-link active" href="#">REGISTER</a>
+                    </li>
+                </ul>
+
             </div>
-    <div class="container-fluid">
+        </nav>
+    </div>
+    <!-- <div class="container-fluid">
         <div class="row " style="height: auto;  padding: 5vh 10vw 10vh 10vw; background: dodgerblue">
             <div class="col-12"
                 style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center;">
@@ -345,7 +414,26 @@ background-position: center;
             </div>
 
         </div>
-    </div>
+    </div> -->
+
+
+
+
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">INDIA</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
 
 
     <div class="container-fluid">
@@ -353,89 +441,88 @@ background-position: center;
             <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
                 <!-- <p style="font-size: 28px;"><b>About Local Organising Committee</b></p> -->
                 <p style="font-size: 18px;">
-                        India is a land of unparalleled beauty ranging from snow-capped mountains to hot deserts. It
-                        is endowed with a diverse variety of landscapes, natural features and weather conditions and
-                        moments of magic await the explorer in every state, in every corner. There exists a myriad of
-                        cultures comprising of influences which also include Portuguese, Dutch, French, Mughals,
-                        Persians and British nuances. </p>
+                    India is a land of unparalleled beauty ranging from snow-capped mountains to hot deserts. It
+                    is endowed with a diverse variety of landscapes, natural features and weather conditions and
+                    moments of magic await the explorer in every state, in every corner. There exists a myriad of
+                    cultures comprising of influences which also include Portuguese, Dutch, French, Mughals,
+                    Persians and British nuances. </p>
                 <p style="font-size: 18px; margin-top: 3vh">
-                        Agriculturally driven, the country is home to lush paddy fields, spectacular sunrises, colorful
-                        places of worship and rock cut structures and pristine clear waters that offer a wonderful
-                        experience.
+                    Agriculturally driven, the country is home to lush paddy fields, spectacular sunrises, colorful
+                    places of worship and rock cut structures and pristine clear waters that offer a wonderful
+                    experience.
                 </p>
-                
+
             </div>
         </div>
     </div>
 
     <div class="container-fluid" style="margin-top: 50px">
-            <div id="bgImagesTamil" class="row"
-                style="height: auto; min-height: 300px;  padding: 5vh 10vw 10vh 10vw;">
-                <div class="col-xs-12 col-lg-12" style="color: white;height: auto;text-align: center ">
-    
-                    <h1 style="font-size: 50px; font-weight: 500;margin-bottom: 1vh; padding-top: 3vh">
-                        <b>Tamil Nadu</b>
-                    </h1>
-                    <p style="font-size: 200px">
-                        &nbsp;
-                    </p>
-                    <!-- <p><span style="color: #ffffff;font-size:15px ">Making Decisions</span></p> -->
-                    
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-                <div class="row bgImagesLine" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-                    <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
-                        <!-- <p style="font-size: 28px;"><b>About Local Organising Committee</b></p> -->
-                        <p style="font-size: 18px;">
-                                Tamil Nadu, India’s southernmost state has a lot to offer with unique festivals, the classical
-                                language ‘Tamil’, the people who epitomize the Indian tradition of putting guests before
-                                oneself and ancient architectural marvels that go as far back as two millennia of which some
-                                are world heritage sites. The fervour of fans, their unique love and frenzy for cinema and the
+        <div id="bgImagesTamil" class="row" style="height: auto; min-height: 300px;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-xs-12 col-lg-12" style="color: white;height: auto;text-align: center ">
 
-                                culinary experience can rival even the best in the world. It has a beautiful 1000 km coastline,
-                                with golden sands, lush vegetation and twisted gorges cascading into a series of spectacular
-                                waterfalls. Not to forget the juxtaposition of “shola forest and grassland ecosystem” and the
-                                beautiful mountainous regions. </p>
-                       
-                    </div>
-                </div>
-        </div>
-       
-    <div class="container-fluid" style="margin-top: 50px">
-            <div id="bgImagesVellore" class="row"
-                style="height: auto; min-height: 300px;  padding: 5vh 10vw 10vh 10vw;">
-                <div class="col-xs-12 col-lg-12" style="color: white;height: auto;text-align: center ">
-    
-                    <h1 style="font-size: 50px; font-weight: 500;margin-bottom: 1vh; padding-top: 3vh">
-                        <b>Vellore</b>
-                    </h1>
-                    <p style="font-size: 100px">
-                        &nbsp;
-                    </p>
-                    <p><span style="color: #ffffff;font-size:15px ">“They&#39;ve kept the tale a hundred years; they’ll keep the tale a hundred more”
-                            – Sir Henry Newbolt on “Vellore”</span></p>
-                    
-                </div>
+                <h1 style="font-size: 50px; font-weight: 500;margin-bottom: 1vh; padding-top: 3vh">
+                    <b>Tamil Nadu</b>
+                </h1>
+                <p style="font-size: 200px">
+                    &nbsp;
+                </p>
+                <!-- <p><span style="color: #ffffff;font-size:15px ">Making Decisions</span></p> -->
+
             </div>
         </div>
-        <div class="container-fluid">
-                <div class="row bgImages" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-                    <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
-                        <!-- <p style="font-size: 28px;"><b>About Local Organising Committee</b></p> -->
-                        <p style="font-size: 18px;">
-                                With its bright blue sky, hillocks and hot sun, Vellore, &quot;The City of spears” is located on the
-                                banks of the River Palar in Tamil Nadu. The historical city having shadows of a glorious past
-                                is known for its enriching legacy and shimmering early Dravidian culture. The magnificent
-                                Vellore fortress in the centre of the city is the finest and one of the best-preserved specimens
-                                worthy of being called a marvel of military architecture. The city surrounded by hills,
-                                facing the lovely sundown, puts on a purple tinge like a heather bloom to greet us with
-                                tropical temperature. </p>
-                       
-                    </div>
-                </div>
-        </div> 
+    </div>
+    <div class="container-fluid">
+        <div class="row bgImagesLine" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
+                <!-- <p style="font-size: 28px;"><b>About Local Organising Committee</b></p> -->
+                <p style="font-size: 18px;">
+                    Tamil Nadu, India’s southernmost state has a lot to offer with unique festivals, the classical
+                    language ‘Tamil’, the people who epitomize the Indian tradition of putting guests before
+                    oneself and ancient architectural marvels that go as far back as two millennia of which some
+                    are world heritage sites. The fervour of fans, their unique love and frenzy for cinema and the
+
+                    culinary experience can rival even the best in the world. It has a beautiful 1000 km coastline,
+                    with golden sands, lush vegetation and twisted gorges cascading into a series of spectacular
+                    waterfalls. Not to forget the juxtaposition of “shola forest and grassland ecosystem” and the
+                    beautiful mountainous regions. </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 50px">
+        <div id="bgImagesVellore" class="row" style="height: auto; min-height: 300px;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-xs-12 col-lg-12" style="color: white;height: auto;text-align: center ">
+
+                <h1 style="font-size: 50px; font-weight: 500;margin-bottom: 1vh; padding-top: 3vh">
+                    <b>Vellore</b>
+                </h1>
+                <p style="font-size: 100px">
+                    &nbsp;
+                </p>
+                <p><span style="color: #ffffff;font-size:15px ">“They&#39;ve kept the tale a hundred years; they’ll keep
+                        the tale a hundred more”
+                        – Sir Henry Newbolt on “Vellore”</span></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row bgImages" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
+                <!-- <p style="font-size: 28px;"><b>About Local Organising Committee</b></p> -->
+                <p style="font-size: 18px;">
+                    With its bright blue sky, hillocks and hot sun, Vellore, &quot;The City of spears” is located on the
+                    banks of the River Palar in Tamil Nadu. The historical city having shadows of a glorious past
+                    is known for its enriching legacy and shimmering early Dravidian culture. The magnificent
+                    Vellore fortress in the centre of the city is the finest and one of the best-preserved specimens
+                    worthy of being called a marvel of military architecture. The city surrounded by hills,
+                    facing the lovely sundown, puts on a purple tinge like a heather bloom to greet us with
+                    tropical temperature. </p>
+
+            </div>
+        </div>
+    </div>
     <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
         <h1 style="font-weight: 600;color: white">Join us in Vellore! See you in...</h1>
         <div class="x">
