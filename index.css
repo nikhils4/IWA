@@ -1,0 +1,74 @@
+.MultiCarousel {
+	float: left;
+	overflow: hidden;
+	padding: 15px;
+	width: auto;
+	position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+	transition: 1s ease all;
+	float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+	float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+	text-align: center;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+	position: absolute;
+	border-radius: 50%;
+	top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+	left: 0;
+}
+
+.MultiCarousel .rightLst {
+	right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+	pointer-events: none;
+	background: #ccc;
+}
+
+
+/* registration table style */
+
+.demo {
+	border:1px solid #C0C0C0;
+	border-collapse:collapse;
+	padding:5px;
+}
+.demo th {
+	border:1px solid #C0C0C0;
+	padding:5px;
+	/* background:#F0F0F0; */
+}
+.demo td {
+	border:1px solid #C0C0C0;
+	padding:5px;
+}
+th{
+	padding:30px;
+}
+tr{
+	padding:30px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+th {
+	background-color: dodgerblue;
+	color: white
+}
+td{
+	padding: 40px
+}

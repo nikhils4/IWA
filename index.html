@@ -19,6 +19,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
 
 
     <style>
@@ -227,56 +228,8 @@
             background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
             background-repeat: no-repeat;
             background-position: center;
-
         }
-
-
-        /* for slider */
-        .MultiCarousel {
-            float: left;
-            overflow: hidden;
-            padding: 15px;
-            width: 100%;
-            position: relative;
-        }
-
-        .MultiCarousel .MultiCarousel-inner {
-            transition: 1s ease all;
-            float: left;
-        }
-
-        .MultiCarousel .MultiCarousel-inner .item {
-            float: left;
-        }
-
-        .MultiCarousel .MultiCarousel-inner .item>div {
-            text-align: center;
-            padding: 10px;
-            margin: 10px;
-            background: #f1f1f1;
-            color: #666;
-        }
-
-        .MultiCarousel .leftLst,
-        .MultiCarousel .rightLst {
-            position: absolute;
-            border-radius: 50%;
-            top: calc(50% - 20px);
-        }
-
-        .MultiCarousel .leftLst {
-            left: 0;
-        }
-
-        .MultiCarousel .rightLst {
-            right: 0;
-        }
-
-        .MultiCarousel .leftLst.over,
-        .MultiCarousel .rightLst.over {
-            pointer-events: none;
-            background: #ccc;
-        }
+        
     </style>
 </head>
 
@@ -533,35 +486,187 @@
     </div>
 
 
+
+
+
     <div class="container-fluid">
-        <div class="row bgImages" style="height: auto;padding: 7vh 10vw 8vh 10vw;">
-            <div class="col-12 col-md-6" style="min-height: 350px; height: auto;">
-                <p style="font-weight: bold;font-size: 30px"><a href="#"
-                        style="color : rgb(64,157,225);">DESTINATION</a></p>
-
-                <a href="aboutTheDestination.html" style="text-decoration: none">
-                    <div
-                        style=" width : 180px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
-                        Know More About Destination
-                    </div>
-                </a>
+            <div class="row bgImages" style="height: auto;padding: 7vh 10vw 8vh 10vw;">
+                <div class="col-12 col-md-6" style="min-height: 350px; height: auto;">
+                    <p style="font-weight: bold;font-size: 30px"><a href="#"
+                            style="color : rgb(64,157,225);">DESTINATION</a></p>
+    
+                    <a href="aboutTheDestination.html" style="text-decoration: none">
+                        <div
+                            style=" width : 180px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                            Know More About Destination
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-12 col-md-6">
+                    <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
+                    <object type="application/x-shockwave-flash" style="width: 100%; height:auto;min-height:320px"
+                        data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
+                        <param name="movie"
+                            value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
+                        <param name="allowFullScreen" value="true" />
+                        <param name="allowscriptaccess" value="always" />
+                    </object>
+    
+                </div>
+    
             </div>
-
-            <div class="col-12 col-md-6">
-                <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
-                <object type="application/x-shockwave-flash" style="width: 100%; height:auto;min-height:320px"
-                    data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
-                    <param name="movie"
-                        value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
-                    <param name="allowFullScreen" value="true" />
-                    <param name="allowscriptaccess" value="always" />
-                </object>
-
-            </div>
-
         </div>
-    </div>
 
+    <!-- Slider -->
+
+    <div class="container-fluid">
+        <div class="row" style="height: auto;padding: 7vh 10vw 0vh 10vw;">
+            <h1>Latest</h1>
+        </div>
+        <div class="row" style="height: auto;padding: 3vh 10vw 8vh 10vw;">
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="./images/accessory-black-background-bright-1660521.jpeg"
+                                style="height : 120px; width : 120px">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15" style="text-align : left; padding : 8px">
+                            <p>August 4, 2019</p>
+                            <h6>when-will-lake-ontario-finally-be-enough-of-an-inconvenience-for-us-to-care</h6>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary leftLst">
+                    <</button> <button class="btn btn-primary rightLst">>
+                </button>
+            </div>
+        </div>
+
+    </div>
 
     <!-- 
 <div class="container-fluid">
@@ -638,7 +743,6 @@
         </div>
     </div>
 </div> -->
-
     <div class="container-fluid">
         <div class="row" style="height: auto;  padding: 2vh 10vw 8vh 10vw; ">
             <div class="col-xs-12 col-lg-7" style="height: 420px;">
@@ -1057,75 +1161,6 @@
         </div>
     </div>
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-    var itemsMainDiv = ('.MultiCarousel');
-    var itemsDiv = ('.MultiCarousel-inner');
-    var itemWidth = "";
-
-    $('.leftLst, .rightLst').click(function () {
-        var condition = $(this).hasClass("leftLst");
-        if (condition)
-            click(0, this);
-        else
-            click(1, this)
-    });
-
-    ResCarouselSize();
-
-
-
-
-    $(window).resize(function () {
-        ResCarouselSize();
-    });
-
-    //this function define the size of the items
-    function ResCarouselSize() {
-        var incno = 0;
-        var dataItems = ("data-items");
-        var itemClass = ('.item');
-        var id = 0;
-        var btnParentSb = '';
-        var itemsSplit = '';
-        var sampwidth = $(itemsMainDiv).width();
-        var bodyWidth = $('body').width();
-        $(itemsDiv).each(function () {
-            id = id + 1;
-            var itemNumbers = $(this).find(itemClass).length;
-            btnParentSb = $(this).parent().attr(dataItems);
-            itemsSplit = btnParentSb.split(',');
-            $(this).parent().attr("id", "MultiCarousel" + id);
-
-
-            if (bodyWidth >= 1200) {
-                incno = itemsSplit[3];
-                itemWidth = sampwidth / incno;
-            }
-            else if (bodyWidth >= 992) {
-                incno = itemsSplit[2];
-                itemWidth = sampwidth / incno;
-            }
-            else if (bodyWidth >= 768) {
-                incno = itemsSplit[1];
-                itemWidth = sampwidth / incno;
-            }
-            else {
-                incno = itemsSplit[0];
-                itemWidth = sampwidth / incno;
-            }
-            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
-            $(this).find(itemClass).each(function () {
-                $(this).outerWidth(itemWidth);
-            });
-
-            $(".leftLst").addClass("over");
-            $(".rightLst").removeClass("over");
-
-        });
-    }
-
 
     //this function used to move the items
     function ResCarousel(e, el, s) {
@@ -1164,8 +1199,6 @@
         ResCarousel(ell, Parent, slide);
     }
 
-});
-    </script>
     <script type="text/javascript">
         function makeTimer() {
 
@@ -1196,6 +1229,116 @@
 
         setInterval(function () { makeTimer(); }, 1000);
     </script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            var itemsMainDiv = ('.MultiCarousel');
+            var itemsDiv = ('.MultiCarousel-inner');
+            var itemWidth = "";
+
+            $('.leftLst, .rightLst').click(function () {
+                var condition = $(this).hasClass("leftLst");
+                if (condition)
+                    click(0, this);
+                else
+                    click(1, this)
+            });
+
+            ResCarouselSize();
+
+
+
+
+            $(window).resize(function () {
+                ResCarouselSize();
+            });
+
+            //this function define the size of the items
+            function ResCarouselSize() {
+                var incno = 0;
+                var dataItems = ("data-items");
+                var itemClass = ('.item');
+                var id = 0;
+                var btnParentSb = '';
+                var itemsSplit = '';
+                var sampwidth = $(itemsMainDiv).width();
+                var bodyWidth = $('body').width();
+                $(itemsDiv).each(function () {
+                    id = id + 1;
+                    var itemNumbers = $(this).find(itemClass).length;
+                    btnParentSb = $(this).parent().attr(dataItems);
+                    itemsSplit = btnParentSb.split(',');
+                    $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+                    if (bodyWidth >= 1200) {
+                        incno = itemsSplit[3];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 992) {
+                        incno = itemsSplit[2];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 768) {
+                        incno = itemsSplit[1];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else {
+                        incno = itemsSplit[0];
+                        itemWidth = sampwidth / incno;
+                    }
+                    $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+                    $(this).find(itemClass).each(function () {
+                        $(this).outerWidth(itemWidth);
+                    });
+
+                    $(".leftLst").addClass("over");
+                    $(".rightLst").removeClass("over");
+
+                });
+            }
+
+
+            //this function used to move the items
+            function ResCarousel(e, el, s) {
+                var leftBtn = ('.leftLst');
+                var rightBtn = ('.rightLst');
+                var translateXval = '';
+                var divStyle = $(el + ' ' + itemsDiv).css('transform');
+                var values = divStyle.match(/-?[\d\.]+/g);
+                var xds = Math.abs(values[4]);
+                if (e == 0) {
+                    translateXval = parseInt(xds) - parseInt(itemWidth * s);
+                    $(el + ' ' + rightBtn).removeClass("over");
+
+                    if (translateXval <= itemWidth / 2) {
+                        translateXval = 0;
+                        $(el + ' ' + leftBtn).addClass("over");
+                    }
+                }
+                else if (e == 1) {
+                    var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+                    translateXval = parseInt(xds) + parseInt(itemWidth * s);
+                    $(el + ' ' + leftBtn).removeClass("over");
+
+                    if (translateXval >= itemsCondition - itemWidth / 2) {
+                        translateXval = itemsCondition;
+                        $(el + ' ' + rightBtn).addClass("over");
+                    }
+                }
+                $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+            }
+
+            //It is used to get some elements from btn
+            function click(ell, ee) {
+                var Parent = "#" + $(ee).parent().attr("id");
+                var slide = $(Parent).attr("data-slide");
+                ResCarousel(ell, Parent, slide);
+            }
+
+        });</script>
 
 </body>
 

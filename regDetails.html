@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SUBMISSION</title>
+    <title>Registration Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -16,9 +16,9 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+
 <style>
     @font-face {
         font-family: 'Avenir Next';
@@ -206,17 +206,27 @@
             font-size: 12px;
         }
 
-        #bgImages {
-            background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url("images/circleBlue.png");
-            background-repeat: no-repeat;
-            background-position: center;
-        }
         .bgImages {
-            background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url("images/circleBlue.png");
+            background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url("images/blueLine.png");
             background-repeat: no-repeat;
             background-position: center;
         }
 
+        .keyd-head {
+            font-size : 30px;
+            font-weight : bolder;
+        }
+        .keyd-content {
+            padding-top : 10px;
+            padding-bottom : 10px;
+            font-size : 12px;
+        }
+        .sec-one {
+            background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/keyDates.jpg") center center no-repeat;
+            background-size: cover;
+            background-color: black
+        }
+        
     </style>
 </head>
 
@@ -350,131 +360,88 @@
                     </div>
                 </nav>
             </div>
-
     <div class="container-fluid">
-        <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw; background: dodgerblue">
-            <div class="col-xs-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh">
-                <h1 style="font-size: 4.5em; font-weight: bold;">
-                    Submission
+        <div class="row sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;color: black">
+            <div class="col-xs-12 col-lg-12" style="height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
+                <h1 style="font-size: 4.5em; font-weight: bold;color: white">
+                   Registration Fee
                 </h1>
-                <!-- <p style="font-size: 18px;">
-                Inter-generational learning
-            </p> -->
             </div>
 
-        </div>
-    </div>
+            
 
-    <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-            <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
-                <!-- <p style="font-size: 28px;"><b>About Program Committee</b></p> -->
-                <p style="font-size: 18px;">
-                    The Conference organizers and Conference Program Committee are pleased to invite
-                    submissions of abstracts (max 2 pages) for consideration for Oral or Poster presentations at the
-                    IWA-Technoscape 2020. </p>
-                <a href="#"><button type="button" class="btn btn-primary">DOWNLOAD THE ABSTRACT TEMPLATE</button></a>
-
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-            <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
-                <!-- <p style="font-size: 28px;"><b>About Program Committee</b></p> -->
-                <p style="font-size: 18px;">
-                    Oral and Poster presentations will be assessed based on their scientific quality, novelty and
-                    relevance to the scope of the conference and selected after recommendations from reviewers. </p>
-                <p style="font-size: 18px;">
-                    Quality abstracts, submitted before _____ will be considered for peer review for publication in
-                    IWA and Springer indexed journals. </p>
-                <a href="#"><button style="margin-top:10px" type="button" class="btn btn-primary">SUBMIT YOUR
-                        ABSTRACT</button></a><br>
-                <a href="#"><button style="margin-top:30px" type="button" class="btn btn-primary">DEADLINE FOR
-                        SUBMISSION</button></a>
-
-
-            </div>
         </div>
     </div>
 
 
+<div class="container-fluid">
+    <div class="row bgImages" style="padding: 5vh 10vw 10vh 10vw;color: black;width: 100%;overflow: scroll;text-align: center">
 
+            
 
-<div class="container-fluid bgImages">
-        <div class="row" style="padding: 5vh 10vw 10vh 10vw;color: black">
-                <h1>Key Dates</h1>
-        </div>
-        <div class="row" style="padding: 5vh 10vw 10vh 10vw;color: black">
-                
-                <div class="col-12 col-md-6 col-lg-2" style="border-left : 1px solid gray; margin-top : 20px">
-                        <div class="keyd-head">
-                            15 AUG 2019
-                        </div>
-                        <div class="keyd-content">
-                            <p>
-                                Call for papers open
-                            </p>
-                        </div>
-                    </div>
+            <table style="overflow: scroll;width: 100%" class="demo">
+                    <caption style="text-align: right">*VAT excluded; **IWA to provide specification, sponser to provide merchandise/artwork </caption>
+                    <thead>
+                    <tr>
+                        <th style="text-align: right" colspan="3">Low Income</th>
+                        <th style="text-align: right" colspan="4">High Income</th>
+                 </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                            <td style="padding:20px">&nbsp;</td>
+                            <td style="padding:20px">Early</td>
+                            <td style="padding:20px">Regular</td>
+                            <td style="padding:20px">Onsite</td>
+                            <td style="padding:20px">Early</td>
+                            <td style="padding:20px">Regular</td>
+                            <td style="padding:20px">Onsite</th>
         
-                    <div class="col-12 col-md-6 col-lg-2" style="border-left : 1px solid gray; margin-top : 20px">
-                        <div class="keyd-head">
-                            14 JAN 2020
-                        </div>
-                        <div class="keyd-content">
-                            <p>
-                                Abstract Submission Deadline
-                            </p>
-                        </div>
-                    </div>
         
-                    <div class="col-12 col-md-6 col-lg-2" style="border-left : 1px solid gray; margin-top : 20px">
-                        <div class="keyd-head">
-                            15 MAR 2020
-                        </div>
-                        <div class="keyd-content">
-                            <p>
-                                Authors notification
-                            </p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-6 col-lg-2" style="border-left : 1px solid gray; margin-top : 20px">
-                        <div class="keyd-head">
-                            01 APR 2020
-                        </div>
-                        <div class="keyd-content">
-                            <p>
-                                Registrations Opens
-                            </p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-6 col-lg-2" style="border-left : 1px solid gray; margin-top : 20px">
-                        <div class="keyd-head">
-                            15 JUL 2020
-                        </div>
-                        <div class="keyd-content">
-                            <p>
-                                Early Bird Registration Deadline
-                            </p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-6 col-lg-2" style="border-left : 1px solid gray; margin-top : 20px">
-                        <div class="keyd-head">
-                            15 SEP 2020
-                        </div>
-                        <div class="keyd-content">
-                            <p>
-                                Authors Registration Deadline
-                            </p>
-                        </div>
-                    </div>
-        </div>
-    </div>
+                        </tr>
+                    <tr>
+                        <td style="padding:20px">Non IWA</td>
+                        <td style="padding:20px">200</td>
+                        <td style="padding:20px">300</td>
+                        <td style="padding:20px">400</td>
+                        <td style="padding:20px">400</td>
+                        <td style="padding:20px">500</td>
+                        <td style="padding:20px">600</td>
+                    </tr>
     
+                    <tr>
+                            <td style="padding:20px">IWA</td>
+                            <td style="padding:20px">125</td>
+                            <td style="padding:20px">200</td>
+                            <td style="padding:20px">300</td>
+                            <td style="padding:20px">250</td>
+                            <td style="padding:20px">350</td>
+                            <td style="padding:20px">500</td>
+                    </tr>
+                    <tr>
+                            <td style="padding:20px">YWP(student)</td>
+                            <td style="padding:20px">100</td>
+                            <td style="padding:20px">150</td>
+                            <td style="padding:20px">200</td>
+                            <td style="padding:20px">175</td>
+                            <td style="padding:20px">275</td>
+                            <td style="padding:20px">400</td>
+                    </tr>
+                    <tr>
+                            <td style="padding:20px">Accompanying delegates</td>
+                            <td style="padding:20px">75</td>
+                            <td style="padding:20px">100</td>
+                            <td style="padding:20px">150</td>
+                            <td style="padding:20px">100</td>
+                            <td style="padding:20px">150</td>
+                            <td style="padding:20px">200</td>
+                    </tr>
+                    </tbody>
+                </table>
+    
+    </div>
+</div>
+
 
     <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
         <h1 style="font-weight: 600;color: white">Join us in Vellore! See you in...</h1>
@@ -568,7 +535,7 @@
         function makeTimer() {
 
             //      var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");  
-            var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");
+            var endTime = new Date("16 December 2020 00:00:00 GMT+05:30");
             endTime = (Date.parse(endTime) / 1000);
 
             var now = new Date();
@@ -594,6 +561,7 @@
 
         setInterval(function () { makeTimer(); }, 1000);
     </script>
+
 
 
 </body>

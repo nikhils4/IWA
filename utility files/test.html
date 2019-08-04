@@ -8,86 +8,104 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+
     <style>
-
-        .sec-one {
-            background: url('../images/taj-mahal-2.jpg') center center;
-            background-size: cover;
-        }
-        .sec-one-cont {
-            height: auto;
-            min-height: 80vh;
-            color : white;
-        }
-        .bg-dark-ov {
-            background-color: rgb(34,34,34);
-        }
-        .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-            color: rgb(64,157,224);
-        }
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgb(255,255,255);
-        }
-        body {
-            font-size: 0.9rem;
-        }
-        .navbar-dark .navbar-nav .nav-link.disabled {
-            color: rgb(255,255,255);
-        }
-        .dropdown-menu{
-            background: rgb(34,34,34);
-        }
-        .dropdown-item{
-            color : rgba(255,255,255,0.5);
-            font-size: 0.8rem;
-            padding: .6rem 1.5rem;
-        }
-        .dropdown-item:hover{
-            color: white;
-            background-color: rgb(34,34,34);
-        }
-        .nav-item:hover{
-            color: rgb(64,157,224);
-        }
-        #top-btn:hover {
-            background-color: grey;
-            border-color: grey;
-
-        }
-
-        @media (min-width: 992px){
-            .navbar-expand-lg .navbar-nav .nav-link {
-                padding-right: .7rem;
-                padding-left: .7rem;
+            .demo {
+                border:1px solid #C0C0C0;
+                border-collapse:collapse;
+                padding:5px;
             }
-        }
-    </style>
+            .demo th {
+                border:1px solid #C0C0C0;
+                padding:5px;
+                /* background:#F0F0F0; */
+            }
+            .demo td {
+                border:1px solid #C0C0C0;
+                padding:5px;
+            }
+            th{
+                padding:30px;
+            }
+            tr{
+                padding:30px;
+            }
+            tr:nth-child(even){background-color: #f2f2f2;}
+            tr:hover {background-color: #ddd;}
+            th {
+                background-color: dodgerblue;
+                color: white
+            }
+            td{
+                padding: 30px
+            }
+        </style>
 </head>
 <body>
 
 
 
 
+            <table class="demo">
+                <caption style="text-align: right">*VAT excluded; **IWA to provide specification, sponser to provide merchandise/artwork </caption>
+                <thead>
+                <tr>
+                    <th style="text-align: right" colspan="3">Low Income</th>
+                    <th style="text-align: right" colspan="4">High Income</th>
+             </tr>
+                </thead>
+                <tbody>
+                <tr>
+                        <td style="padding:20px">&nbsp;</td>
+                        <td style="padding:20px">Early</td>
+                        <td style="padding:20px">Regular</td>
+                        <td style="padding:20px">Onsite</td>
+                        <td style="padding:20px">Early</td>
+                        <td style="padding:20px">Regular</td>
+                        <td style="padding:20px">Onsite</th>
+    
+    
+                    </tr>
+                <tr>
+                    <td style="padding:20px">Non IWA</td>
+                    <td style="padding:20px">200</td>
+                    <td style="padding:20px">300</td>
+                    <td style="padding:20px">400</td>
+                    <td style="padding:20px">400</td>
+                    <td style="padding:20px">500</td>
+                    <td style="padding:20px">600</td>
+                </tr>
 
-
-<div class="container-fluid">
-    <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw; ">
-        <div class="col-xs-12 col-lg-6" style=" height: 500px;">
-            <object type="application/x-shockwave-flash" style="width: 100%; height:500px;border-radius:10px " data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
-                <param name="movie" value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
-                <param name="allowFullScreen" value="true" />
-                <param name="allowscriptaccess" value="always" />
-            </object>
-        </div>
-        <div class="col-xs-12 col-lg-1">
-
-        </div>
-        <div class="col-xs-12 col-lg-5" style="border: 2px solid black;height: 500px;overflow: scroll">
-            <a class="twitter-timeline" href="https://twitter.com/IWAHQ?ref_src=twsrc%5Etfw">Tweets by IWAHQ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
-</div>
-
+                <tr>
+                        <td style="padding:20px">IWA</td>
+                        <td style="padding:20px">125</td>
+                        <td style="padding:20px">200</td>
+                        <td style="padding:20px">300</td>
+                        <td style="padding:20px">250</td>
+                        <td style="padding:20px">350</td>
+                        <td style="padding:20px">500</td>
+                </tr>
+                <tr>
+                        <td style="padding:20px">YWP(student)</td>
+                        <td style="padding:20px">100</td>
+                        <td style="padding:20px">150</td>
+                        <td style="padding:20px">200</td>
+                        <td style="padding:20px">175</td>
+                        <td style="padding:20px">275</td>
+                        <td style="padding:20px">400</td>
+                </tr>
+                <tr>
+                        <td style="padding:20px">Accompanying delegates</td>
+                        <td style="padding:20px">75</td>
+                        <td style="padding:20px">100</td>
+                        <td style="padding:20px">150</td>
+                        <td style="padding:20px">100</td>
+                        <td style="padding:20px">150</td>
+                        <td style="padding:20px">200</td>
+                </tr>
+                </tbody>
+            </table>
 
 
 </body>
