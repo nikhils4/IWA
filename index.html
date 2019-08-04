@@ -1,170 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Event Vellore</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     <style>
         @font-face {
-        font-family: 'Avenir Next';
-        src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); /* File to be stored at your site */
+            font-family: 'Avenir Next';
+            src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
+            /* File to be stored at your site */
         }
-        body{
+
+        body {
             font-family: "Avenir Next" !important;
 
         }
+
         .sec-one {
             background: url('images/tahHd.jpeg') center center;
             background-size: cover;
         }
+
         .sec-one-cont {
             height: auto;
             min-height: 80vh;
-            color : white;
+            color: white;
         }
+
         .bg-dark-ov {
-            background-color: rgb(34,34,34);
+            background-color: rgb(34, 34, 34);
         }
-        .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-            color: rgb(64,157,224);
+
+        .navbar-dark .navbar-nav .active>.nav-link,
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link.show,
+        .navbar-dark .navbar-nav .show>.nav-link {
+            color: rgb(64, 157, 224);
         }
+
         .navbar-dark .navbar-nav .nav-link {
-            color: rgb(255,255,255);
+            color: rgb(255, 255, 255);
         }
+
         body {
             font-size: 0.9rem;
         }
+
         .navbar-dark .navbar-nav .nav-link.disabled {
-            color: rgb(255,255,255);
+            color: rgb(255, 255, 255);
         }
-        .dropdown-menu{
-            background: rgb(34,34,34);
+
+        .dropdown-menu {
+            background: rgb(34, 34, 34);
         }
-        .dropdown-item{
-            color : rgba(255,255,255,0.5);
+
+        .dropdown-item {
+            color: rgba(255, 255, 255, 0.5);
             font-size: 0.8rem;
             padding: .6rem 1.5rem;
         }
-        .dropdown-item:hover{
+
+        .dropdown-item:hover {
             color: white;
-            background-color: rgb(34,34,34);
+            background-color: rgb(34, 34, 34);
         }
-        .nav-item:hover{
-            color: rgb(64,157,224);
+
+        .nav-item:hover {
+            color: rgb(64, 157, 224);
         }
+
         #top-btn:hover {
             background-color: grey;
             border-color: grey;
 
         }
 
-        @media (min-width: 992px){
+        @media (min-width: 992px) {
             .navbar-expand-lg .navbar-nav .nav-link {
                 padding-right: .7rem;
                 padding-left: .7rem;
             }
-            .pad4lap{
+
+            .pad4lap {
                 padding-left: 40px;
             }
         }
 
 
         .y {
-          margin: 0 auto;
-          text-align: center;
-          color: white;
-          background: #222;
-          font-weight: 100;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            background: #222;
+            font-weight: 100;
         }
 
         .x {
-          display: inline-block;
-          line-height: 1;
-          padding: 20px;
-          font-size: 40px;
+            display: inline-block;
+            line-height: 1;
+            padding: 20px;
+            font-size: 40px;
         }
 
         span {
-          display: block;
-          font-size: 20px;
-          color: white;
+            display: block;
+            font-size: 20px;
+            color: white;
         }
 
         #days {
-          font-size: 100px;
-          color: white;
-          background-color: black;
-          margin-bottom: 30px;
-          margin-top: 30px;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
+
         #hours {
-          font-size: 100px;
-          color: white;
-          background-color: black;
-          margin-bottom: 30px;
-          margin-top: 30px;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
+
         #minutes {
-          font-size: 100px;
-          color: white;
-          background-color: black;
-          margin-bottom: 30px;
-          margin-top: 30px;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
+
         #seconds {
-          font-size: 100px;
-          color: white;
-          background-color: black;
-          margin-bottom: 30px;
-          margin-top: 30px;
+            font-size: 100px;
+            color: white;
+            background-color: black;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
 
 
-        @media (max-width: 780px){
-            .subbut{
+        @media (max-width: 780px) {
+            .subbut {
                 padding-left: 15px;
             }
-            .subbut{
+
+            .subbut {
                 width: 100px;
-                margin-left:-10px; 
+                margin-left: -10px;
             }
         }
 
-        @media (min-width: 900px){
-                .subbut{
-                    margin-left: -10px;
-                    width: 150px;
-                }
-                .lesspad{
-                    padding-left: -22px;
-                }
-                
+        @media (min-width: 900px) {
+            .subbut {
+                margin-left: -10px;
+                width: 150px;
             }
 
-        @media (min-width: 1001px){
-                
-                #minWidth1{
-                    min-width: 290px;
-                }
-                #minWidth2{
-                        min-width: 90px;
-                }
+            .lesspad {
+                padding-left: -22px;
             }
+
+        }
+
+        @media (min-width: 1001px) {
+
+            #minWidth1 {
+                min-width: 290px;
+            }
+
+            #minWidth2 {
+                min-width: 90px;
+            }
+        }
 
         #footer {
-        background: #222;
-        color: #fff;
-        padding: 80px 0 35px 0;
+            background: #222;
+            color: #fff;
+            padding: 80px 0 35px 0;
         }
-        
+
         .bfricon:before {
             content: "\e131";
             font-family: 'Glyphicons Halflings';
@@ -175,7 +208,7 @@
         }
 
 
-        
+
 
         .df:before {
             content: "\e131";
@@ -184,176 +217,253 @@
             margin-left: -17px;
             color: #4a4a4a;
         }
-        li{
+
+        li {
             font-size: 12px;
         }
+
         .bgImages {
 
-        background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
-        background-repeat: no-repeat;
-        background-position: center;
+            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
 
+        }
+
+
+        /* for slider */
+        .MultiCarousel {
+            float: left;
+            overflow: hidden;
+            padding: 15px;
+            width: 100%;
+            position: relative;
+        }
+
+        .MultiCarousel .MultiCarousel-inner {
+            transition: 1s ease all;
+            float: left;
+        }
+
+        .MultiCarousel .MultiCarousel-inner .item {
+            float: left;
+        }
+
+        .MultiCarousel .MultiCarousel-inner .item>div {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background: #f1f1f1;
+            color: #666;
+        }
+
+        .MultiCarousel .leftLst,
+        .MultiCarousel .rightLst {
+            position: absolute;
+            border-radius: 50%;
+            top: calc(50% - 20px);
+        }
+
+        .MultiCarousel .leftLst {
+            left: 0;
+        }
+
+        .MultiCarousel .rightLst {
+            right: 0;
+        }
+
+        .MultiCarousel .leftLst.over,
+        .MultiCarousel .rightLst.over {
+            pointer-events: none;
+            background: #ccc;
         }
     </style>
 </head>
+
 <body>
 
-        <div class="container-fluid" style="background-color: dodgerblue;height: 23px;">
-                <div class="row">
-                    <div class="col-lg-7">
-                                <p style="color: white;font-size:14px;">International Water Association</p>          
-                    </div>
-                    <div class="col-lg-3">
-                            <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank" href="https://thesourcemagazine.org/" style="text-decoration: none;color:white;cursor: pointer;">The Source</a></div>
-                            <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank" href="https://iwa-connect.org/" style="text-decoration: none;color:white;cursor: pointer;">IWA Connect</a></div>
-                            <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank" href="http://www.iwapublishing.com/" style="text-decoration: none;color:white;cursor: pointer;">IWA Publishing</a></div>
-        
-                    </div>
-                    <div class="col-lg-2">
-                            <a target="_blank" href="https://www.facebook.com/InternationalWaterAssociation" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i style="color:white;" class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a target="_blank" href="https://twitter.com/IWAHQ" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white" class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/company/1119749?trk=tyah&trkInfo=tarId%3A1397062280514%2Ctas%3Ainternational%20water%20association%2Cidx%3A2-1-6" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;" class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <a target="_blank" href="https://vimeo.com/iwahq" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;" class="fa fa-vimeo" aria-hidden="true"></i></a>
-                    </div>
-                   
-                </div>
+    <div class="container-fluid" style="background-color: dodgerblue;height: 23px;">
+        <div class="row">
+            <div class="col-lg-7">
+                <p style="color: white;font-size:14px;">International Water Association</p>
             </div>
-        
-<div class="container-fluid" style="background-color: rgb(34,34,34)">
-    <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
-        <a class="navbar-brand" href="#">
-            <img src="images/iwa.png"  height="30" alt="IWA logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <div class="col-lg-3">
+                <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank"
+                        href="https://thesourcemagazine.org/"
+                        style="text-decoration: none;color:white;cursor: pointer;">The Source</a></div>
+                <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank"
+                        href="https://iwa-connect.org/" style="text-decoration: none;color:white;cursor: pointer;">IWA
+                        Connect</a></div>
+                <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank"
+                        href="http://www.iwapublishing.com/"
+                        style="text-decoration: none;color:white;cursor: pointer;">IWA Publishing</a></div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                </li>
+            </div>
+            <div class="col-lg-2">
+                <a target="_blank" href="https://www.facebook.com/InternationalWaterAssociation"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i
+                        style="color:white;" class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://twitter.com/IWAHQ"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white"
+                        class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank"
+                    href="https://www.linkedin.com/company/1119749?trk=tyah&trkInfo=tarId%3A1397062280514%2Ctas%3Ainternational%20water%20association%2Cidx%3A2-1-6"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;"
+                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://vimeo.com/iwahq"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;"
+                        class="fa fa-vimeo" aria-hidden="true"></i></a>
+            </div>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ABOUT
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
-                        <a class="dropdown-item" href="themes.html">THEMES</a>
-                        <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
-                        <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS
-                        <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
-             
-                    </div>
-                </li>
-                <!--PROGRAMME TO USED LATER -->
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PROGRAMME
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
-                <a class="dropdown-item" href="techSessions.html">TECHINAL SESSIONS</a>
-                <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
-                <a class="dropdown-item" href="techTour.html">TECHINAL TOUR</a>
-                
-                </div>
-                </li>
+        </div>
+    </div>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        COMMITTEE
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="petron.html">PATRONS</a>
-                        <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
-                        <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
-                        <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
-                        <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
-                        <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="container-fluid" style="background-color: rgb(34,34,34)">
+        <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
+            <a class="navbar-brand" href="#">
+                <img src="images/iwa.png" height="30" alt="IWA logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
+                            <a class="dropdown-item" href="themes.html">THEMES</a>
+                            <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
+                            <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS
+                                <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
+
+                        </div>
+                    </li>
+                    <!--PROGRAMME TO USED LATER -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PROGRAMME
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
+                            <a class="dropdown-item" href="techSessions.html">TECHINAL SESSIONS</a>
+                            <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
+                            <a class="dropdown-item" href="techTour.html">TECHINAL TOUR</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COMMITTEE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="petron.html">PATRONS</a>
+                            <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
+                            <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
+                            <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+                            <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
+                            <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             SUBMISSION
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="SUBMISSION.html">CALL FOR ABSRACT</a>
+                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR ABSRACT</a>
 
-                           </div>
+                        </div>
                     </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        SPONSORS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        DESTINATION
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
-                        <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
-                        <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        DOWNLOADS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">BROCHURE</a>
-                        <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
-                    </div>
-                </li>
-                <li class="nav-item dropdown" style="margin-right: 15px;">
-                    <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        CONTACT
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="faq.html">FAQ</a>
-                    </div>
-                </li>
-                <li class="nav-item " style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
-                    <a class="nav-link active" href="#" >REGISTER</a>
-                </li>
-            </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SPONSORS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DESTINATION
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
+                            <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
+                            <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DOWNLOADS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">BROCHURE</a>
+                            <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-right: 15px;">
+                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CONTACT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item "
+                        style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
+                        <a class="nav-link active" href="#">REGISTER</a>
+                    </li>
+                </ul>
 
-        </div>
-    </nav>
-</div>
-<!--Top Division-->
-<div class="container-fluid sec-one">
-    <div class="row sec-one-cont" >
-        <div class="col-sm-12 "style="height: auto; padding: 7vh 10vw 8vh 10vw;">
-            
-            <div style=" margin-bottom: 7vh;">
-                <p style="font-size: 2.5em;"><b>Technoscape 2020</b></p>
             </div>
-            <div style=" margin-bottom: 7vh;">
-                <p style="font-size: 1.5em;">IWA-YWP FIRST TRANS ASIA CONFERENCE</p>
+        </nav>
+    </div>
+    <!--Top Division-->
+    <div class="container-fluid sec-one">
+        <div class="row sec-one-cont">
+            <div class="col-sm-12 " style="height: auto; padding: 7vh 10vw 8vh 10vw;">
+
+                <div style=" margin-bottom: 7vh;">
+                    <p style="font-size: 2.5em;"><b>Technoscape 2020</b></p>
+                </div>
+                <div style=" margin-bottom: 7vh;">
+                    <p style="font-size: 1.5em;">IWA-YWP FIRST TRANS ASIA CONFERENCE</p>
+                </div>
+                <div style=" margin-bottom: 5vh; ">
+                    <p style="font-size: 4em;  word-wrap: break-word"><b>Smart Technology for Water and Waste Water
+                            Treatment</b></p>
+                </div>
+                <div style=" margin-bottom: 2vh;">
+                    <p style="font-size: 1.5em;"><b>16th to 19th December 2020, VELLORE, INDIA</b></p>
+                </div>
             </div>
-            <div style=" margin-bottom: 5vh; ">
-                <p style="font-size: 4em;  word-wrap: break-word"><b>Smart Technology for Water and Waste Water Treatment</b></p>
-            </div>
-            <div style=" margin-bottom: 2vh;">
-                <p style="font-size: 1.5em;"><b>16th to 19th December 2020, VELLORE, INDIA</b></p>
-            </div>
-        </div>
 
 
-        
-        <div class="row" style="padding: 5vh 10vw 0 11vw;">
-       
+
+            <div class="row" style="padding: 5vh 10vw 0 11vw;">
+
+            </div>
         </div>
     </div>
-</div>
 
-<!-- 
+    <!-- 
 
 <div class="container-fluid">
     <div class="row" style="height: auto;  padding: 8vh 10vw 10vh 10vw; ">
@@ -387,65 +497,73 @@
 
 
 
-<div class="container-fluid">
+    <div class="container-fluid">
         <div class="row bgImages" style="height: auto;padding: 7vh 10vw 8vh 10vw;">
-        
+
             <div class="col-12 col-md-6">
-                 <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
-                 <object type="application/x-shockwave-flash" style="width: 100%; height:auto;min-height:320px" data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
-                    <param name="movie" value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
+                <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
+                <object type="application/x-shockwave-flash" style="width: 100%; height:auto;min-height:320px"
+                    data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
+                    <param name="movie"
+                        value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
                     <param name="allowFullScreen" value="true" />
                     <param name="allowscriptaccess" value="always" />
                 </object>
 
             </div>
-            <div class="col-12 col-md-6"  style="min-height: 350px; height: auto;padding: auto 20px auto 30px " >
-                    <p style="font-weight: bold;font-size: 30px;color : rgb(64,157,225)">TECHNOSCAPE 2020</p>
-                    
+            <div class="col-12 col-md-6" style="min-height: 350px; height: auto;padding: auto 20px auto 30px ">
+                <p style="font-weight: bold;font-size: 30px;color : rgb(64,157,225)">TECHNOSCAPE 2020</p>
+
                 <p style="font-size: 18px">
-                            Water has made its way into almost every aspect of human life and has become the most
-                            indispensable natural resource. However, various anthropogenic activities are threatening its very
-                            existence. If the judicious utilization of the remaining supplies is to be ensured, it is our responsibility
-                            as human beings to search for viable alternatives.
-                    </p>
-                    
-                    <a href="theconference.html" style="text-decoration: none">
-                            <div style=" width : 180px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
-                                Know More About Technoscape
-                            </div>
-                        </a>
+                    Water has made its way into almost every aspect of human life and has become the most
+                    indispensable natural resource. However, various anthropogenic activities are threatening its very
+                    existence. If the judicious utilization of the remaining supplies is to be ensured, it is our
+                    responsibility
+                    as human beings to search for viable alternatives.
+                </p>
+
+                <a href="theconference.html" style="text-decoration: none">
+                    <div
+                        style=" width : 180px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                        Know More About Technoscape
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
 
-<div class="container-fluid">
+    <div class="container-fluid">
         <div class="row bgImages" style="height: auto;padding: 7vh 10vw 8vh 10vw;">
-            <div class="col-12 col-md-6"  style="min-height: 350px; height: auto;" >
-                <p style="font-weight: bold;font-size: 30px"><a href="#" style="color : rgb(64,157,225);">DESTINATION</a></p>
-                
+            <div class="col-12 col-md-6" style="min-height: 350px; height: auto;">
+                <p style="font-weight: bold;font-size: 30px"><a href="#"
+                        style="color : rgb(64,157,225);">DESTINATION</a></p>
+
                 <a href="aboutTheDestination.html" style="text-decoration: none">
-                        <div style=" width : 180px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
-                            Know More About Destination
-                        </div>
-                    </a>
+                    <div
+                        style=" width : 180px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                        Know More About Destination
+                    </div>
+                </a>
             </div>
 
             <div class="col-12 col-md-6">
-                 <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
-                 <object type="application/x-shockwave-flash" style="width: 100%; height:auto;min-height:320px" data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
-                    <param name="movie" value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
+                <!-- <iframe width="420" height="345" src="https://www.youtube.com/watch?v=wAD9uO9YAQw" frameborder="0" allowfullscreen></iframe> -->
+                <object type="application/x-shockwave-flash" style="width: 100%; height:auto;min-height:320px"
+                    data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
+                    <param name="movie"
+                        value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
                     <param name="allowFullScreen" value="true" />
                     <param name="allowscriptaccess" value="always" />
                 </object>
 
             </div>
-                
+
         </div>
     </div>
 
-    
-<!-- 
+
+    <!-- 
 <div class="container-fluid">
     <div class="row " style="height: auto; background-color: black; padding: 7vh 10vw 5vh 10vw;">
         <div class="col-xs-12 col-md-8" style="color : white;">
@@ -485,7 +603,7 @@
 
 
 
-<!-- <div class="container-fluid">
+    <!-- <div class="container-fluid">
     <div class="row" style="height: auto; background-color: white; padding: 5vh 10vw 10vh 10vw;">
         <div class="col-xs-12">
             <h1 style="font-weight: bold">News</h1>
@@ -520,49 +638,58 @@
         </div>
     </div>
 </div> -->
-<div class="container-fluid">
-    <div class="row" style="height: auto;  padding: 2vh 10vw 8vh 10vw; ">
-        <div class="col-xs-12 col-lg-7" style="height: 420px;">
-            <iframe src="https://player.vimeo.com/video/217191032" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="420px" width="100%" allowfullscreen></iframe>            <!-- <object type="application/x-shockwave-flash" style="width: 100%; height:420px;border-radius:5px " data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
+
+    <div class="container-fluid">
+        <div class="row" style="height: auto;  padding: 2vh 10vw 8vh 10vw; ">
+            <div class="col-xs-12 col-lg-7" style="height: 420px;">
+                <iframe src="https://player.vimeo.com/video/217191032" style="border:0px #ffffff none;" name="myiFrame"
+                    scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="420px" width="100%"
+                    allowfullscreen></iframe>
+                <!-- <object type="application/x-shockwave-flash" style="width: 100%; height:420px;border-radius:5px " data="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3">
                 <param name="movie" value="//www.youtube.com/v/wAD9uO9YAQw?color2=FBE9EC&amp;autoplay=1&amp;version=3" />
                 <param name="allowFullScreen" value="true" />
                 <param name="allowscriptaccess" value="always" />
             </object> -->
-        </div>
-        <div style="max-height: 0px" class="col-xs-12 col-lg-1">
-            &nbsp;
-        </div>
-        <div class="col-xs-12 col-lg-4" style="border: 2px solid black;height: 420px;overflow: scroll;border-radius:5px ">
-            <a style="width: 100%;" class="twitter-timeline" href="https://twitter.com/IWAHQ?ref_src=twsrc%5Etfw">Tweets by IWAHQ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div style="max-height: 0px" class="col-xs-12 col-lg-1">
+                &nbsp;
+            </div>
+            <div class="col-xs-12 col-lg-4"
+                style="border: 2px solid black;height: 420px;overflow: scroll;border-radius:5px ">
+                <a style="width: 100%;" class="twitter-timeline"
+                    href="https://twitter.com/IWAHQ?ref_src=twsrc%5Etfw">Tweets by IWAHQ</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid" style="background: url('images/vitLake.jpg') no-repeat center center">
-    <div class="row" style="height: auto;width: 100vw;  padding: 5vh 10vw 10vh 10vw;">
-        <div class="col-12" style="color: white;height: auto; ">
-            <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 5vh; padding-top: 3vh">
-                THE VENUE
-            </h2>
-            <p style="font-size: 18px;">
-                The first IWA-YWP Trans-Asia Conference – Technoscape 2020 will be
-                held at Vellore Institute of Technology, Vellore, TN, INDIA
-            </p>
-            <a href="theconference.html" style="text-decoration: none">
-                <div style=" width : 200px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
-                    About
-                </div>
-            </a>
+    <div class="container-fluid"
+        style="background: url('images/vitLake.jpg') no-repeat center center; background-size: cover">
+        <div class="row" style="height: auto;width: 100vw;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-12" style="color: white;height: auto; ">
+                <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 5vh; padding-top: 3vh">
+                    THE VENUE
+                </h2>
+                <p style="font-size: 18px;">
+                    The first IWA-YWP Trans-Asia Conference – Technoscape 2020 will be
+                    held at Vellore Institute of Technology, Vellore, TN, INDIA
+                </p>
+                <a href="theconference.html" style="text-decoration: none">
+                    <div
+                        style=" width : 200px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                        About
+                    </div>
+                </a>
+            </div>
+
         </div>
-
     </div>
-</div>
 
 
 
 
 
-<!-- 
+    <!-- 
 <div class="container-fluid">
     <div class="row" style="height: auto; background-color: white; padding: 10vh 10vw 10vh 10vw;">
         <div class="col-xs-12 col-md-7"  style="min-height: 350px; height: auto;" >
@@ -577,8 +704,8 @@
 </div>
  -->
 
-                <!-- SPONERS -->
- <!-- <div class="container-fluid">
+    <!-- SPONERS -->
+    <!-- <div class="container-fluid">
     <div class="row" style=" padding: 10vh 10vw 5vh 10vw;">
         <h2 style="font-weight: bold">ORGANISERS</h2>
     </div>
@@ -595,7 +722,7 @@
 </div> -->
 
 
-<div class="container-fluid">
+    <div class="container-fluid">
         <div class="row bgImages" style="height: auto;  padding: 0vh 10vw 8vh 10vw;">
             <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
                 <h1 style="font-size: 3.3em;font-weight: 800">International Water Association</h1><br>
@@ -606,11 +733,12 @@
                     water professionals working towards a world that is water wise.
                 </p>
                 <a href="theconference.html#aboutIwa" style="text-decoration: none">
-                        <div style=" width : 200px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
-                           Read More
-                        </div>
+                    <div
+                        style=" width : 200px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                        Read More
+                    </div>
                 </a>
-               
+
 
             </div>
         </div>
@@ -626,118 +754,149 @@
                     young staff, as well as put them at the forefront of design, development and implementation of
                     current change processes. It is not a concern of the future, but it should and is happening now!
                 </p>
-                
+
                 <a href="theconference.html#aboutYwp" style="text-decoration: none">
-                        <div style=" width : 200px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
-                            Read More
-                        </div>
+                    <div
+                        style=" width : 200px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                        Read More
+                    </div>
                 </a>
             </div>
         </div>
     </div>
     <div class="container-fluid">
-            <div id="bgImages" class="row" style="height: auto;  padding: 2vh 10vw 8vh 10vw; background: dodgerblue;color: white">
-                <div class="col-12 col-lg-6" style="height: auto; margin-top: 8vh; margin-bottom: 5vh;text-align: center;margin: auto auto">
-                    
-                    <a href="https://iwa-network.org/join/" style="text-decoration: none;cursor: pointer;text-align: center;margin: auto auto">
-                        <div style=" width : 250px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white" >
-                                TO BECOME IWA MEMBER
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh;text-align: center">
-                        <img src="images/iwaLogo.jpg" alt="IWA LOGO" height="auto" width="300">
-                </div>
-            </div>
-        </div>
-    
+        <div id="bgImages" class="row"
+            style="height: auto;  padding: 2vh 10vw 8vh 10vw; background: dodgerblue;color: white">
+            <div class="col-12 col-lg-6"
+                style="height: auto; margin-top: 8vh; margin-bottom: 5vh;text-align: center;margin: auto auto">
 
-
-<div class="container-fluid">
-    <div class="row"  style="height: auto; background-color: white; padding: 4vh 10vw 5vh 10vw;">
-        <div class="col-xs-12">
-            <h1 style="font-size: 40px; font-weight: bold">Partner University</h1>
-        </div>
-    </div>
-
-    <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
-        
-        <div class="col-xs-12 col-md-6" >
-            <div class="row" style="padding: 20px 20px">
-                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/NKU.png" alt="NKU"></div>
-                    
-                        <div class="col-8" style="color: black;font-size: 1.2em;"><a href="http://www.nu.edu.om/" style="text-decoration: none;cursor: pointer">National Kaohsiung University of Science and Technology, TAIWAN </a></div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6" >
-                <div class="row"  style="padding: 20px 20px" >
-                        <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/Taipeitech.jpg" alt="NKU"></div>
-                        <div class="col-8" style="color: black;font-size:18px;"><a href="https://www-en.ntut.edu.tw/" style="text-decoration: none;cursor: pointer"> National Taipei University of Technology, TAIWAN</a>  </div>
-                </div>
-            </div>
-    </div>
-
-    <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
-        
-            <div class="col-xs-12 col-md-6" >
-                <div class="row"  style="padding: 20px 20px">
-                        <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/YNU.png" alt="NKU"></div>
-                        <div class="col-8" style="color: black;font-size:18px;"><a href="https://www.ynu.ac.jp/" style="text-decoration: none;cursor: pointer"> Yokoham Nationa University, JAPAN</a> </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6" >
-                    <div class="row"  style="padding: 20px 20px">
-                            <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/dst.JPG" alt="NKU"></div>
-                            <div class="col-8" style="color: black;font-size:18px;"> <a href="http://dstcpriisc.org/" style="text-decoration: none;cursor: pointer"> DST Center for Policy Research, INDIA</a>   </div>
+                <a href="https://iwa-network.org/join/"
+                    style="text-decoration: none;cursor: pointer;text-align: center;margin: auto auto">
+                    <div
+                        style=" width : 250px; margin-top : 5vh; margin-bottom: 5vh; border: 2px solid rgb(64,157,225); text-align : center; padding: 5px; padding-right: 15px; padding-left: 15px; font-size: 1em; background-color: rgb(64,157,225); color : white">
+                        TO BECOME IWA MEMBER
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-lg-6 col-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh;text-align: center">
+                <img src="images/iwaLogo.jpg" alt="IWA LOGO" height="auto" width="300">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row" style="height: auto; background-color: white; padding: 4vh 10vw 5vh 10vw;">
+            <div class="col-xs-12">
+                <h1 style="font-size: 40px; font-weight: bold">Partner University</h1>
+            </div>
         </div>
 
         <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
-        
-                <div class="col-xs-12 col-md-6" >
-                    <div class="row"  style="padding: 20px 20px">
-                            <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/pg_logo_kolor.png" alt="NKU"></div>
-                             <div class="col-8" style="color: black;font-size:18px;"><a href="https://pg.edu.pl/welcome?p_l_id=52858455&p_v_l_s_g_id=0&" style="text-decoration: none;cursor: pointer"> Politechnika Gdanska, POLAND</a> </div>
+
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/NKU.png"
+                            alt="NKU"></div>
+
+                    <div class="col-8" style="color: black;font-size: 1.2em;"><a href="http://www.nu.edu.om/"
+                            style="text-decoration: none;cursor: pointer">National Kaohsiung University of Science and
+                            Technology, TAIWAN </a></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px"
+                            src="images/Taipeitech.jpg" alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a href="https://www-en.ntut.edu.tw/"
+                            style="text-decoration: none;cursor: pointer"> National Taipei University of Technology,
+                            TAIWAN</a> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/YNU.png"
+                            alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a href="https://www.ynu.ac.jp/"
+                            style="text-decoration: none;cursor: pointer"> Yokoham Nationa University, JAPAN</a> </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/dst.JPG"
+                            alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"> <a href="http://dstcpriisc.org/"
+                            style="text-decoration: none;cursor: pointer"> DST Center for Policy Research, INDIA</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6" >
-                        <div class="row"  style="padding: 20px 20px">
-                                <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/UKM_logo_4C_teks-hitam.png" alt="NKU"></div>
-                                <div class="col-8" style="color: black;font-size:18px;"><a href="http://www.ukm.my/portal/" style="text-decoration: none;cursor: pointer"> The National University of Malaysia, MALAYSIA </a> </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+
+        <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px"
+                            src="images/pg_logo_kolor.png" alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a
+                            href="https://pg.edu.pl/welcome?p_l_id=52858455&p_v_l_s_g_id=0&"
+                            style="text-decoration: none;cursor: pointer"> Politechnika Gdanska, POLAND</a> </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px"
+                            src="images/UKM_logo_4C_teks-hitam.png" alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a href="http://www.ukm.my/portal/"
+                            style="text-decoration: none;cursor: pointer"> The National University of Malaysia, MALAYSIA
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/Ulsan.png"
+                            alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a
+                            href="http://www.ulsan.ac.kr/FileNotFound.htm?aspxerrorpath=/eng/index.aspx"
+                            style="text-decoration: none;cursor: pointer">University of Ulsan, SOUTH KOREA </a></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/MIU.png"
+                            alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a href="https://miu.edu.my/"
+                            style="text-decoration: none;cursor: pointer">Manipal International University, MALAYSIA
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="row" style="padding: 20px 20px">
+                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/NU.png"
+                            alt="NKU"></div>
+                    <div class="col-8" style="color: black;font-size:18px;"><a href="https://www.ynu.ac.jp/"
+                            style="text-decoration: none;cursor: pointer">National University of Science and Technology,
+                            OMAN</a> </div>
+                </div>
             </div>
 
-            <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
-        
-                    <div class="col-xs-12 col-md-6" >
-                        <div class="row"  style="padding: 20px 20px">
-                                <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/Ulsan.png" alt="NKU"></div>
-                                <div class="col-8" style="color: black;font-size:18px;"><a href="http://www.ulsan.ac.kr/FileNotFound.htm?aspxerrorpath=/eng/index.aspx" style="text-decoration: none;cursor: pointer">University of Ulsan, SOUTH KOREA </a></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6" >
-                            <div class="row"  style="padding: 20px 20px">
-                                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/MIU.png" alt="NKU"></div>
-                                     <div class="col-8" style="color: black;font-size:18px;"><a href="https://miu.edu.my/" style="text-decoration: none;cursor: pointer">Manipal International University, MALAYSIA </a> </div>
-                            </div>
-                        </div>
-                </div>
+        </div>
+    </div>
 
-                <div class="row" style="height: auto; background-color: white; padding: 0 10vw 5vh 10vw;">
-        
-                        <div class="col-xs-12 col-md-6" >
-                            <div class="row"  style="padding: 20px 20px">
-                                    <div class="col-4"><img style="width: 80px; height: auto;line-height: 100px" src="images/NU.png" alt="NKU"></div>
-                                    <div class="col-8" style="color: black;font-size:18px;"><a href="https://www.ynu.ac.jp/" style="text-decoration: none;cursor: pointer">National University of Science and Technology, OMAN</a> </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-</div>
-
-<!-- <div class="container-fluid">
+    <!-- <div class="container-fluid">
     <div class="row"  style="height: auto; background-color: white; padding: 5vh 10vw 5vh 10vw;">
         <div class="col-xs-12">
             <h1 style="font-size: 40px; font-weight: bold">Sponsors</h1>
@@ -756,7 +915,7 @@
 
 </div>
  -->
-<!-- 
+    <!-- 
 
 <div class="container-fluid">
     <div class="row" style="height: auto;  padding: 0 10vw 10vh 10vw; ">
@@ -777,7 +936,7 @@
     </div>
 </div> -->
 
-<!-- 
+    <!-- 
 <div class="container-fluid">
     <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw; ">
         <div class=" col-xs-12 col-lg-6" style=" height: 200px;">
@@ -811,97 +970,207 @@
 </div>
  -->
 
-<div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
-    <h1 style="font-weight: 600;color: white">Join us in Vellore! See you in...</h1>
-    <div class="x">
-        <div class="x" id="timer">
-           <div class="x" id="days"></div>
-           <div class="x" id="hours"></div>
-           <div class="x" id="minutes"></div>
-           <div class="x" id="seconds"></div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="container-fluid">
-    <div class="row" style="height: auto;padding: 5vh 5vw 5vh 5vw; color : white; background-color: black">
-        <div class="col-md-6 col-xs-12" style="margin-top: 5vh; margin-bottom: 5vh">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h3>Stay informed</h3>
-                </div>
-            </div>
-            <div class="row" style="padding-right: 6vw;">
-                <div class="col-xs-12">
-                    <p>Latest updates and announcements, delivered to your e-mail.</p>
-                </div>
-            </div>
-
-            <div class="row " style="width: 100%;">
-                <form method="post" class="form-inline" style="width: 90%;">
-                    <div class="col-xs-8 form-group" style="padding-right: 0; display: inline-block; width: 70%;">
-                        <input style=" border: none; border-radius: 0;width:100% "  class="form-control" placeholder="  Your email address">
-                    </div>
-                    <div class="col-xs-4 form-group" style="padding-left: 0;  display: inline-block; width: 30%;">
-                        <input type="button" style="width : 100%; border: none; border-radius: 0;background-color:#00ADEF; " value="Sign Up" class="form-control">
-                    </div>
-                </form>
-            </div>
-        </div>
-
-
-        <div class="col-md-4 col-xs-12" style="margin-top: 5vh; margin-bottom: 5vh">
-            <div class="row" style="margin-bottom: 20px; width: auto">
-                <div class="col-xs-12">
-                    <h3>Contact</h3>
-
-                </div>
-            </div>
-            <div class="row" >
-                <div class="col-xs-12 ">
-                    <p>IYWPC Email:</p>
-                    <p><a href="#" style="color: #7f7f7f;">IWAYWPconference@iwahq.org</a><p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 ">
-                    <p>Registration and Visa Email:</p>
-                    <p><a href="#" style="color: #7f7f7f;"> jennifer.hsu@utoronto.ca</a></p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-2 col-xs-12" style="margin-top: 5vh; margin-bottom: 5vh">
-            <div class="row" style="margin-bottom: 20px; width : auto">
-                <h3>Quick Links</h3>
-            </div>
-            <div class="row">
-                <ul class="list" style="font-size : 15px; width : 100%">
-                    <li ><a href="faq.html">FAQ</a></li>
-                    <li ><a href="contact.html">CONTACT</a></li>
-                    <li ><a href="#" target="_blank">IWA YOUNG WATER PROFESSIONALS</a></li>
-                    <li ><a href="#" target="_blank">ALL IWA EVENTS</a></li>
-                    <li ><a href="#" target="_blank">WATER AND DEVELOPMENT CONGRESS</a></li>
-                    <li ><a href="#" target="_blank">WORLD WATER CONGRESS</a></li>
-                    <li ><a href="#" target="_blank">IWA-LET</a></li>
-                </ul>
+    <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
+        <h1 style="font-weight: 600;color: white">Join us in Vellore! See you in...</h1>
+        <div class="x">
+            <div class="x" id="timer">
+                <div class="x" id="days"></div>
+                <div class="x" id="hours"></div>
+                <div class="x" id="minutes"></div>
+                <div class="x" id="seconds"></div>
             </div>
         </div>
     </div>
-</div>
 
 
 
 
-<script type="text/javascript">
-    function makeTimer() {
+    <div class="container-fluid">
+        <div class="row" style="height: auto;padding: 5vh 5vw 5vh 5vw; color : white; background-color: black">
+            <div class="col-md-6 col-xs-12" style="margin-top: 5vh; margin-bottom: 5vh">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Stay informed</h3>
+                    </div>
+                </div>
+                <div class="row" style="padding-right: 6vw;">
+                    <div class="col-xs-12">
+                        <p>Latest updates and announcements, delivered to your e-mail.</p>
+                    </div>
+                </div>
 
-    //      var endTime = new Date("29 A 2018 9:56:00 GMT+01:00");  
-        var endTime = new Date("16 December 2020 00:00:00 GMT+05:30");
+                <div class="row " style="width: 100%;">
+                    <form method="post" class="form-inline" style="width: 90%;">
+                        <div class="col-xs-8 form-group" style="padding-right: 0; display: inline-block; width: 70%;">
+                            <input style=" border: none; border-radius: 0;width:100% " class="form-control"
+                                placeholder="  Your email address">
+                        </div>
+                        <div class="col-xs-4 form-group" style="padding-left: 0;  display: inline-block; width: 30%;">
+                            <input type="button"
+                                style="width : 100%; border: none; border-radius: 0;background-color:#00ADEF; "
+                                value="Sign Up" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-xs-12" style="margin-top: 5vh; margin-bottom: 5vh">
+                <div class="row" style="margin-bottom: 20px; width: auto">
+                    <div class="col-xs-12">
+                        <h3>Contact</h3>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <p>IYWPC Email:</p>
+                        <p><a href="#" style="color: #7f7f7f;">IWAYWPconference@iwahq.org</a>
+                            <p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <p>Registration and Visa Email:</p>
+                        <p><a href="#" style="color: #7f7f7f;"> jennifer.hsu@utoronto.ca</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-2 col-xs-12" style="margin-top: 5vh; margin-bottom: 5vh">
+                <div class="row" style="margin-bottom: 20px; width : auto">
+                    <h3>Quick Links</h3>
+                </div>
+                <div class="row">
+                    <ul class="list" style="font-size : 15px; width : 100%">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#" target="_blank">IWA YOUNG WATER PROFESSIONALS</a></li>
+                        <li><a href="#" target="_blank">ALL IWA EVENTS</a></li>
+                        <li><a href="#" target="_blank">WATER AND DEVELOPMENT CONGRESS</a></li>
+                        <li><a href="#" target="_blank">WORLD WATER CONGRESS</a></li>
+                        <li><a href="#" target="_blank">IWA-LET</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+    var itemsMainDiv = ('.MultiCarousel');
+    var itemsDiv = ('.MultiCarousel-inner');
+    var itemWidth = "";
+
+    $('.leftLst, .rightLst').click(function () {
+        var condition = $(this).hasClass("leftLst");
+        if (condition)
+            click(0, this);
+        else
+            click(1, this)
+    });
+
+    ResCarouselSize();
+
+
+
+
+    $(window).resize(function () {
+        ResCarouselSize();
+    });
+
+    //this function define the size of the items
+    function ResCarouselSize() {
+        var incno = 0;
+        var dataItems = ("data-items");
+        var itemClass = ('.item');
+        var id = 0;
+        var btnParentSb = '';
+        var itemsSplit = '';
+        var sampwidth = $(itemsMainDiv).width();
+        var bodyWidth = $('body').width();
+        $(itemsDiv).each(function () {
+            id = id + 1;
+            var itemNumbers = $(this).find(itemClass).length;
+            btnParentSb = $(this).parent().attr(dataItems);
+            itemsSplit = btnParentSb.split(',');
+            $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+            if (bodyWidth >= 1200) {
+                incno = itemsSplit[3];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 992) {
+                incno = itemsSplit[2];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 768) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
+            else {
+                incno = itemsSplit[0];
+                itemWidth = sampwidth / incno;
+            }
+            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).find(itemClass).each(function () {
+                $(this).outerWidth(itemWidth);
+            });
+
+            $(".leftLst").addClass("over");
+            $(".rightLst").removeClass("over");
+
+        });
+    }
+
+
+    //this function used to move the items
+    function ResCarousel(e, el, s) {
+        var leftBtn = ('.leftLst');
+        var rightBtn = ('.rightLst');
+        var translateXval = '';
+        var divStyle = $(el + ' ' + itemsDiv).css('transform');
+        var values = divStyle.match(/-?[\d\.]+/g);
+        var xds = Math.abs(values[4]);
+        if (e == 0) {
+            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            $(el + ' ' + rightBtn).removeClass("over");
+
+            if (translateXval <= itemWidth / 2) {
+                translateXval = 0;
+                $(el + ' ' + leftBtn).addClass("over");
+            }
+        }
+        else if (e == 1) {
+            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            $(el + ' ' + leftBtn).removeClass("over");
+
+            if (translateXval >= itemsCondition - itemWidth / 2) {
+                translateXval = itemsCondition;
+                $(el + ' ' + rightBtn).addClass("over");
+            }
+        }
+        $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+    }
+
+    //It is used to get some elements from btn
+    function click(ell, ee) {
+        var Parent = "#" + $(ee).parent().attr("id");
+        var slide = $(Parent).attr("data-slide");
+        ResCarousel(ell, Parent, slide);
+    }
+
+});
+    </script>
+    <script type="text/javascript">
+        function makeTimer() {
+
+            //      var endTime = new Date("29 A 2018 9:56:00 GMT+01:00");  
+            var endTime = new Date("16 December 2020 00:00:00 GMT+05:30");
             endTime = (Date.parse(endTime) / 1000);
 
             var now = new Date();
@@ -909,11 +1178,11 @@
 
             var timeLeft = endTime - now;
 
-            var days = Math.floor(timeLeft / 86400); 
+            var days = Math.floor(timeLeft / 86400);
             var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
             var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-  
+
             if (hours < "10") { hours = "0" + hours; }
             if (minutes < "10") { minutes = "0" + minutes; }
             if (seconds < "10") { seconds = "0" + seconds; }
@@ -921,13 +1190,13 @@
             $("#days").html(days + "<span>Days</span>");
             $("#hours").html(hours + "<span>Hours</span>");
             $("#minutes").html(minutes + "<span>Minutes</span>");
-            $("#seconds").html(seconds + "<span>Seconds</span>");       
+            $("#seconds").html(seconds + "<span>Seconds</span>");
 
-    }
+        }
 
-    setInterval(function() { makeTimer(); }, 1000);
-</script>
+        setInterval(function () { makeTimer(); }, 1000);
+    </script>
 
 </body>
-</html>
 
+</html>
