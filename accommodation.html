@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Accommodation</title>
+    <title>Accomodation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -15,358 +16,385 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
+    
+</head>
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
-
-    <style>
-        p{
-            text-align: justify;
-        }
-        body {
+<style type="text/css">
+        body{
             font-family: 'Muli', sans-serif;
             font-weight: bold;
 
         }
+        p{
+            text-align: justify;
+        }
+    .bg-dark-ov {
+        background-color: rgb(34, 34, 34);
+    }
 
-        .bg-dark-ov {
-            background-color: rgb(34, 34, 34);
+    .navbar-dark .navbar-nav .active>.nav-link,
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .navbar-dark .navbar-nav .show>.nav-link {
+        color: rgb(64, 157, 224);
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgb(255, 255, 255);
+    }
+
+    body {
+        font-size: 0.8rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.disabled {
+        color: rgb(255, 255, 255);
+    }
+
+    .dropdown-menu {
+        background: rgb(34, 34, 34);
+    }
+
+    .dropdown-item {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8rem;
+        padding: .6rem 1.5rem;
+    }
+
+    .dropdown-item:hover {
+        color: white;
+        background-color: rgb(34, 34, 34);
+    }
+
+    .nav-item:hover {
+        color: rgb(64, 157, 224);
+    }
+
+    .register-nav:hover {
+        background-color: white;
+        color: black;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: .7rem;
+            padding-left: .7rem;
+        }
+    }
+
+
+    .sec-one {
+        background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/auruville.jpg") center center no-repeat;
+
+        /* background: url('images/auruville.jpg') center center; */
+        background-size: cover;
+        /*margin-top: 20px;*/
+    }
+
+    .sec-one-cont {
+        height: auto;
+        min-height: 80vh;
+        color: white;
+    }
+
+
+    .y {
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        background: #222;
+        font-weight: 100;
+    }
+
+    .x {
+        display: inline-block;
+        line-height: 1;
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    span {
+        display: block;
+        font-size: 20px;
+        color: white;
+    }
+
+    #days {
+        font-size: 100px;
+        color: white;
+        background-color: black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #hours {
+        font-size: 100px;
+        color: white;
+        background-color: black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #minutes {
+        font-size: 100px;
+        color: white;
+        background-color: black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #seconds {
+        font-size: 100px;
+        color: white;
+        background-color: black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+
+    @media (max-width: 780px) {
+        .subbut {
+            padding-left: 15px;
         }
 
-        .navbar-dark .navbar-nav .active>.nav-link,
-        .navbar-dark .navbar-nav .nav-link.active,
-        .navbar-dark .navbar-nav .nav-link.show,
-        .navbar-dark .navbar-nav .show>.nav-link {
-            color: rgb(64, 157, 224);
+        .black-content {
+            height: 96vh;
         }
 
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgb(255, 255, 255);
+        .inpbut {
+            width: 200px
         }
 
-        body {
-            font-size: 0.8rem;
+        .subbut {
+            width: 100px;
+            margin-left: -10px;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .givepos {
+            top: 145vh;
+            left: 50%;
         }
 
-        .navbar-dark .navbar-nav .nav-link.disabled {
-            color: rgb(255, 255, 255);
-        }
-
-        .dropdown-menu {
-            background: rgb(34, 34, 34);
-        }
-
-        .dropdown-item {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.8rem;
-            padding: .6rem 1.5rem;
-        }
-
-        .dropdown-item:hover {
-            color: white;
-            background-color: rgb(34, 34, 34);
-        }
-
-        .nav-item:hover {
-            color: rgb(64, 157, 224);
-        }
-
-        .register-nav:hover {
-            background-color: white;
-            color: black;
-        }
-
-        @media (min-width: 992px) {
-            .navbar-expand-lg .navbar-nav .nav-link {
-                padding-right: .7rem;
-                padding-left: .7rem;
-            }
-        }
-
-        .sec-one {
-            background: linear-gradient(rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)), url("images/accom.jpg") center center no-repeat;
-
-            /* background: url('images/accom.jpg') center center; */
-            background-size: cover;
-            /*margin-top: 20px;*/
-            background-color: black
-        }
-
-        .sec-one-cont {
-            height: auto;
-            min-height: 80vh;
-            color: white;
-        }
-
-        .y {
-            margin: 0 auto;
-            text-align: center;
-            color: white;
-            background: #222;
-            font-weight: 100;
-        }
-
-        .x {
+        .black {
             display: inline-block;
-            line-height: 1;
-            padding: 20px;
-            font-size: 40px;
         }
 
-        span {
-            display: block;
-            font-size: 20px;
-            color: white;
+        .inpbut {
+            width: 300px;
         }
 
-        #days {
-            font-size: 100px;
-            color: white;
-            background-color: black;
-            margin-bottom: 30px;
-            margin-top: 30px;
+        .subbut {
+            margin-left: -10px;
+            width: 150px;
         }
 
-        #hours {
-            font-size: 100px;
-            color: white;
-            background-color: black;
-            margin-bottom: 30px;
-            margin-top: 30px;
+        .lesspad {
+            padding-left: -22px;
         }
+    }
 
-        #minutes {
-            font-size: 100px;
-            color: white;
-            background-color: black;
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
+    #footer {
+        background: #222;
+        color: #fff;
+        padding: 80px 0 35px 0;
+    }
 
-        #seconds {
-            font-size: 100px;
-            color: white;
-            background-color: black;
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
+    .bfricon:before {
+        content: "\e131";
+        font-family: 'Glyphicons Halflings';
+        font-size: 10px;
+        float: left;
+        margin-left: -17px;
+        color: #4a4a4a;
+    }
 
 
-        @media (max-width: 780px) {
-            .subbut {
-                padding-left: 15px;
-            }
 
-            .subbut {
-                width: 100px;
-                margin-left: -10px;
-            }
-        }
 
-        @media (min-width: 900px) {
-            .subbut {
-                margin-left: -10px;
-                width: 150px;
-            }
+    .vertical-align {
+        line-height: 160px;
+    }
 
-            .lesspad {
-                padding-left: -22px;
-            }
-        }
+    .black {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        height: 16vh;
+        width: 13vw;
+        vertical-align: middle;
+        font-weight: 900;
+        padding-top: 4vh;
+    }
 
-        #footer {
-            background: #222;
-            color: #fff;
-            padding: 80px 0 35px 0;
-        }
+    .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-        .bfricon:before {
-            content: "\e131";
-            font-family: 'Glyphicons Halflings';
-            font-size: 10px;
-            float: left;
-            margin-left: -17px;
-            color: #4a4a4a;
-        }
+    .black-content {
+        height: 20vh;
+    }
 
-        li {
-            font-size: 12px;
-        }
-    </style>
+    li {
+        font-size: 12px;
+    }
+    #bgImages{
+        background: linear-gradient(rgba(255,255,255,.94), rgba(255,255,255,.94)), url("images/circleBlue.png");
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+</style>
 </head>
 
 <body>
 
-
-    <div class="container-fluid" style="background-color: #00ADEF;height: 23px;">
-        <div class="row">
-            <div class="col-lg-7">
-                <p style="color: white;font-size:14px;">International Water Association</p>
+        <div class="container-fluid" style="background-color: #00ADEF;height: 23px;">
+                <div class="row">
+                    <div class="col-lg-7">
+                                <p style="color: white;font-size:14px;">International Water Association</p>          
+                    </div>
+                    <div class="col-lg-3">
+                            <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank" href="https://thesourcemagazine.org/" style="text-decoration: none;color:white;cursor: pointer;">The Source</a></div>
+                            <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank" href="https://iwa-connect.org/" style="text-decoration: none;color:white;cursor: pointer;">IWA Connect</a></div>
+                            <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank" href="http://www.iwapublishing.com/" style="text-decoration: none;color:white;cursor: pointer;">IWA Publishing</a></div>
+        
+                    </div>
+                    <div class="col-lg-2">
+                            <a target="_blank" href="https://www.facebook.com/InternationalWaterAssociation" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i style="color:white;" class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://twitter.com/IWAHQ" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white" class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/1119749?trk=tyah&trkInfo=tarId%3A1397062280514%2Ctas%3Ainternational%20water%20association%2Cidx%3A2-1-6" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;" class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://vimeo.com/iwahq" style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;" class="fa fa-vimeo" aria-hidden="true"></i></a>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="col-lg-3">
-                <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank"
-                        href="https://thesourcemagazine.org/"
-                        style="text-decoration: none;color:white;cursor: pointer;">The Source</a></div>
-                <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank"
-                        href="https://iwa-connect.org/" style="text-decoration: none;color:white;cursor: pointer;">IWA
-                        Connect</a></div>
-                <div style="color: white;font-size:14px;display: inline-block;margin-right: 15px"><a target="_blank"
-                        href="http://www.iwapublishing.com/"
-                        style="text-decoration: none;color:white;cursor: pointer;">IWA Publishing</a></div>
-
-            </div>
-            <div class="col-lg-2">
-                <a target="_blank" href="https://www.facebook.com/InternationalWaterAssociation"
-                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i
-                        style="color:white;" class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a target="_blank" href="https://twitter.com/IWAHQ"
-                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white"
-                        class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a target="_blank"
-                    href="https://www.linkedin.com/company/1119749?trk=tyah&trkInfo=tarId%3A1397062280514%2Ctas%3Ainternational%20water%20association%2Cidx%3A2-1-6"
-                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;"
-                        class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a target="_blank" href="https://vimeo.com/iwahq"
-                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;"
-                        class="fa fa-vimeo" aria-hidden="true"></i></a>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container-fluid" style="background-color: rgb(34,34,34)">
-        <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
-            <a class="navbar-brand" href="#">
-                <img src="images/iwa.png" height="30" alt="IWA logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            ABOUT
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
-                            <a class="dropdown-item" href="themes.html">THEMES</a>
-                            <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
-                            <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS
-                                <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
-
-                        </div>
-                    </li>
-                    <!--PROGRAMME TO USED LATER -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        <div class="container-fluid" style="background-color: rgb(34,34,34)">
+                <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/iwa.png"  height="30" alt="IWA logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ABOUT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
+                                    <a class="dropdown-item" href="themes.html">THEMES</a>
+                                    <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
+                                    <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS
+                                    <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
+                         
+                                </div>
+                            </li>
+                            <!--PROGRAMME TO USED LATER -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             PROGRAMME
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
                             <a class="dropdown-item" href="techSessions.html">TECHINAL SESSIONS</a>
                             <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
                             <a class="dropdown-item" href="techTour.html">TECHINAL TOUR</a>
-
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            COMMITTEE
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="petron.html">PATRONS</a>
-                            <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
-                            <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
-                            <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
-                            <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
-                            <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SUBMISSION
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR PAPERS</a>
-
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SPONSORS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            DESTINATION
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
-                            <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
-                            <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            DOWNLOADS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">BROCHURE</a>
-                            <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown" style="margin-right: 15px;">
-                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CONTACT
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="faq.html">FAQ</a>
-                        </div>
-                    </li>
-                    <li class="nav-item "
-                        style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
-                        <a class="nav-link active" href="#">REGISTER</a>
-                    </li>
-                </ul>
-
+                            
+                            </div>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    COMMITTEE
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="petron.html">PATRONS</a>
+                                    <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
+                                    <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
+                                    <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+                                    <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
+                                    <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SUBMISSION
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR PAPERS</a>
+            
+                                       </div>
+                                </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SPONSORS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    DESTINATION
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
+                                    <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
+                                    <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    DOWNLOADS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">BROCHURE</a>
+                                    <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" style="margin-right: 15px;">
+                                <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    CONTACT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </div>
+                            </li>
+                            <li class="nav-item " style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
+                                <a class="nav-link active" href="#" >REGISTER</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </div>
-
 
     <div class="container-fluid">
-        <div class="row sec-one" style="height: auto;min-height: 350px;padding: 1vh 10vw 10vh 15vw;">
-            <div class="col-xs-12" style="color: white;height: auto; margin-top: 7vh; margin-bottom: 5vh">
-                <h1 style="font-size: 4em; font-weight: 700;">
-                    Toronto
+        <div class="row sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-xs-12 col-lg-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
+                <h1 style="font-size: 4.5em; font-weight: 700;">
+                    <i>COMING SOON!</i>
                 </h1>
-                <p style="color: #ffffff; font-size: 18px;">The capital of the Canadian province of Ontario, Toronto is
-                    located within the Golden Horseshoe in Southern Ontario on the northern shore of Lake Ontario.
-                    Toronto has plenty of accommodation possibilities that you will be able to locate through for
-                    example: AirBnB and Booking.com, but the organising team also has made sure we have two cheaper
-                    arrangements for accommodation.</p>
-
             </div>
 
         </div>
@@ -374,64 +402,6 @@
 
 
 
-
-
-    <div class="container-fluid">
-        <div class="row" style="height: auto;  padding: 5vh 10vw 0vh 10vw;">
-            <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
-                <h4><span style="text-shadow: #000000 1px 1px 1px;">Accommodation recommendations and special
-                        arrangements can be seen below.</span></h4>
-                <div>
-                    <p><strong>Holiday Inn Downtown Toronto: a group discount code is available for 10 standard rooms
-                            per night on a first come-first serve basis. Wireless internet is included in this
-                            rate.</strong></p>
-                    <p><strong>Reservation</strong>: Guests can either call in to reserve at: 416-977-6655 OR 1-855-
-                        914-9610</p>
-                    <p>Or follow the below link to book online:<br>
-                        <a
-                            href="http://ichotelsgroup.com/redirect?path=rates&amp;brandCode=HI&amp;GPC=ZCZ&amp;hotelCode=YYZCT&amp;_PMID=99801505">http://ichotelsgroup.com/redirect?path=rates&amp;brandCode=HI&amp;GPC=ZCZ&amp;hotelCode=YYZCT&amp;_PMID=99801505</a>
-                    </p>
-                    <p><strong>Promo code</strong>: RES ID: ZCZ (2019 Intl Young Water Professionals Conf)</p>
-                    <p><strong>Dates</strong>: June 23-27, 2019</p>
-                    <p><strong>Cut-off date</strong>: May 24, 2019</p>
-                    <p><strong>Notes</strong>:</p>
-                    <ul>
-                        <li>All individual reservations must be guaranteed by credit card.</li>
-                        <li>Reservations may be cancelled only by calling the hotel directly and obtaining a
-                            cancellation number from a reservation agent. This will however affect the attrition fees
-                            that will be calculated at the end of the event.</li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr style="width: 70%">
-
-    <div class="container-fluid">
-        <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-            <!-- <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh"> -->
-            <div>
-                <p><strong>Ryerson group accommodations: International Living/Learning Centre (ILC) &amp; Pitman Hall
-                        (PIT)</strong></p>
-                <p><strong>Reservations</strong>: Guests can book their individual accommodation online:&nbsp;<a
-                        href="https://www.ryerson.ca/summer-stay/">https://www.ryerson.ca/summer-stay/</a></p>
-                <p><strong>Promo&nbsp;code</strong>: YWP2019</p>
-                <p><strong>Dates</strong>: June 23-27, 2019</p>
-                <p><strong>Cut-off date</strong>: April 23, 2019</p>
-                <p><strong>Notes</strong>:</p>
-                <ul>
-                    <li>Guests must make their reservations directly online with the promo code provided.</li>
-                    <li>If guests would like to stay for dates outside of your group booking, they must make their
-                        reservation online for the group dates and then contact <a
-                            href="mailto:reservations@ryerson.ca">reservations@ryerson.ca</a>to have their dates
-                        extended.</li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
 
 
     <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
@@ -446,6 +416,7 @@
             </div>
         </div>
     </div>
+
 
 
 
@@ -508,8 +479,8 @@
                 </div>
                 <div class="row">
                     <ul class="list" style="font-size : 15px; width : 100%">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                         <li><a href="#" target="_blank">IWA YOUNG WATER PROFESSIONALS</a></li>
                         <li><a href="#" target="_blank">ALL IWA EVENTS</a></li>
                         <li><a href="#" target="_blank">WATER AND DEVELOPMENT CONGRESS</a></li>
@@ -520,7 +491,6 @@
             </div>
         </div>
     </div>
-
 
 
 
@@ -558,8 +528,11 @@
         }
 
         setInterval(function () { makeTimer(); }, 1000);
-
     </script>
+
+
+
+
 
 </body>
 
