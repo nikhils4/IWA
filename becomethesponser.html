@@ -218,13 +218,12 @@
 				margin-left: -10px;
 			}
 		}
-
+		
 		@media (min-width: 900px) {
 			.givepos {
 				top: 145vh;
 				left: 50%;
 			}
-
 			.black {
 				display: inline-block;
 			}
@@ -355,6 +354,11 @@
 		p{
             text-align: justify;
         }
+		@media only screen and (min-width: 800px){
+			#sponsorCard{
+				padding: 5vh 10vw 15vh 10vw;
+			}
+		}
 	</style>
 </head>
 
@@ -557,8 +561,8 @@
 	</div>
 
 	<div class="container-fluid">
-		<div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-			<table id="customers">
+		<div class="row" style="height: auto;overflow: scroll;margin-right:1px;padding: 5vh 10vw 10vh 10vw;">
+			<table style="overflow: scroll" id="customers">
 				<tr>
 					<th>SPONSOR Benifits</th>
 					<th>PLATINUM 3 Lakhs*</th>
@@ -653,7 +657,7 @@
 
 
 	<div class="container-fluid">
-		<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw; text-align : center">
+		<div id="sponsorCard" class="row" style="height: auto;text-align : center">
 
 			<div class="col-12 col-lg-6" style="padding : 35px">
 
