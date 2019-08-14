@@ -91,7 +91,7 @@
 		}
 
 		.sec-one {
-			background: linear-gradient(rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)), url("images/becomethesponser.png") center center no-repeat;
+			background: linear-gradient(rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)), url("images/IMG-20190814-WA0006.jpg") center center no-repeat;
 
 			/* background: url('images/becomethesponser.png') center center; */
 			background-size: cover;
@@ -218,13 +218,12 @@
 				margin-left: -10px;
 			}
 		}
-
+		
 		@media (min-width: 900px) {
 			.givepos {
 				top: 145vh;
 				left: 50%;
 			}
-
 			.black {
 				display: inline-block;
 			}
@@ -319,6 +318,10 @@
 			color: white;
 		}
 
+		#customers tr {
+			font-size: 16px
+		}
+
 		li {
 			font-size: 12px;
 		}
@@ -349,12 +352,17 @@
 			font-size: 20px
 		}
 
-		li {
-			font-size: 14px
-		}
 		p{
             text-align: justify;
         }
+		@media only screen and (min-width: 800px){
+			#sponsorCard{
+				padding: 5vh 10vw 15vh 10vw;
+			}
+		}
+		.fontSize18{
+			font-size: 18px
+		}
 	</style>
 </head>
 
@@ -409,7 +417,7 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto">
-									<li class="nav-item active">
+									<li class="nav-item">
 											<a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
 									</li>
 
@@ -466,7 +474,7 @@
 
 											</div>
 									</li>
-									<li class="nav-item dropdown">
+									<li class="nav-item dropdown active">
 											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 													SPONSORS
@@ -557,8 +565,8 @@
 	</div>
 
 	<div class="container-fluid">
-		<div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-			<table id="customers">
+		<div class="row" style="height: auto;overflow: scroll;margin-right:1px;padding: 5vh 10vw 10vh 10vw;">
+			<table style="overflow: scroll" id="customers">
 				<tr>
 					<th>SPONSOR Benifits</th>
 					<th>PLATINUM 3 Lakhs*</th>
@@ -567,44 +575,44 @@
 
 				</tr>
 				<tr>
-					<td>Acknawledgemet on conference website</td>
+					<td>Acknowledgement on conference website</td>
 					<td>Yes</td>
 					<td>Yes</td>
 					<td>Yes</td>
 
 				</tr>
 				<tr>
-					<td>Complirentary egate ragistrations</td>
+					<td>Complimentary delegate registrations</td>
 					<td>4</td>
 					<td>3</td>
 					<td>2</td>
 				</tr>
 				<tr>
-					<td>Discount o partnersclients dalegate registrations </td>
+					<td>Discount on partnersclients dalegate registrations </td>
 					<td>20%</td>
 					<td>15%</td>
 					<td>10%</td>
 				</tr>
 				<tr>
-					<td>Cne tem of merchendisa with sponsor logo in delegate bags**</td>
+					<td>One team of merchandise with sponsor logo in delegate bags<sup>**</sup></td>
 					<td>Yes</td>
 					<td>Yes</td>
-					<td>Yesn</td>
+					<td>Yes</td>
 				</tr>
 				<tr>
-					<td>Comapny profile in Final Program</td>
+					<td>Company profile in Final Program</td>
 					<td>300 words</td>
 					<td>150 words</td>
 					<td>-</td>
 				</tr>
 				<tr>
-					<td>One color advertiserment in Final Program**</td>
+					<td>One color advertisement in Final Program**</td>
 					<td>A4</td>
 					<td>A5</td>
 					<td>A5</td>
 				</tr>
 				<tr>
-					<td>Logo on all conference collateralss</td>
+					<td>Logo on all conference collaterals</td>
 					<td>Yes</td>
 					<td>Yes</td>
 					<td>-</td>
@@ -624,7 +632,7 @@
 				</tr>
 
 				<tr>
-					<td>Sponsers logo at lunches/coffe breaks</td>
+					<td>Sponsors logo at lunches/coffee breaks</td>
 					<td>Yes</td>
 					<td>Yes</td>
 					<td>One Coffee break</td>
@@ -653,7 +661,7 @@
 
 
 	<div class="container-fluid">
-		<div class="row" style="height: auto;  padding: 5vh 10vw 15vh 10vw; text-align : center">
+		<div id="sponsorCard" class="row" style="height: auto;text-align : center">
 
 			<div class="col-12 col-lg-6" style="padding : 35px">
 
@@ -664,19 +672,19 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 								Logo and corporate name display at dinner venue
 							</li>
-							<li>
+							<li class="fontSize18">
 								One corporate VIP table for 5 pax
 							</li>
-							<li>
+							<li class="fontSize18">
 								One speech at the Gala Dinner – 5 mins
 							</li>
-							<li>
+							<li class="fontSize18">
 								Two complimentary delegate registrations
 							</li>
-							<li>
+							<li class="fontSize18">
 								Acknowledgement on conference website
 							</li>
 						</ul>
@@ -694,19 +702,19 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									6 shell scheme with basic furniture
 							</li>
-							<li>
+							<li class="fontSize18">
 								One corporate VIP table for 5 pax
 							</li>
-							<li>
+							<li class="fontSize18">
 									Acknowledgement on conference website
 							</li>
-							<li>
+							<li class="fontSize18">
 									Company profile in exhibitor list
 							</li>
-							<li>
+							<li class="fontSize18">
 									One corporate VIT table for 2 pax in Gala Dinner
 							</li>
 						</ul>
@@ -723,16 +731,16 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									Logos on T-shirts, Conference satchel, Delegate kit and other merchandise
 							</li>
-							<li>
+							<li class="fontSize18">
 									One complimentary delegate registration
 							</li>
-							<li>
+							<li class="fontSize18">
 								One speech at the Gala Dinner – 5 mins
 							</li>
-							<li>
+							<li class="fontSize18">
 									One corporate VIP Table for 2 pax in Gala Dinner
 							</li>
 							
@@ -750,11 +758,11 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									Corporate logo and name on Congress delegate lanyards
 									
 							</li>
-							<li>
+							<li class="fontSize18">
 									One corporate VIP table for 2 pax in Gala Dinner
 							</li>
 							
@@ -772,17 +780,17 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									Naming rights and Logo display for individual sessions/workshops
 									
 							</li>
-							<li>
+							<li class="fontSize18">
 									One speech at session – 3 minutes
 							</li>
-							<li>
+							<li class="fontSize18">
 									One complimentary delegate registration
 							</li>
-							<li>
+							<li class="fontSize18">
 									One corporate VIP Table for 2 pax in Gala Dinner
 							</li>
 							
@@ -801,16 +809,16 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									“Powered by” (Sponsor Logo) included in video
 							</li>
-							<li>
+							<li class="fontSize18">
 									Lasting videos available publicly on IWA video platforms
 							</li>
-							<li>
+							<li class="fontSize18">
 									One complimentary delegate registration
 							</li>
-							<li>
+							<li class="fontSize18">
 									Acknowledgement on conference website
 							</li>
 						</ul>
@@ -827,13 +835,13 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									Corporate design in full color on one side of Congress delegate satchel
 							</li>
-							<li>
+							<li class="fontSize18">
 									One complimentary delegate registration
 							</li>
-							<li>
+							<li class="fontSize18">
 									One corporate VIP table for 2 pax in Gala Dinner
 							</li>
 						</ul>
@@ -850,10 +858,10 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 									One corporate VIP Table for 2 pax in Gala Dinner
 							</li>
-							<li>
+							<li class="fontSize18">
 									Standees displayed at refreshment venue
 							</li>
 						</ul>
@@ -871,19 +879,19 @@
 					</div>
 					<div class="card-content">
 						<ul>
-							<li>
+							<li class="fontSize18">
 								Logo and corporate name display at dinner venue
 							</li>
-							<li>
+							<li class="fontSize18">
 								One corporate VIP table for 5 pax
 							</li>
-							<li>
+							<li class="fontSize18">
 								One speech at the Gala Dinner – 5 mins
 							</li>
-							<li>
+							<li class="fontSize18">
 								Two complimentary delegate registrations
 							</li>
-							<li>
+							<li class="fontSize18">
 								Acknowledgement on conference website
 							</li>
 						</ul>
@@ -899,7 +907,7 @@
 	<div class="container-fluid">
 		<div id="bgImages" class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
 			<div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
-				<h1 style="font-size: 2em;font-weight: 400">BECOME A PART Of OUR QUEST</h1><br>
+				<h1 style="font-size: 2em;font-weight: 400">Become A Part Of Our Quest</h1><br>
 				<p style="font-size: 20px;">
 					Stand out as a global ally of sustainable and smart water technologies with fellow water researchers
 					around the industrial sphere. Thus, empowering your repute and glamourize your marketing plan.
@@ -987,16 +995,30 @@
 				</div>
 				<div class="row">
 					<ul class="list" style="font-size : 15px; width : 100%">
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
-						<li><a href="#" target="_blank">IWA YOUNG WATER PROFESSIONALS</a></li>
-						<li><a href="#" target="_blank">ALL IWA EVENTS</a></li>
-						<li><a href="#" target="_blank">WATER AND DEVELOPMENT CONGRESS</a></li>
-						<li><a href="#" target="_blank">WORLD WATER CONGRESS</a></li>
-						<li><a href="#" target="_blank">IWA-LET</a></li>
+						<li class="fontSize18"><a href="faq.html">FAQ</a></li>
+						<li class="fontSize18"><a href="contact.html">CONTACT</a></li>
+						<li class="fontSize18"><a href="#" target="_blank">IWA YOUNG WATER PROFESSIONALS</a></li>
+						<li class="fontSize18"><a href="#" target="_blank">ALL IWA EVENTS</a></li>
+						<li class="fontSize18"><a href="#" target="_blank">WATER AND DEVELOPMENT CONGRESS</a></li>
+						<li class="fontSize18"><a href="#" target="_blank">WORLD WATER CONGRESS</a></li>
+						<li class="fontSize18"><a href="#" target="_blank">IWA-LET</a></li>
 					</ul>
 				</div>
 			</div>
+
+			<div class="col-lg-3">
+                <a target="_blank" href="https://www.facebook.com/technoscape2020/?ref=br_rs"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i
+                        style="color:white;font-size: 22px" class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://twitter.com/Technoscape2020"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
+                        class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank"
+                    href="https://www.instagram.com/technoscape20/"
+                    style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
+                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                
+            </div>
 		</div>
 	</div>
 
@@ -1013,7 +1035,7 @@
 		function makeTimer() {
 
 			//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
-			var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");
+            var endTime = new Date("16 December 2020 00:00:00 GMT+05:30");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
