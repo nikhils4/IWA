@@ -237,7 +237,7 @@
     </div>
 </body>
 <script>
-    /* $(document).ready(function () {
+    $(document).ready(function () {
         $('.submitmain').click(function (e) {
             e.preventDefault();
             let formData = new FormData(formElem);
@@ -265,7 +265,7 @@
 
                 $.ajax(settings).done(function (response) {
                 console.log(response);
-                }); 
+                }); */
             fetch({
                 url: "http://technoscope.herokuapp.com/",
                 method: "POST",
@@ -294,31 +294,8 @@
             );
         })
 
-    }) */
-    var form = new FormData();
-    form.append("author", "sandeep");
-    form.append("email", "rayan@gmail.com");
-    form.append("file", "Backend.pdf");
-    form.append("coress_author", "abhishek");
-    form.append("alt_email", "qwertyu@gmail.com");
-    form.append("phone", "9492671016");
-
-    var settings = {
-    "url": "http://technoscope.herokuapp.com/",
-    "method": "POST",
-    "timeout": 0,
-    "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
-    },
-    "processData": false,
-    "mimeType": "multipart/form-data",
-    "contentType": false,
-    "data": form
-    };
-
-    $.ajax(settings).done(function (response) {
-    console.log(response);
-    });
+    })
+    
 
 
 </script>
