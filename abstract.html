@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
     <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
     <title>ABSTRACT</title>
 </head>
+
 <body>
     <div class="container-fluid" style="background-color: #00ADEF;height: 23px;">
         <div class="row">
@@ -71,7 +73,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html" style="color: white;">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html" style="color: white;">HOME <span
+                                class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -95,7 +98,7 @@
                             PROGRAMME
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="techTour.html">TECHNICAL TOUR</a>
+                            <a class="dropdown-item" href="techTour.html">TECHNICAL TOUR</a>
                             <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
                             <a class="dropdown-item" href="techSessions.html">TECHNICAL SESSIONS</a>
                             <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
@@ -179,51 +182,145 @@
         <p>Submit Abstract</p>
     </div>
     <div class="main">
-        <form action="" method="post">
-            <h6>Theme</h6>
+        <form action="" method="post" id="formElem">
+            <h6>Presenting Author Name</h6>
+            <input class="" type="text" name="author" value="" placeholder="Presenting Author Name">
+            <h6>Corresponding Author Name</h6>
+            <input class="" type="text" name="coress_author" value="" placeholder="Corresponding Author Name">
+            <h6>Email Address</h6>
+            <input class="" type="text" name="email" value="" placeholder="Email">
+            <h6>Alternate Email Address</h6>
+            <input class="" type="text" name="alt_email" value="" placeholder="Alternate Email">
+            <h6>Phone Number</h6>
+            <input class="" type="text" name="phone" value="" placeholder="Phone Number">
+            <!-- <h6>Paper Theme</h6>
             <select name="" id="">
-                <option value="">Select Theme</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
-                <option value="">11</option>
-                <option value="">12</option>
-                <option value="">13</option>
-                <option value="">14</option>
-                <option value="">15</option>
-                <option value="">16</option>
-                <option value="">17</option>
-                <option value="">18</option>
-                <option value="">19</option>
-                <option value="">20</option>
-                <option value="">21</option>
-                <option value="">22</option>
-            </select>
-            <h6>Name</h6>
-            <input class="" type="text" name="" value="" placeholder="Name">
+                <option value="0">Select Theme</option>
+                <option value="1">Agri-Industrial Waste Water Management</option>
+                <option value="2">Big Data/Data Analysis</option>
+                <option value="3">Cloud Systems for Water Quality Data Visualization</option>
+                <option value="4">Difitalization of Water</option>
+                <option value="5">Ecological Sanitation</option>
+                <option value="6">Ecosystems, Engineering, Management and Restoration</option>
+                <option value="7">Energy/Resource Recovery and Reuse</option>
+                <option value="8">GIS and remote sensing</option>
+                <option value="9">Hybrid and Novel Desalination process</option>
+                <option value="10">Hydro-informatics</option>
+                <option value="11">Integrated Watershed Management</option>
+                <option value="12">Mathematical Modeling,Optimization and control</option>
+                <option value="13">Optimal Management of Water Resources</option>
+                <option value="14">Sluge Stabalization, Utilization and Disposal of Industrial Waste Water</option>
+                <option value="15">Smart Farming</option>
+                <option value="16">Smart/Innovative Treatment Technologies involved in Waste Water Treatment</option>
+                <option value="17">Smart Water Utilities</option>
+                <option value="18">Storm Water, Green INfrastructure and Wet Weather Management</option>
+                <option value="19">Sustainable Development Goals - SDG6</option>
+                <option value="20">Water Management and Ecological Sanitation</option>
+                <option value="21">Waste Water and Water Reclamation/Reuse</option>
+                <option value="22">Water Governance</option>
+            </select> -->
+
+            <!-- <input class="" type="text" name="" value="" placeholder="Name">
             <h6>Class</h6>
             <input class="" type="text" name="" value="" placeholder="Name">
             <h6>Class</h6>
             <input class="" type="text" name="" value="" placeholder="Name">
             <h6>Class</h6>
-            <input class="" type="text" name="" value="" placeholder="Name">
-            <h6>Class</h6>
-            <input class="" type="text" name="" value="" placeholder="Name">
+            <input class="" type="text" name="" value="" placeholder="Name"> -->
             <p>Research Paper(PDF only)</p>
             <div class="btnWrappermain">
                 <button class="btnmain">Choose File...</button>
-                <input type="file" accept=""  name="" id="file" class="file">
+                <input type="file" accept="" name="file" id="file" class="file">
             </div>
-            <button type="submit" class="submitmain" >Submit</button>
+            <button type="submit" class="submitmain">Submit</button>
         </form>
     </div>
-    
 </body>
+<script>
+    /* $(document).ready(function () {
+        $('.submitmain').click(function (e) {
+            e.preventDefault();
+            let formData = new FormData(formElem);
+
+            var object = {};
+            formData.forEach(function (value, key) {
+                console.log(value)
+                object[key] = value;
+            });
+            console.log(object)
+            JSON.stringify(object);
+            console.log(object)
+            /* var settings = {
+                "url": "http://technoscope.herokuapp.com/",
+                "method": "POST",
+                "timeout": 0,
+                "headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                "data": formElem
+            };
+
+                $.ajax(settings).done(function (response) {
+                console.log(response);
+                }); 
+            fetch({
+                url: "http://technoscope.herokuapp.com/",
+                method: "POST",
+                
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                processData: false,
+                mimeType: "multipart/form-data",
+                contentType: false,
+                data: object
+            }).then(
+
+                response => response.json()
+            ).then(
+                success => {
+                    console.log(success);
+                    /* for (let elem of $("#formElem")) {
+                        elem.reset()
+                    } 
+                }
+            ).catch(
+                error => {
+                    console.log(error)
+                }
+            );
+        })
+
+    }) */
+    var form = new FormData();
+    form.append("author", "sandeep");
+    form.append("email", "rayan@gmail.com");
+    form.append("file", "Backend.pdf");
+    form.append("coress_author", "abhishek");
+    form.append("alt_email", "qwertyu@gmail.com");
+    form.append("phone", "9492671016");
+
+    var settings = {
+    "url": "http://technoscope.herokuapp.com/",
+    "method": "POST",
+    "timeout": 0,
+    "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "processData": false,
+    "mimeType": "multipart/form-data",
+    "contentType": false,
+    "data": form
+    };
+
+    $.ajax(settings).done(function (response) {
+    console.log(response);
+    });
+
+
+</script>
+
 </html>
