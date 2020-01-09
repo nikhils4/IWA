@@ -111,7 +111,7 @@ body{
     position: relative;
     height: 70vh;
     background: white;
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
 }
 form{
     position: absolute;
@@ -195,6 +195,7 @@ p{
     margin-top: 30px;
     width: 100%;
     display: block;
+    margin-bottom: 120px;
 }
 .img > p{
     position: absolute;
