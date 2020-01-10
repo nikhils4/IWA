@@ -296,6 +296,7 @@
     }
     $(document).ready(function () {
 
+						let isUploaded = false
         $("#file").on("input", (e) => {
             $("#filename").html(file.value)
         })
@@ -308,6 +309,9 @@
         const phonenumber = document.getElementById("phoneField")
         const file = document.getElementById("file")
         $('.submitmain').click(function (e) {
+								if (isUploaded) {
+												return
+								}
             e.preventDefault();
             let validationErrors = validate({
                 pauthorname: pauthorname.value,
@@ -326,13 +330,15 @@
                 console.log("[Validation message] phoneNumber validation: ", validate.isNumber(parseInt(phonenumber.value)))
                 console.log("[Validation message] file: ", file.value)
 
-                return
+								isUploaded = false
             }
             else {
                 document.querySelector(".submitmain").innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
-										    $(this).trigger('click');
-						return true
+										isUploaded = true
             }
+										if(isUploaded) {
+										    $(this).trigger('click');
+										}
         });
     });
 
