@@ -339,7 +339,7 @@
 								headers: {
 									'Content-Type': 'multipart/form-data'
 								},
-								credentials: true,
+								credentials: "include",
                 body: formData, // have to use body instead of data and formData instead of object
 								crossDomain: true
 								}).then( data => {
