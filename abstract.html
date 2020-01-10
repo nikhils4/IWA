@@ -336,11 +336,11 @@
             console.log("[Validation message] sucphonenumber.valueeeded")
 
             let formData = new FormData(formElem);
-            fetch("https://technoscope.herokuapp.com/", {
+            fetch("https://hidden-hollows-55794.herokuapp.com/", {
                 method: "POST",
                 crossDomain: true,
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'multipart/form-data',
                     'Accept': 'multipart/form-data',
                 },
                 body: formData, // have to use body instead of data and formData instead of object
