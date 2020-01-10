@@ -205,3 +205,12 @@ p{
     font-size: 3rem;
     color: white;
 }
+.phoneno1{
+    float: left;
+    width: 20%;
+}
+.phoneno2{
+    float: left;
+    margin-left: 1%;
+    width: 79%;
+}
