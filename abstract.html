@@ -340,8 +340,8 @@
 									'Content-Type': 'multipart/form-data'
 								},
                 body: formData, // have to use body instead of data and formData instead of object
-								// crossDomain: true,
-								mode: "cors"
+								crossDomain: true,
+								// mode: "cors"
 								}).then( data => {
                                     document.querySelector(".message").innerHTML = "Successfully Uploaded!";
                                     document.querySelector(".submitmain").innerHTML = "Submit";
