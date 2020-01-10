@@ -253,11 +253,13 @@
 								},
                 body: formData, // have to use body instead of data and formData instead of object
 								crossDomain: true
-            }).then(
+								}).then( data => {
 										alert("Successfully uploaded document")
+										console.log(data)
                      for (let elem of $("#formElem")) {
                         elem.reset()
                     } 
+								}
             )
             .catch(
                 error => {
