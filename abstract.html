@@ -250,7 +250,7 @@
 <script src="./assets/validate.min.js"></script>
 <script>
     const phone = document.querySelector("#phoneField");
-    
+
     $("#phoneField").CcPicker();
     $("#phoneField").CcPicker({
         "countryCode":"us"
@@ -356,7 +356,7 @@
                 error => {
                     document.querySelector(".message").innerHTML = "Error Uploading Document";
                     document.querySelector(".submitmain").innerHTML = "Submit";
-										/* alert("Error uploading document") */
+										alert("Error uploading document")
                     console.log(error)
                 }
             ); 
