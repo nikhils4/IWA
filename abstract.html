@@ -338,10 +338,10 @@
 								fetch("https://technoscope.herokuapp.com/", {
                 method: "POST",
 								headers: {
-									'Content-Type': 'application/json'
+									'Content-Type': 'multipart/form-data'
 								},
-                body: JSON.stringify(formData), // have to use body instead of data and formData instead of object
-								// crossDomain: true,
+                body: formData, // have to use body instead of data and formData instead of object
+								crossDomain: true,
 								// mode: "cors"
 								}).then( data => {
                                     document.querySelector(".message").innerHTML = "Successfully Uploaded!";
