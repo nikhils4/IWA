@@ -187,7 +187,7 @@
         <p>Submit Abstract</p>
     </div>
     <div class="main">
-        <form action="https://technoscope.herokuapp.com/" method="post" id="formElem" enctype="multipart/form-data">
+        <form action="https://hidden-hollows-55794.herokuapp.com/" method="post" id="formElem" enctype="multipart/form-data">
             <div class="message">
 
             </div>
@@ -296,6 +296,11 @@
     }
     $(document).ready(function () {
 
+
+
+        $("#file").on("input", (e) => {
+            $("#filename").html(file.value)
+        })
         const pauthorname = document.getElementById("pauthorname")
         const cauthorname = document.getElementById("cauthorname")
         const papertitle = document.getElementById("papertitle")
@@ -304,11 +309,6 @@
         const aemail = document.getElementById("aemail")
         const phonenumber = document.getElementById("phoneField")
         const file = document.getElementById("file")
-
-
-        $("#file").on("input", (e) => {
-            $("#filename").html(file.value)
-        })
         $('.submitmain').click(function (e) {
             e.preventDefault();
             let validationErrors = validate({
@@ -336,16 +336,10 @@
             console.log("[Validation message] sucphonenumber.valueeeded")
 
             let formData = new FormData(formElem);
-						formData.append("author", pauthorname.value)
-						formData.append("coress_author", cauthorname.value)
-						formData.append("papertitle", papertitle.value)
-						formData.append("papertheme", papertheme.value)
-						formData.append("email", pemail.value)
-						formData.append("alt_email", aemail.value)
-						formData.append("phone", phonenumber.value)
 						formData.append("file", file.files[0])
 
 								console.log(formData)
+								return true
             fetch("https://hidden-hollows-55794.herokuapp.com/", {
                 method: "POST",
                 crossDomain: true,
