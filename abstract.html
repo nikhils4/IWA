@@ -188,7 +188,7 @@
         <p>Submit Abstract</p>
     </div>
     <div class="main">
-        <form action="" method="post" id="formElem" enctype="multipart/form-data">
+        <form action="https://technoscope.herokuapp.com/" method="post" id="formElem" enctype="multipart/form-data">
             <div class="message">
                 
             </div>
@@ -308,6 +308,7 @@
 										$("#filename").html(file.value)
 						})
         $('.submitmain').click(function (e) {
+								return
             e.preventDefault();
 								let validationErrors = validate({
 												pauthorname: pauthorname.value,
