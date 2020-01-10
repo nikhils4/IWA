@@ -338,6 +338,7 @@
                 method: "POST",
 								headers: {
 									'Content-Type': 'multipart/form-data'
+									'Access-Control-Allow-Origin':'*',
 								},
                 body: formData, // have to use body instead of data and formData instead of object
 								crossDomain: true,
