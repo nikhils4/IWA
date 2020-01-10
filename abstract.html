@@ -308,7 +308,7 @@
 										$("#filename").html(file.value)
 						})
         $('.submitmain').click(function (e) {
-								return true
+								//return true
             e.preventDefault();
 								let validationErrors = validate({
 												pauthorname: pauthorname.value,
@@ -340,7 +340,7 @@
 								headers: {
 									'Content-Type': 'multipart/form-data'
 								},
-                body: formData, // have to use body instead of data and formData instead of object
+                body: JSON.stringify(formData), // have to use body instead of data and formData instead of object
 								// crossDomain: true,
 								// mode: "cors"
 								}).then( data => {
