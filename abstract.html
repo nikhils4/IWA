@@ -242,7 +242,7 @@
                     class="file" required>
             </div>
             <p id="filename"></p>
-            <button type="submit" class="submitmainDONT_REMOVE_THIS">
+            <button type="submit" class="submitmain">
                 Submit
             </button>
 
@@ -330,6 +330,7 @@
             }
             else {
                 document.querySelector(".submitmain").innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
+										    $(this).trigger('click');
 						return true
             }
         });
