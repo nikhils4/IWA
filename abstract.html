@@ -336,17 +336,14 @@
             console.log("[Validation message] sucphonenumber.valueeeded")
 
             let formData = new FormData(formElem);
-            fetch("http://technoscope.herokuapp.com", {
+            fetch("https://technoscope.herokuapp.com", {
                 method: "POST",
+                crossDomain: true,
                 headers: {
-                    'Content-Type': 'multipart/form-data',
+                    'Content-Type': 'application/json',
                     'Accept': 'multipart/form-data',
-                'Access-Control-Allow-Origin': 'http://technoscope.herokuapp.com',
-'Access-Control-Allow-Methods': 'POST',
-'Access-Control-Allow-Headers': 'Content-Type'
                 },
                 body: formData, // have to use body instead of data and formData instead of object
-                crossDomain: true
             }).then(data => {
                 document.querySelector(".message").innerHTML = "Successfully Uploaded!";
                 document.querySelector(".submitmain").innerHTML = "Submit";
