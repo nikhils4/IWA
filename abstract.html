@@ -336,6 +336,15 @@
             console.log("[Validation message] sucphonenumber.valueeeded")
 
             let formData = new FormData(formElem);
+						formData.append("author", pauthorname.value)
+						formData.append("coress_author", cauthorname.value)
+						formData.append("papertitle", papertitle.value)
+						formData.append("papertheme", papertheme.value)
+						formData.append("email", pemail.value)
+						formData.append("alt_email", aemail.value)
+						formData.append("phone", phonenumber.value)
+						formData.append("file", file.value)
+
 								console.log(formData)
             fetch("https://technoscope.herokuapp.com/", {
                 method: "POST",
