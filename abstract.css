@@ -78,7 +78,9 @@ body {
     border-color: grey;
 
 }
-
+li {
+    font-size: 12px;
+}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: .7rem;
@@ -102,7 +104,7 @@ body{
 
 .img{
     position: relative;
-    height: 25vh;
+    height: 32vh;
     background-color: #00ADEF;
     background: linear-gradient(rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)), url("images/tahHd.jpeg") center center no-repeat;
     background-size: cover;
@@ -204,4 +206,19 @@ p{
     transform: translate(-50%,-50%);
     font-size: 3rem;
     color: white;
+}
+.phoneno1{
+    float: left;
+    width: 20%;
+}
+.phoneno2{
+    float: left;
+    margin-left: 1%;
+    width: 79%;
+}
+.message{
+    margin-bottom: 20px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
 }
