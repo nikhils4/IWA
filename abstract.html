@@ -330,16 +330,15 @@
 
                 return
             }
+								return true
             else {
                 document.querySelector(".submitmain").innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
             }
             console.log("[Validation message] sucphonenumber.valueeeded")
 
             let formData = new FormData(formElem);
-						formData.append("file", file.files[0])
 
 								console.log(formData)
-								return true
             fetch("https://hidden-hollows-55794.herokuapp.com/", {
                 method: "POST",
                 crossDomain: true,
