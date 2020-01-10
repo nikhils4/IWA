@@ -188,7 +188,7 @@
         <p>Submit Abstract</p>
     </div>
     <div class="main">
-        <form action="" method="post" id="formElem" enctype="multipart/form-data">
+        <form action="https://technoscope.herokuapp.com/" method="post" id="formElem" enctype="multipart/form-data">
             <div class="message">
                 
             </div>
@@ -253,7 +253,7 @@
 
     $("#phoneField").CcPicker();
     $("#phoneField").CcPicker({
-        "countryCode":"us"
+        "countryCode":"in"
     });
     $("#phoneField").CcPicker("setCountryByCode","es");
     $("#phoneField").CcPicker({
@@ -350,8 +350,16 @@
                         elem.reset()
                     } 
 								}
-            )
-            .catch(
+
+								fetch("https://technoscope.herokuapp.com/", settings)
+								.then( data => {
+                 	document.querySelector(".message").innerHTML = "Successfully Uploaded!";
+                  document.querySelector(".submitmain").innerHTML = "Submit";
+									console.log(data)
+                  for (let elem of $("#formElem")) {
+                  	elem.reset()
+                  } 
+								}).catch(
                 error => {
                     document.querySelector(".message").innerHTML = "Error Uploading Document";
                     document.querySelector(".submitmain").innerHTML = "Submit";
