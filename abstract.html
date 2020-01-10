@@ -342,6 +342,7 @@
                 crossDomain: true,
                 headers: {
                     'Content-Type': 'multipart/form-data',
+										'Accept': '*/*'
                 },
                 body: formData, // have to use body instead of data and formData instead of object
             }).then(data => {
