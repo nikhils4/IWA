@@ -230,8 +230,11 @@
             <h6>Alternate Email Address</h6>
             <input class="" type="email" name="alt_email" value="" placeholder="Alternate Email" id="aemail" required>
             <h6>Phone Number</h6>
+            <div class="input">
+                <input type="tel" id="phoneField" name="phone" class="phone-field" placeholder="Phone Number" required>
+            </div>
             <!-- <input class="phone-field" type="tel" name="phone" value="" placeholder="Phone Number" id="phonenumber phoneField" required> -->
-            <input type="tel" id="phoneField" name="phone" class="phone-field" placeholder="Phone Number" required>
+            
             <div class="btnWrappermain">
                 <button class="btnmain" id="filebtn">Upload Abstract</button>
                 <input type="file" accept=".pdf,application/pdf" data-max-size="5242880" name="file" id="file" class="file" required>
@@ -246,6 +249,8 @@
 </body>
 <script src="./assets/validate.min.js"></script>
 <script>
+    const phone = document.querySelector("#phoneField");
+    
     $("#phoneField").CcPicker();
     $("#phoneField").CcPicker({
         "countryCode":"us"
