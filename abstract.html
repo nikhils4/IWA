@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./assets/jquery.ccpicker.js"></script>
+    <link rel="stylesheet" href="./assets/jquery.ccpicker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./abstract.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -224,17 +230,8 @@
             <h6>Alternate Email Address</h6>
             <input class="" type="email" name="alt_email" value="" placeholder="Alternate Email" id="aemail" required>
             <h6>Phone Number</h6>
-            <input class="phoneno1" type="" name="" value="" placeholder="Region Code" id="" required>
-            <input class="phoneno2" type="tel" name="phone" value="" placeholder="Phone Number" id="phonenumber" required>
-            
-
-            <!-- <input class="" type="text" name="" value="" placeholder="Name">
-            <h6>Class</h6>
-            <input class="" type="text" name="" value="" placeholder="Name">
-            <h6>Class</h6>
-            <input class="" type="text" name="" value="" placeholder="Name">
-            <h6>Class</h6>
-            <input class="" type="text" name="" value="" placeholder="Name"> -->
+            <!-- <input class="phone-field" type="tel" name="phone" value="" placeholder="Phone Number" id="phonenumber phoneField" required> -->
+            <input type="tel" id="phoneField" name="phone" class="phone-field" placeholder="Phone Number" required>
             <div class="btnWrappermain">
                 <button class="btnmain" id="filebtn">Upload Abstract</button>
                 <input type="file" accept=".pdf,application/pdf" data-max-size="5242880" name="file" id="file" class="file" required>
@@ -249,14 +246,18 @@
 </body>
 <script src="./assets/validate.min.js"></script>
 <script>
-    /* const submitmain = document.querySelector(".submitmain");
-    submitmain.addEventListener("click", ()=>{
-        submitmain.innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
-    }) */
+    $("#phoneField").CcPicker();
+    $("#phoneField").CcPicker({
+        "countryCode":"us"
+    });
+    $("#phoneField").CcPicker("setCountryByCode","es");
+    $("#phoneField").CcPicker({
+        dataUrl: "data.json"
+    });
+
 </script>
 
 <script>
-				
 						const constraints = {
 										pauthorname : {
 											presence: true
@@ -294,7 +295,7 @@
 				const papertheme = document.getElementById("papertheme")
 				const pemail = document.getElementById("pemail")
 				const aemail = document.getElementById("aemail")
-				const phonenumber = document.getElementById("phonenumber")
+				const phonenumber = document.getElementById("phoneField")
 				const file = document.getElementById("file")
 
 
