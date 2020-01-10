@@ -188,7 +188,7 @@
         <p>Submit Abstract</p>
     </div>
     <div class="main">
-        <form action="https://technoscope.herokuapp.com/" method="post" id="" enctype="multipart/form-data">
+        <form action="https://technoscope.herokuapp.com/" method="post" id="formElem" enctype="multipart/form-data">
             <div class="message">
                 
             </div>
@@ -308,7 +308,6 @@
 										$("#filename").html(file.value)
 						})
         $('.submitmain').click(function (e) {
-								return true
             e.preventDefault();
 								let validationErrors = validate({
 												pauthorname: pauthorname.value,
@@ -334,26 +333,25 @@
                                 }
 								console.log("[Validation message] sucphonenumber.valueeeded")
                                 
-            let formData = new FormData(formElem);
-								fetch("https://technoscope.herokuapp.com/", {
-                method: "POST",
-								headers: {
-									'Content-Type': 'multipart/form-data'
-								},
-                body: formData, // have to use body instead of data and formData instead of object
-								crossDomain: true,
-								// mode: "cors"
-								}).then( data => {
-                                    document.querySelector(".message").innerHTML = "Successfully Uploaded!";
-                                    document.querySelector(".submitmain").innerHTML = "Submit";
-										/* alert("Successfully uploaded document") */
-										console.log(data)
-                     for (let elem of $("#formElem")) {
-                        elem.reset()
-                    } 
+								let settings = {
+                	method: "POST",
+									headers: {
+										'Content-Type': 'multipart/form-data'
+									},
+                	body: formData, // have to use body instead of data and formData instead of object
+									crossDomain: true,
 								}
-            )
-            .catch(
+
+            let formData = new FormData(formElem);
+								fetch("https://technoscope.herokuapp.com/", settings)
+								.then( data => {
+                 	document.querySelector(".message").innerHTML = "Successfully Uploaded!";
+                  document.querySelector(".submitmain").innerHTML = "Submit";
+									console.log(data)
+                  for (let elem of $("#formElem")) {
+                  	elem.reset()
+                  } 
+								}).catch(
                 error => {
                     document.querySelector(".message").innerHTML = "Error Uploading Document";
                     document.querySelector(".submitmain").innerHTML = "Submit";
