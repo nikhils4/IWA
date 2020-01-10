@@ -33,7 +33,14 @@
 .MultiCarousel .rightLst {
 	right: 0;
 }
-
+@media(max-width: 750px){
+	.leftLst{
+		opacity: 0.6;
+	}
+	.rightLst{
+		opacity: 0.6;
+	}
+}
 .MultiCarousel .leftLst.over,
 .MultiCarousel .rightLst.over {
 	pointer-events: none;

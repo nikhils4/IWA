@@ -122,11 +122,7 @@ form{
     margin-top: 5vh;
     width: 500px;
 }
-@media (max-width : 700px){
-    form{
-        width: 70vw;
-    }
-}
+
 select{
     border: 1px black solid;
     padding: 10px 0;
@@ -207,18 +203,28 @@ p{
     font-size: 3rem;
     color: white;
 }
-.phoneno1{
-    float: left;
-    width: 20%;
+.input{
+    width: 100%;
 }
-.phoneno2{
-    float: left;
-    margin-left: 1%;
-    width: 79%;
+.phone-field{
+    width: 424px;
 }
 .message{
     margin-bottom: 20px;
     /* left: 50%;
     transform: translateX(-50%); */
     text-align: center;
+}
+
+
+@media (max-width : 700px){
+    form{
+        width: 70vw;
+    }
+    img > p{
+        font-size: 1rem;
+    }
+    .phone-field{
+        width: calc(70vw - 76px);
+    }
 }
