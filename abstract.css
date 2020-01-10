@@ -216,3 +216,9 @@ p{
     margin-left: 1%;
     width: 79%;
 }
+.message{
+    margin-bottom: 20px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}

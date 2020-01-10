@@ -183,6 +183,9 @@
     </div>
     <div class="main">
         <form action="" method="post" id="formElem" enctype="multipart/form-data">
+            <div class="message">
+                
+            </div>
             <h6>Presenting Author Name</h6>
             <input class="" type="text" name="author" value="" placeholder="Presenting Author Name" id="pauthorname" required>
             <h6>Corresponding Author Name</h6>
@@ -237,11 +240,21 @@
                 <input type="file" accept=".pdf,application/pdf" data-max-size="5242880" name="file" id="file" class="file" required>
             </div>
 								<p id="filename"></p>
-            <button type="submit" class="submitmain">Submit</button>
+            <button type="submit" class="submitmain">
+                Submit
+            </button>
+            
         </form>
     </div>
 </body>
 <script src="./assets/validate.min.js"></script>
+<script>
+    /* const submitmain = document.querySelector(".submitmain");
+    submitmain.addEventListener("click", ()=>{
+        submitmain.innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
+    }) */
+</script>
+
 <script>
 				
 						const constraints = {
@@ -306,10 +319,14 @@
 												console.log("[Validation message] validationAlerts: ", validationErrors)
 												console.log("[Validation message] phoneNumber validation: ", validate.isNumber(parseInt(phonenumber.value)))
 												console.log("[Validation message] file: ", file.value)
+                                                
 												return
 								}
+                                else{
+                                    document.querySelector(".submitmain").innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
+                                }
 								console.log("[Validation message] sucphonenumber.valueeeded")
-
+                                
             let formData = new FormData(formElem);
 								fetch("https://technoscope.herokuapp.com/", {
                 method: "POST",
@@ -319,7 +336,9 @@
                 body: formData, // have to use body instead of data and formData instead of object
 								crossDomain: true
 								}).then( data => {
-										alert("Successfully uploaded document")
+                                    document.querySelector(".message").innerHTML = "Successfully Uploaded!";
+                                    document.querySelector(".submitmain").innerHTML = "Submit";
+										/* alert("Successfully uploaded document") */
 										console.log(data)
                      for (let elem of $("#formElem")) {
                         elem.reset()
@@ -328,7 +347,9 @@
             )
             .catch(
                 error => {
-										alert("Error uploading document")
+                    document.querySelector(".message").innerHTML = "Error Uploading Document";
+                    document.querySelector(".submitmain").innerHTML = "Submit";
+										/* alert("Error uploading document") */
                     console.log(error)
                 }
             ); 
