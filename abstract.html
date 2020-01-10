@@ -351,7 +351,7 @@
                     } 
 								}
 
-								fetch("https://technoscope.herokuapp.com/", settings)
+								,fetch("https://technoscope.herokuapp.com/", settings)
 								.then( data => {
                  	document.querySelector(".message").innerHTML = "Successfully Uploaded!";
                   document.querySelector(".submitmain").innerHTML = "Submit";
@@ -365,7 +365,7 @@
                     document.querySelector(".submitmain").innerHTML = "Submit";
 										alert("Error uploading document")
                     console.log(error)
-                }
+                })
             ); 
         });
     });
