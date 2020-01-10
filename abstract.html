@@ -232,9 +232,10 @@
             <h6>Class</h6>
             <input class="" type="text" name="" value="" placeholder="Name"> -->
             <div class="btnWrappermain">
-                <button class="btnmain">Upload Abstract</button>
+                <button class="btnmain" id="filebtn">Upload Abstract</button>
                 <input type="file" accept=".pdf,application/pdf" data-max-size="5242880" name="file" id="file" class="file" required>
             </div>
+								<p id="filename"></p>
             <button type="submit" class="submitmain">Submit</button>
         </form>
     </div>
@@ -283,6 +284,9 @@
 				const file = document.getElementById("file")
 
 
+						$("#file").on("input", (e) => {
+										$("#filename").html(file.value)
+						})
         $('.submitmain').click(function (e) {
             e.preventDefault();
 								let validationErrors = validate({
