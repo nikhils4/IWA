@@ -333,6 +333,8 @@
                                 }
 								console.log("[Validation message] sucphonenumber.valueeeded")
                                 
+            		let formData = new FormData(formElem);
+
 								let settings = {
                 	method: "POST",
 									headers: {
@@ -342,7 +344,6 @@
 									crossDomain: true,
 								}
 
-            let formData = new FormData(formElem);
 								fetch("https://technoscope.herokuapp.com/", settings)
 								.then( data => {
                  	document.querySelector(".message").innerHTML = "Successfully Uploaded!";
