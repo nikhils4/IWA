@@ -77,3 +77,14 @@ th {
 td{
 	padding: 20px
 }
+
+@media(min-width: 1150px){
+	body{
+		overflow-x: hidden;
+	}
+}
+@media(max-width: 992px){
+	body{
+		overflow-x: hidden;
+	}
+}

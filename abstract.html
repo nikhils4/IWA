@@ -187,7 +187,7 @@
         <p>Submit Abstract</p>
     </div>
     <div class="main">
-        <form action="http://technoscope.herokuapp.com/" method="post" id="formElem" enctype="multipart/form-data">
+        <form action="https://hidden-hollows-55794.herokuapp.com/abstract/" method="post" id="formElem" enctype="multipart/form-data">
             <div class="message">
 
             </div>
@@ -296,6 +296,10 @@
     }
     $(document).ready(function () {
 
+						let isUploaded = false
+        $("#file").on("input", (e) => {
+            $("#filename").html(file.value)
+        })
         const pauthorname = document.getElementById("pauthorname")
         const cauthorname = document.getElementById("cauthorname")
         const papertitle = document.getElementById("papertitle")
@@ -304,12 +308,10 @@
         const aemail = document.getElementById("aemail")
         const phonenumber = document.getElementById("phoneField")
         const file = document.getElementById("file")
-
-
-        $("#file").on("input", (e) => {
-            $("#filename").html(file.value)
-        })
         $('.submitmain').click(function (e) {
+								if (isUploaded) {
+												return
+								}
             e.preventDefault();
             let validationErrors = validate({
                 pauthorname: pauthorname.value,
@@ -328,48 +330,15 @@
                 console.log("[Validation message] phoneNumber validation: ", validate.isNumber(parseInt(phonenumber.value)))
                 console.log("[Validation message] file: ", file.value)
 
-                return
+								isUploaded = false
             }
             else {
                 document.querySelector(".submitmain").innerHTML = '<img src="./images/loading.gif" alt="" height = "20" width = "20">';
+										isUploaded = true
             }
-            console.log("[Validation message] sucphonenumber.valueeeded")
-
-            let formData = new FormData(formElem);
-            fetch("https://technoscope.herokuapp.com", {
-                method: "POST",
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                },
-                body: formData, // have to use body instead of data and formData instead of object
-                crossDomain: true
-            }).then(data => {
-                document.querySelector(".message").innerHTML = "Successfully Uploaded!";
-                document.querySelector(".submitmain").innerHTML = "Submit";
-                /* alert("Successfully uploaded document") */
-                console.log(data)
-                for (let elem of $("#formElem")) {
-                    elem.reset()
-                }
-            })
-
-								/* fetch("https://technoscope.herokuapp.com/", settings) */
-								/* .then( data => {
-                 	document.querySelector(".message").innerHTML = "Successfully Uploaded!";
-                  document.querySelector(".submitmain").innerHTML = "Submit";
-									console.log(data)
-                  for (let elem of $("#formElem")) {
-                  	elem.reset()
-                  } 
-								}) */
-            .catch (
-            error => {
-                document.querySelector(".message").innerHTML = "Error Uploading Document";
-                document.querySelector(".submitmain").innerHTML = "Submit";
-                alert("Error uploading document")
-                console.log(error)
-            })
-        
+										if(isUploaded) {
+										    $(this).trigger('click');
+										}
         });
     });
 
