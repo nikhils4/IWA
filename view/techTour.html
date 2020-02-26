@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Programme Schedule</title>
+    <title>The conference</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -14,12 +14,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-        <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
-    
+        <link rel="icon" href="../images/fav.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 
@@ -29,13 +29,12 @@
             font-weight: bold;
 
         }
-        p{
-            text-align: justify;
-        }
     .bg-dark-ov {
         background-color: rgb(34, 34, 34);
     }
-
+    p{
+            text-align: justify;
+        }
     .navbar-dark .navbar-nav .active>.nav-link,
     .navbar-dark .navbar-nav .nav-link.active,
     .navbar-dark .navbar-nav .nav-link.show,
@@ -88,8 +87,11 @@
 
 
     .sec-one {
-        background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/auruville.jpg") center center no-repeat;
+        background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("../images/auruville.jpg") center center no-repeat;
+
+        /* background: url('images/auruville.jpg') center center; */
         background-size: cover;
+        /*margin-top: 20px;*/
     }
 
     .sec-one-cont {
@@ -248,7 +250,7 @@
         font-size: 12px;
     }
     #bgImages{
-        background: linear-gradient(rgba(255,255,255,.94), rgba(255,255,255,.94)), url("images/circleBlue.png");
+        background: linear-gradient(rgba(255,255,255,.94), rgba(255,255,255,.94)), url("../images/circleBlue.png");
         background-repeat: no-repeat;
         background-position: center;
 }
@@ -282,7 +284,7 @@
         <div class="container-fluid" style="background-color: rgb(34,34,34)">
                 <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
                     <a class="navbar-brand" href="#">
-                        <img src="images/iwa.png"  height="30" alt="IWA logo">
+                        <img src="../images/iwa.png"  height="30" alt="IWA logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -291,7 +293,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
                             </li>
             
                             <li class="nav-item dropdown">
@@ -341,8 +343,8 @@
                                         SUBMISSION
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR PAPERS</a>
-                                            <a class="dropdown-item" href="./abstract.html">SUBMIT ABSTRACT</a>
+                                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR PAPERS</a><a class="dropdown-item" href="./abstract.html">SUBMIT ABSTRACT</a>
+            
                                        </div>
                                 </li>
                             <li class="nav-item dropdown">
@@ -390,10 +392,10 @@
             </div>
 
     <div class="container-fluid">
-        <div class="row sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-            <div class="col-xs-12 col-lg-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
+        <div class="row sec-one" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
+            <div class="col-xs-12 col-lg-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 10vh;text-align: center">
                 <h1 style="font-size: 4.5em; font-weight: 700;">
-                    <i>COMING SOON!</i>
+                    Auroville – Sustainable Village
                 </h1>
                 <!-- <p style="font-size: 18px;">
                     A Conference for Young Leaders, by Young Leaders
@@ -403,6 +405,39 @@
         </div>
     </div>
 
+
+    <div class="container-fluid">
+        <div id="bgImages" class="row"
+            style="height: auto;  padding: 0vh 10vw 0 10vw;">
+            <div class="col-xs-12" style="height: auto; margin-top: 8vh; margin-bottom: 5vh">
+                <!-- <h1 style="font-size: 3.3em;font-weight: 800">About International Water Association:</h1><br> -->
+                <p style="font-size: 18px; ">
+                    Auroville is first and foremost an international township with a spiritual objective—to embody the
+                    ideal of human unity—and its ecological work comes as a consequence. Auroville’s overarching
+                    vision is grounded in the Integral Yoga of Sri Aurobindo, which understands biophysical reality as
+                    an revolutionary unfoldment of spirit.
+                    Founded in 1968 upon a severely eroded plateau in south India, the first order of business for the
+                    pioneers was to revitalize the land. Three million trees later, Auroville is home to over 2,000
+                    people
+                    from 43 different countries and is one of the few places on Earth where biodiversity is actually
+                    increasing.
+                </p>
+                <p style="font-size: 18px; margin-top: 3vh">
+                    The community is also a world leader in compressed-earth building techniques, rainwater
+                    harvesting, plant-based sewage treatment, solar and wind energy, and Effective Microorganisms.
+                    Auroville’s tremendous dynamism is partly due to its proximity to 40,000 traditional Tamil
+                    villagers,
+                    many of whom work in Auroville’s guesthouses and cottage industries. While most Aurovilians live
+                    very simply by American standards, their lifestyles are far more comfortable than those of the
+                    surrounding villagers.
+                    The inevitable social and economic tensions suffuse every aspect of Auroville’s existence—from
+                    housing policies, to the division of labor, to race and gender relations. In this way, Auroville is a
+                    microcosm of the world. To the extent that it succeeds in exemplifying the ideal of human unity,
+                    Auroville’s discoveries for every facet of E2C2 will therefore have global significance.
+                </p>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -490,7 +525,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col-lg-3">
                 <a target="_blank" href="https://www.facebook.com/technoscape2020/?ref=br_rs"
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i
@@ -499,7 +533,7 @@
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a target="_blank"
-                    href="https://www.instagram.com/technoscape20/"
+                    href="https://www.instagram.com/technoscape2020/"
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-instagram" aria-hidden="true"></i></a>
                 

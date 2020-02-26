@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Local Organising Committee
-    </title>
+    <title>Advisory Committe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -18,10 +17,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
+    <link rel="icon" href="../images/fav.jpeg" type="image/x-icon">
 
 <style>
         body{
@@ -85,7 +83,7 @@
                 padding-left: .7rem;
             }
 
-            #list-part-two {
+            .list-part-two {
                 margin-top: 4vh;
             }
         }
@@ -96,11 +94,10 @@
                 padding-left: .7rem;
             }
 
-            #list-part-two {
+            .list-part-two {
                 margin-top: 0;
             }
         }
-
 
         .y {
             margin: 0 auto;
@@ -210,23 +207,23 @@
         li {
             font-size: 12px;
         }
-
-        #bgImages {
-
-            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
-            background-repeat: no-repeat;
-            background-position: center;
-
+        #bgImages{
+        background: linear-gradient(rgba(255,255,255,.80), rgba(255,255,255,.80)), url("../images/circleBlue.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        #bgImagesLine{
+                background: linear-gradient(rgba(255,255,255,.80), rgba(255,255,255,.80)), url("../images/circleBlue.png");
+                background-repeat: no-repeat;
+                background-position: center;
         }
         .sec-one {
-			background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/committe.jpeg") center center no-repeat;
+                    background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("../images/committe.jpeg") center center no-repeat;
+                    background-size: cover;
+                    background-color: black
+                }
 
-			/* background: url('images/becomethesponser.png') center center; */
-			background-size: cover;
-			/*margin-top: 20px;*/
-			background-color: black
-        }
-        @media (max-width : 700px){
+                @media (max-width : 700px){
             .heading{
             font-size: 3.2em;
         }
@@ -236,8 +233,8 @@
             .heading{
                 font-size: 4.5em;
             }
-
         }
+
     </style>
 </head>
 
@@ -267,7 +264,7 @@
         <div class="container-fluid" style="background-color: rgb(34,34,34)">
                 <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
                     <a class="navbar-brand" href="#">
-                        <img src="images/iwa.png"  height="30" alt="IWA logo">
+                        <img src="../images/iwa.png"  height="30" alt="IWA logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -276,7 +273,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
                             </li>
             
                             <li class="nav-item dropdown">
@@ -373,35 +370,38 @@
                     </div>
                 </nav>
             </div>
+
     <div class="container-fluid">
-        <div class="row  sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
-            <div class="col-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
-                <h1 class="heading" style="font-weight: 700;">
-                    Local Organising Committee
+        <div class="row sec-one" style="height: auto;  padding: 15vh 10vw 15vh 10vw;">
+            <div class="col-12" style="color: white;height: auto; text-align: center">
+                <h1 class="heading" style=" font-weight: bold;">
+                    Advisory Committee
                 </h1>
-                
             </div>
-
         </div>
     </div>
 
     <div class="container-fluid">
-        <div class="row" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
+        <div id="bgImagesLine" class="row" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
             <div class="col-xs-12" style="height: auto; margin-top: 5vh; margin-bottom: 5vh">
-                <p style="font-size: 18px; margin-top: 3vh">
-                    The Local Organising Committee – all young water professionals – are responsible for the event
-                    experience.
-                    They manage everything related to conference management, including the conference planning, the
-                    budget (with
-                    JOC approving all costs), the venue and catering, the social events, the technical tours and other
-                    logistics.
-                </p>
+                <p style="font-size: 18px;">
+                    The role of the Advisory Committee is to provide advice and a mentorship role to the Programme
+                    Committee. These are highly 
+                    acclaimed experts from within the water sector. The roles of the Advisory Committee is to: </p>
+                <ul style="font-size: 18px; margin-top: 3vh">
+                    <li style="font-size: 18px;margin-bottom: 13px">Review the abstracts in a fair and transparent manner.</li>
+                    <li style="font-size: 18px;margin-bottom: 13px">Ensure that the conference programme is relevant to the
+                        current issues in the water sector and
+                        balanced between the different sessions.</li>
+                    <li style="font-size: 18px;margin-bottom: 13px">Potentially be present at the conference as keynotes, adjudicators
+                        and in panel discussions etc.</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 0 10vw 5vh 10vw;">
+        <div id="bgImages" class="row" style="height: auto;  padding: 3vh 10vw 10vh 10vw;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
@@ -412,24 +412,96 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12"
-                        style="height: auto; margin-top: 4vh; margin-bottom: 4vh;">
+                        style="height: auto; margin-top: 4vh; margin-bottom: 1vh;text-align: justify;text-justify: inter-word;">
                         <ul>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Mahesh Ganesapillai, (Chair and Joint
-                                Organising Committee-JOC)</li>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Aruna Singh (Co-chair and Treasurer)
-                            </li>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Govardhan (Events Lead)</li>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Vijayalakshmi (Communication Lead)</li>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Sudandiradoss C. (Technical Lead)</li>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Tirumalini Selvaraj (Social Lead)</li>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Aslam Abdullah (Sponsorship Lead)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Jakub Drewnowski, Gdansk University of
+                                Technology, POLAND, (Chair)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Alper Baba, Izmir Institute of
+                                Technology, TURKEY</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. B. Kuswandi, University of Jember Jl,
+                                INDONESIA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Bahri Akiça, National Agricultural
+                                Institute of Tunisia, TUNISIA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Banu Ormeci, Carleton University,
+                                CANADA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Bhaskaran Natesan, Chem Plast Sanmar
+                                Group, INDIA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Chandramouli V. Chandramouli, Boston
+                                University, USA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Despo Fatta-Kassinos, University of
+                                Cyprus, CYPRUS</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Edevar Luvizotto Junior, University of
+                                Campinas, BRAZIL</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Eric D van Hullebusch, Institut De
+                                Physique Du Globe De Paris, FRANCE</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Eric Lichtfouse, Aix-Marseille
+                                University, FRANCE</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Franz-Bernd Frechen, Universität Kassel
+                                Kassel, Hessen, GERMANY</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Giusy Lofrano, Università degli Studi
+                                di Salerno, ITALY</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Gürkan Sin, University of Denmark
+                                Lyngby DENMARK</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Hideaki Yoshitake, Yokohama National
+                                University, JAPAN</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Inês Lousinha Ribeiro Breda, Aalborg
+                                University, DENMARK</li>
+                            <li style="margin-bottom: 8px; font-size: 18px;">Dr. Juan M. Peralta-Hernandez, Universidad
+                                de Guanajuato, MEXICO</li>
+                                <li style="margin-bottom: 8px; font-size: 18px;">Dr. Rimuka Dzwairo, Durban University of
+                                        Technology, SOUTH AFRICA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Kala Vairavamurthy, IWA Headquarter, Netherland</li>
+                                    
+                       
+                                <li style="margin-bottom: 8px; font-size: 18px;">Dr. Konstantinos Simeonidis, Aristotle
+                                        University of Thessaloniki, GREECE</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Motasem Saidan, University of Jordan,
+                                        JORDAN</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Murugesan Thanabalan, University
+                                        Technology Petronas, MALAYSIA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Nandita Dasgupta, Institute of
+                                        Engineering and Technology, INDIA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Rajib Maity, Indian Institute of
+                                        Technology Kharagpur, INDIA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Ramesh S. V. Teegavarapu, Florida
+                                        Atlantic University, USA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Renato Morbidelli, Università degli
+                                        Studi di Perugia Perugia, ITALY</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. S Mohan, Indian Institute of
+                                        Technology, Madras, INDIA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Mr. Sampath Dayaratne, University of Sri
+                                        Jayewardanapura, SRI LANKA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Shaik Feroz, National University for
+                                        Science and Technology, OMAN</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. T R Sreekrishnan, Indian Institute of
+                                        Technology Delhi, INDIA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Tiziano Zarra, University of Salerno
+                                        Fisciano, ITALY</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Tyhra Carolyn Kumasi, Accra-Ghana,
+                                        GHANA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Vincenzo Naddeo, University of Salerno,
+                                        ITALY</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Yan-Fang Sang, Jilin University, CHINA
+                                    </li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Yanchen Liu, Capital Medical University
+                                        Beijing, CHINA</li>
+                                    <li style="margin-bottom: 8px; font-size: 18px;">Dr. Zhiwei Wang, Tongji University,
+                                        Shanghai, CHINA</li>
+        
+
+
+
+
+
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
+   
 
     <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
         <h1 style="font-weight: 600;color: white;margin-top:30px">Join us in Vellore, INDIA ! See you in...
@@ -443,6 +515,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div class="container-fluid">
@@ -521,7 +594,7 @@
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a target="_blank"
-                    href="https://www.instagram.com/technoscape20/"
+                    href="https://www.instagram.com/technoscape2020/"
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-instagram" aria-hidden="true"></i></a>
                 
@@ -561,14 +634,6 @@
 
         setInterval(function () { makeTimer(); }, 1000);
     </script>
-
-
-
-
-
-
-
-
 
 
 </body>

@@ -90,7 +90,7 @@ td{
 }
 
 .blinking {
-	animation: blinker 1s linear infinite;
+	animation: blinker 1.4s linear infinite;
   }
   
   @keyframes blinker {

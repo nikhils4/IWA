@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
+    <link rel="icon" href="../images/fav.jpeg" type="image/x-icon">
 
 <style>
         body{
@@ -213,10 +213,18 @@
 
         #bgImages {
 
-            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
+            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("../images/circleBlue.png") no-repeat;
             background-repeat: no-repeat;
             background-position: center;
 
+        }
+        .sec-one {
+			background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("../images/committe.jpeg") center center no-repeat;
+
+			/* background: url('images/becomethesponser.png') center center; */
+			background-size: cover;
+			/*margin-top: 20px;*/
+			background-color: black
         }
         @media (max-width : 700px){
             .heading{
@@ -228,7 +236,7 @@
             .heading{
                 font-size: 4.5em;
             }
-      
+
         }
     </style>
 </head>
@@ -259,7 +267,7 @@
         <div class="container-fluid" style="background-color: rgb(34,34,34)">
                 <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
                     <a class="navbar-brand" href="#">
-                        <img src="images/iwa.png"  height="30" alt="IWA logo">
+                        <img src="../images/iwa.png"  height="30" alt="IWA logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -268,7 +276,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
                             </li>
             
                             <li class="nav-item dropdown">
@@ -366,19 +374,34 @@
                 </nav>
             </div>
     <div class="container-fluid">
-        <div class="row" style="height: auto;  padding: 10vh 10vw 10vh 10vw; background: #00ADEF">
-            <div class="col-12" style="color: white;height: auto; margin-top: 5vh; margin-bottom: 5vh;text-align:center">
-                <h1 class="heading" style=" font-weight: 700;">
-                    Steering Committee
+        <div class="row  sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
+                <h1 class="heading" style="font-weight: 700;">
+                    Local Organising Committee
                 </h1>
+                
             </div>
 
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
+            <div class="col-xs-12" style="height: auto; margin-top: 5vh; margin-bottom: 5vh">
+                <p style="font-size: 18px; margin-top: 3vh">
+                    The Local Organising Committee – all young water professionals – are responsible for the event
+                    experience.
+                    They manage everything related to conference management, including the conference planning, the
+                    budget (with
+                    JOC approving all costs), the venue and catering, the social events, the technical tours and other
+                    logistics.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 8vh 10vw 5vh 10vw;">
+        <div id="bgImages" class="row" style="height: auto;  padding: 0 10vw 5vh 10vw;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
@@ -391,22 +414,20 @@
                     <div class="col-12"
                         style="height: auto; margin-top: 4vh; margin-bottom: 4vh;">
                         <ul>
-                                <li style="margin-bottom: 8px; font-size: 18px">Dr. Anand Samuel, Vice - Chancellor, VIT, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">Dr. S. Narayanan, Pro Vice - Chancellor, VIT, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">Dr. K. Sathiyanarayanan, Registrar, VIT, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">Dr. Shishir K. Behera, Dean – School of Chemical Engineering, VIT, INDIA</li>
-                            
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Mahesh Ganesapillai, (Conference Chair)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Aruna Singh (Co-chair and Treasurer)
+                            </li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Govardhan (Events Lead)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Vijayalakshmi (Communication Lead)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Sudandiradoss C. (Technical Lead)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Tirumalini Selvaraj (Social Lead)</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Aslam Abdullah (Sponsorship Lead)</li>
                         </ul>
                     </div>
-                   
                 </div>
             </div>
         </div>
     </div>
-
-   
-
-
 
 
     <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
@@ -490,6 +511,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="col-lg-3">
                 <a target="_blank" href="https://www.facebook.com/technoscape2020/?ref=br_rs"
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px;margin-left:80px"><i
@@ -498,7 +520,7 @@
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a target="_blank"
-                    href="https://www.instagram.com/technoscape20/"
+                    href="https://www.instagram.com/technoscape2020/"
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-instagram" aria-hidden="true"></i></a>
                 

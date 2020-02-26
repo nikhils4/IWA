@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PATRONS
-    </title>
+    <title>Program Committee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -21,11 +20,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/fav.jpeg" type="image/x-icon">
-
+    <link rel="icon" href="../images/fav.jpeg" type="image/x-icon">
 <style>
         body{
-            font-family: 'Muli', sans-serif ;
+            font-family: 'Muli', sans-serif;
+            font-weight: bold;
+
         }
         p{
             text-align: justify;
@@ -98,7 +98,6 @@
                 margin-top: 0;
             }
         }
-
 
         .y {
             margin: 0 auto;
@@ -198,7 +197,7 @@
 
         .bfricon:before {
             content: "\e131";
-            font-family: 'Amiri';
+            font-family: 'Glyphicons Halflings';
             font-size: 10px;
             float: left;
             margin-left: -17px;
@@ -207,21 +206,35 @@
 
         li {
             font-size: 12px;
-            font-weight: bold;
         }
 
         #bgImages {
 
-            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("images/circleBlue.png") no-repeat;
+            background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)), url("../images/circleBlue.png") no-repeat;
             background-repeat: no-repeat;
             background-position: center;
 
         }
         .sec-one {
-			background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("images/committe.jpeg") center center no-repeat;
+			background: linear-gradient(rgba(0,0,0, .42), rgba(0,0,0, .42)), url("../images/committe.jpeg") center center no-repeat;
+
+			/* background: url('images/becomethesponser.png') center center; */
 			background-size: cover;
+			/*margin-top: 20px;*/
 			background-color: black
-		}
+        }
+        @media (max-width : 700px){
+            .heading{
+            font-size: 3.2em;
+        }
+    }
+
+        @media (min-width: 700px){
+            .heading{
+                font-size: 4.5em;
+            }
+          
+        }
     </style>
 </head>
 
@@ -248,196 +261,191 @@
                 </div>
             </div>
         
-    <div class="container-fluid" style="background-color: rgb(34,34,34)">
-        <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
-            <a class="navbar-brand" href="#">
-                <img src="images/iwa.png" height="30" alt="IWA logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            ABOUT
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
-                            <a class="dropdown-item" href="themes.html">THEMES</a>
-                            <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
-                            <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS</a>
-                                <a class="dropdown-item" href="PrevConference.html">PREVIOUS CONFERENCE</a>
-
-
-                        </div>
-                    </li>
-                    <!--PROGRAMME TO USED LATER -->
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PROGRAMME
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="techTour.html">TECHNICAL TOUR</a>
-                                <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
-                                <a class="dropdown-item" href="techSessions.html">TECHNICAL SESSIONS</a>
-                                <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
-    
-                            </div>
-                        </li>
-    
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                COMMITTEE
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="petron.html">PATRONS</a>
-                                <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
-                                <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
-                                <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
-                                <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
-                                <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
-                            </div>
-                        </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SUBMISSION
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR PAPERS</a>
-                            <a class="dropdown-item" href="./abstract.html">SUBMIT ABSTRACT</a>
-                            <!-- <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
-                            <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
-                            <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
-                            <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a> -->
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SPONSORS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            DESTINATION
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
-                            <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
-                            <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            DOWNLOADS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="brochure.html">BROCHURE</a>
-                            <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown" style="margin-right: 15px;">
-                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CONTACT
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="faq.html">FAQ</a>
-                        </div>
-                    </li>
-                    <li class="nav-item "
-                        style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
-                        <a class="nav-link active" href="./abstract.html">SUBMIT ABSTRACT</a>
-                    </li>
-                </ul>
-
+        <div class="container-fluid" style="background-color: rgb(34,34,34)">
+                <nav class="navbar-expand-lg navbar navbar-dark bg-dark-ov">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/iwa.png"  height="30" alt="IWA logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ABOUT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="theconference.html">THE CONFERENCE</a>
+                                    <a class="dropdown-item" href="themes.html">THEMES</a>
+                                    <a class="dropdown-item" href="keyDates.html">KEY DATES</a>
+                                    <a class="dropdown-item" href="regDetails.html">REGISTRATION DETAILS</a>
+                                    <a class="dropdown-item" href="prevConference.html">PREVIOUS CONFERENCE</a>
+                         
+                                </div>
+                            </li>
+                            <!--PROGRAMME TO USED LATER -->
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        PROGRAMME
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="techTour.html">TECHNICAL TOUR</a>
+                                        <a class="dropdown-item" href="programScedule.html">PROGRAMME SCHEDULE</a>
+                                        <a class="dropdown-item" href="techSessions.html">TECHNICAL SESSIONS</a>
+                                        <a class="dropdown-item" href="workShops.html">WORKSHOPS</a>
+            
+                                    </div>
+                                </li>
+            
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        COMMITTEE
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="petron.html">PATRONS</a>
+                                        <a class="dropdown-item " href="steeringCommitte.html">STEERING COMMITTEE</a>
+                                        <a class="dropdown-item" href="advisoryCommittee.html">ADVISORY COMMITTEE</a>
+                                        <a class="dropdown-item" href="programmeCommittee.html">PROGRAMME COMMITTEE</a>
+                                        <a class="dropdown-item" href="localOrganisingCommittee.html">LOCAL ORGANISING COMMITTEE</a>
+                                        <a class="dropdown-item " href="additionalCommittee.html">JOINT ORGANISING COMMITTEE</a>
+                                    </div>
+                                </li>
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SUBMISSION
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="SUBMISSION.html">CALL FOR PAPERS</a>
+                                            <a class="dropdown-item" href="./abstract.html">SUBMIT ABSTRACT</a>
+                                       </div>
+                                </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SPONSORS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="becomethesponser.html">BECOME A SPONSOR</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    DESTINATION
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="aboutTheDestination.html">ABOUT THE DESTINATION</a>
+                                    <a class="dropdown-item" href="visaRequirements.html">VISA REQUIREMENTS</a>
+                                    <a class="dropdown-item" href="accommodation.html">ACCOMMODATION</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    DOWNLOADS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="brochure.html">BROCHURE</a>
+                                    <!-- <a class="dropdown-item" href="#">MEDIA</a> -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" style="margin-right: 15px;">
+                                <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    CONTACT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </div>
+                            </li>
+                            <li class="nav-item " style="border : 1px solid white; text-align: center; padding-left: 7px; padding-right: 7px">
+                                <a class="nav-link active" href="./abstract.html">SUBMIT ABSTRACT</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </div>
-    
+            
     <div class="container-fluid">
-        <div class="row" style="height: auto;  padding: 5vh 10vw 10vh 10vw;background-color: #00ADEF">
-            <div class="col-xs-12" style="width:100%;color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
-                <h1 style="font-size: 4.5em; font-weight: 700;">
-                   Patrons
+        <div class="row sec-one" style="height: auto;  padding: 5vh 10vw 10vh 10vw;">
+            <div class="col-12" style="color: white;height: auto; margin-top: 10vh; margin-bottom: 5vh;text-align: center">
+                <h1 class="heading" style=" font-weight: 700;">
+                    Programme Committee
                 </h1>
-               
             </div>
 
         </div>
     </div>
 
-  
     <div class="container-fluid">
-        <div id="bgImages" class="row" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
-            <div class="container-fluid">
+        <div class="row" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
+            <div class="col-xs-12" style="height: auto; margin-top: 5vh; margin-bottom: 5vh">
+                <p style="font-size: 18px;">
+                    The Programme Committee is responsible for the content of the conference and ensuring
+                    that the high standard of previous IYWPCs is maintained and meets the needs of the
+                    international water sector. The Programme Committee decides the balance between
+                    technical sessions, workshops, learning sessions and networking events. As part of the
+                    conference programme, the keynote speakers will be decided by the Programme Committee
+                    including the topics of the plenary address that remain relevant to the conference theme.
+                    The Programme Committee is responsible for managing the abstract review process and
+                    creating the multidisciplinary conference programme.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="bgImages" class="row" style="height: auto;  padding: 0 10vw 5vh 10vw;">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h3 style="font-size: 40px;">Chief Patron</h3>
+                        <h2 style="font-size: 40px;">Committee</h2>
                     </div>
                 </div>
-            </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-12"
-                        style="height: auto; margin-top: 4vh; margin-bottom: 1vh;">
+                    <div class="col-12" style="height: auto; margin-top: 4vh; margin-bottom: 4vh;">
                         <ul>
-                            <li style="margin-bottom: 8px; font-size: 18px">Dr. G. Viswanathan, Chancellor, Vellore Institute of Technology, INDIA</li>
-                            
-                             </ul>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Bin Yan, Xiamen University of
+                                Technology, CHINA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Cheng-Di Dong, Kaohsiung National
+                                University of Science and Tech, TAIWAN</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Eilon Adar, Zuckerberg Institute for
+                                Water Research, ISRAEL</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Hassimi Abu Hassan, Universiti
+                                Kebangsaan Malaysia, MALAYSIA</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Jutamas Kaewsuk, Mahasarakham
+                                University, THAILAND</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Kazuho Nakamura, Yokohama National
+                                University, JAPAN</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Hung- Suck Park, University of Ulsan,
+                                SOUTH KOREA</li>
+                        
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Meguru Kaminoyama, Yokohama National
+                                University, JAPAN</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Nguyen Cong Nguyen, DaLat University,
+                                VIETNAM</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Palsiri Srirungruang, Metropolitan
+                                Waterworks Authority, THAILAND </li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Shiao-Shing Chen, National Taipei
+                                University of Technology, TAIWAN</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. Teik Thy Lim, Nanyang Technological
+                                University, SINGAPORE</li>
+                            <li style="margin-bottom: 8px; font-size: 18px">Dr. TVN Padmesh, Manipal International
+                                University, MALAYSIA</li>
+                        </ul>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="container-fluid">
-            <div id="bgImages" class="row" style="height: auto;  padding: 5vh 10vw 5vh 10vw;">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 style="font-size: 40px;">Patrons</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-12"
-                            style="height: auto; margin-top: 4vh; margin-bottom: 1vh;">
-                            <ul>
-                                <li style="margin-bottom: 8px; font-size: 18px">Dr. Sekar Viswanathan, Vice President, Vellore Institute of Technology, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">Dr. Sandhya Pentareddy, Executive Director, Vellore Institute of Technology, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">MR. SANKAR VISWANATHAN, Vice President, Vellore Institute of Technology, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">MR. G V SELVAM, Vice President, Vellore Institute of Technology, INDIA</li>
-                                <li style="margin-bottom: 8px; font-size: 18px">MS. KADHAMBARI S. VISWANATHAN, Assistant Vice President, Vellore Institute of Technology, INDIA</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
+  
     <div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
-        <h1 style="font-weight: 600;color: white">Join us in Vellore, INDIA ! See you in...</h1>
+        <h1 style="font-weight: 600;color: white;margin-top:30px">Join us in Vellore, INDIA ! See you in...
+</h1>
         <div class="x">
             <div class="x" id="timer">
                 <div class="x" id="days"></div>
@@ -447,6 +455,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div class="container-fluid">
@@ -525,14 +534,20 @@
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a target="_blank"
-                    href="https://www.instagram.com/technoscape20/"
+                    href="https://www.instagram.com/technoscape2020/"
                     style="text-decoration: none;color:white;cursor: pointer;margin-right: 10px"><i style="color:white;font-size: 22px"
                         class="fa fa-instagram" aria-hidden="true"></i></a>
                 
             </div>
+            
         </div>
     </div>
 
+
+
+
+    <script type="text/javascript"
+        src="http://worldwatercongress.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
 
 
     <script type="text/javascript">
@@ -565,12 +580,6 @@
 
         setInterval(function () { makeTimer(); }, 1000);
     </script>
-
-
-
-
-
-
 
 
 
